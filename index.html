@@ -160,14 +160,14 @@ section.active{display:block}
 .topbar-logo-wrap{display:flex;align-items:center;gap:8px}
 .topbar-logo-wrap img{height:24px;width:auto;object-fit:contain}
 .topbar-brand{font-family:'Cormorant Garamond',serif;font-size:16px;font-weight:400;color:#f4f1eb;letter-spacing:0.04em}
-.topbar-tagline{font-size:10px;color:rgba(177,208,130,.55);letter-spacing:0.12em;text-transform:uppercase;display:none}
+.topbar-tagline{font-size:10px;color:rgba(177,208,130,.55);letter-spacing:0.12em;text-transform:uppercase;display:block}
 .topbar-right{display:flex;align-items:center;gap:6px}
 .topbar-btn{display:flex;align-items:center;gap:5px;padding:5px 11px;border:1px solid rgba(177,208,130,.2);color:rgba(177,208,130,.8);font-size:11px;text-decoration:none;letter-spacing:0.05em;transition:all .2s;cursor:pointer;background:transparent;white-space:nowrap}
 .topbar-btn:hover,.topbar-btn:focus{background:rgba(177,208,130,.1);border-color:rgba(177,208,130,.5);color:#b1d082}
 .topbar-btn.urgent{border-color:rgba(239,68,68,.4);color:rgba(239,68,68,.8)}
 .topbar-btn.urgent:hover{background:rgba(239,68,68,.1);border-color:rgba(239,68,68,.7);color:#ef4444}
 .topbar-btn svg{width:12px;height:12px;flex-shrink:0}
-@media(max-width:768px){.topbar{padding-left:58px}.topbar-tagline,.topbar-brand{display:none}.topbar-btn span{display:none}.topbar-btn{padding:5px 7px}}
+@media(max-width:768px){.topbar{padding-left:58px}.topbar-tagline,.topbar-brand{display:block}.topbar-btn span{display:none}.topbar-btn{padding:5px 7px}}
 
 /* === FOOTER === */
 .site-footer{background:#0d1a20;color:rgba(177,208,130,.5);padding:36px 48px 28px;}
@@ -565,7 +565,7 @@ function changeLogo(){
       <img src="images/img_00.png" id="topbar-logo-img" alt="NexSocial">
       <span class="topbar-brand" id="topbar-brand">NexSocial</span>
     </div>
-    <span class="topbar-tagline" id="topbar-tagline">Cooperativa de Gestió Social</span>
+    <span class="topbar-tagline" id="topbar-tagline">Nexe de Suport i Acompanyament Global</span>
   </div>
   <div class="topbar-right" id="topbar-links">
     <a href="#contacte" class="topbar-btn" id="topbar-btn-contacte" onclick="showSection('contacte', document.querySelectorAll('nav a')[5])">
@@ -753,6 +753,65 @@ function changeLogo(){
       <p id="mv-historia-text" style="font-size:13px; color:#4a5e46; line-height:1.8;">Diferents professionals multidisciplinars vam coincidir i, sota la mateixa premissa, vam crear un projecte en comú on es valorés a les persones, en un entorn modern, actual i col·laboratiu.</p>
     </div>
 
+  </div>
+
+  <!-- Context i Justificació -->
+  <div style="background:var(--forest);padding:48px 40px;margin-bottom:32px;">
+
+    <div style="font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:300;color:white;margin-bottom:8px;line-height:1.35;">Per què és necessari <em style="font-style:italic;color:var(--green-light);">NexAcompanya</em>, el servei creat per acompanyar-te en el <em style="font-style:italic;color:var(--green-light);">camí de sanar</em></div>
+    <p style="font-size:13px;color:rgba(255,255,255,0.6);line-height:1.8;margin-bottom:36px;max-width:680px;">La salut mental és un dels reptes socials més urgents del nostre temps. Malgrat la creixent conscienciació, l'accés a un acompanyament emocional de qualitat continua sent un privilegi.</p>
+
+    <!-- Xifres -->
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-bottom:36px;">
+
+      <div style="background:rgba(255,255,255,0.06);padding:32px 28px;text-align:center;">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:52px;font-weight:300;color:var(--green-light);line-height:1;margin-bottom:12px;">1 de cada 4</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);line-height:1.65;">persones patirà un trastorn mental al llarg de la seva vida <span style="color:rgba(255,255,255,0.4);">(OMS)</span></div>
+      </div>
+
+      <div style="background:rgba(74,124,89,0.35);padding:32px 28px;text-align:center;">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:52px;font-weight:300;color:var(--green-light);line-height:1;margin-bottom:12px;">40%</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);line-height:1.65;">de les baixes laborals a Catalunya s'associen a causes emocionals o psicosocials</div>
+      </div>
+
+      <div style="background:rgba(255,255,255,0.06);padding:32px 28px;text-align:center;">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:52px;font-weight:300;color:var(--green-light);line-height:1;margin-bottom:12px;">70%</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.7);line-height:1.65;">de les persones amb necessitat de suport psicològic no arriben mai a un professional</div>
+      </div>
+
+    </div>
+
+    <!-- 3 col·lectius -->
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2px;">
+
+      <div style="background:rgba(74,124,89,0.35);padding:24px 24px;">
+        <div style="font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:var(--green-light);margin-bottom:14px;border-bottom:1px solid rgba(177,208,130,0.25);padding-bottom:10px;">Persones i famílies</div>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;">
+          <li style="font-size:12px;color:rgba(255,255,255,0.65);line-height:1.6;display:flex;gap:8px;"><span style="color:var(--green-light);flex-shrink:0;">—</span>Crisi de salut mental post-pandèmia, especialment en joves i gent gran</li>
+          <li style="font-size:12px;color:rgba(255,255,255,0.65);line-height:1.6;display:flex;gap:8px;"><span style="color:var(--green-light);flex-shrink:0;">—</span>Llistes d'espera de mesos als serveis públics de salut mental</li>
+          <li style="font-size:12px;color:rgba(255,255,255,0.65);line-height:1.6;display:flex;gap:8px;"><span style="color:var(--green-light);flex-shrink:0;">—</span>Manca de serveis accessibles, propers i assequibles a les comunitats</li>
+        </ul>
+      </div>
+
+      <div style="background:rgba(255,255,255,0.04);padding:24px 24px;">
+        <div style="font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:var(--green-light);margin-bottom:14px;border-bottom:1px solid rgba(177,208,130,0.25);padding-bottom:10px;">Empreses i organitzacions</div>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;">
+          <li style="font-size:12px;color:rgba(255,255,255,0.65);line-height:1.6;display:flex;gap:8px;"><span style="color:var(--green-light);flex-shrink:0;">—</span>L'estrès laboral i el burnout costen a les empreses fins a 3.000€ per treballador/any</li>
+          <li style="font-size:12px;color:rgba(255,255,255,0.65);line-height:1.6;display:flex;gap:8px;"><span style="color:var(--green-light);flex-shrink:0;">—</span>1 de 3 dels equips amb conflictes interns no rep cap suport professional</li>
+          <li style="font-size:12px;color:rgba(255,255,255,0.65);line-height:1.6;display:flex;gap:8px;"><span style="color:var(--green-light);flex-shrink:0;">—</span>Creixent demanda de programes de benestar emocional al lloc de treball</li>
+        </ul>
+      </div>
+
+      <div style="background:rgba(74,124,89,0.35);padding:24px 24px;">
+        <div style="font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:var(--green-light);margin-bottom:14px;border-bottom:1px solid rgba(177,208,130,0.25);padding-bottom:10px;">Administracions públiques</div>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;">
+          <li style="font-size:12px;color:rgba(255,255,255,0.65);line-height:1.6;display:flex;gap:8px;"><span style="color:var(--green-light);flex-shrink:0;">—</span>Els serveis socials municipals estan desbordats i necessiten serveis complementaris</li>
+          <li style="font-size:12px;color:rgba(255,255,255,0.65);line-height:1.6;display:flex;gap:8px;"><span style="color:var(--green-light);flex-shrink:0;">—</span>Necessitat urgent de programes preventius de salut mental comunitària</li>
+          <li style="font-size:12px;color:rgba(255,255,255,0.65);line-height:1.6;display:flex;gap:8px;"><span style="color:var(--green-light);flex-shrink:0;">—</span>Les licitacions de serveis d'acompanyament creixen any rere any</li>
+        </ul>
+      </div>
+
+    </div>
   </div>
 
   <!-- Galeria de 3 fotos -->
@@ -974,6 +1033,40 @@ function changeLogo(){
   <div style="height:260px;background-size:cover;background-position:center center;background-image:url('images/img_14.jpg');background-size:cover;background-position:center;margin-bottom:24px;"></div>
   <p class="srv-block-desc">Quan la vida ens posa davant de moments que no sabem com gestionar sols, l'acompanyament emocional i terapèutic obre un espai de suport, escolta i creixement. Des de NexAcompanya, oferim terapëes individualitzades i de grup amb mètodes avalats per més de 10 anys d'experiència clínica i vivencial, sempre en un entorn segur, lliure de judicis i orientat al teu benestar real.</p>
 
+  <!-- Cartera de Serveis -->
+  <div style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--green-mid);margin-bottom:20px;">Cartera de Serveis</div>
+
+  <div class="srv-cols" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin-bottom:32px;">
+    <div class="srv-col-box">
+      <div class="srv-col-box-title">Terapèutica Emocional</div>
+      <ul>
+        <li>Regulació i gestió emocional</li>
+        <li>Treball del dol, l'anüncia i la pèrdua</li>
+        <li>Gestió de l'ansüetat i l'estrès crònic</li>
+        <li>Reforcem la resiliència personal</li>
+        <li>Orientació cap a objectius vitals</li>
+      </ul>
+    </div>
+    <div class="srv-col-box">
+      <div class="srv-col-box-title">Terapèutica Psicològica</div>
+      <ul>
+        <li>Psicòlegs i terapeutes col·legiats</li>
+        <li>Teràpia cognitivo-conductual</li>
+        <li>Teràpia Gestalt i enfocament humanista</li>
+        <li>Diagnòstic i pla de tractament individualitzat</li>
+        <li>Intervenció en salut mental lleu i moderada</li>
+      </ul>
+    </div>
+    <div class="srv-col-box">
+      <div class="srv-col-box-title">Format i Accés</div>
+      <ul>
+        <li>Sessions individuals presencials</li>
+        <li>Videotrucades des d'on siguis</li>
+        <li>Freqüència setmanal o quinzenal</li>
+        <li>Primera sessió d'exploració gratuita</li>
+      </ul>
+    </div>
+  </div>
   <!-- Estàndards -->
   <div style="margin-bottom:32px;">
     <div style="font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--green-mid);margin-bottom:16px;">Estàndards dels nostres serveis</div>
@@ -1032,40 +1125,7 @@ function changeLogo(){
     </div>
   </div>
 
-  <!-- Cartera de Serveis -->
-  <div style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--green-mid);margin-bottom:20px;">Cartera de Serveis</div>
 
-  <div class="srv-cols" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin-bottom:32px;">
-    <div class="srv-col-box">
-      <div class="srv-col-box-title">Terapèutica Emocional</div>
-      <ul>
-        <li>Regulació i gestió emocional</li>
-        <li>Treball del dol, l'anüncia i la pèrdua</li>
-        <li>Gestió de l'ansüetat i l'estrès crònic</li>
-        <li>Reforcem la resiliència personal</li>
-        <li>Orientació cap a objectius vitals</li>
-      </ul>
-    </div>
-    <div class="srv-col-box">
-      <div class="srv-col-box-title">Terapèutica Psicològica</div>
-      <ul>
-        <li>Psicòlegs i terapeutes col·legiats</li>
-        <li>Teràpia cognitivo-conductual</li>
-        <li>Teràpia Gestalt i enfocament humanista</li>
-        <li>Diagnòstic i pla de tractament individualitzat</li>
-        <li>Intervenció en salut mental lleu i moderada</li>
-      </ul>
-    </div>
-    <div class="srv-col-box">
-      <div class="srv-col-box-title">Format i Accés</div>
-      <ul>
-        <li>Sessions individuals presencials</li>
-        <li>Videotrucades des d'on siguis</li>
-        <li>Freqüència setmanal o quinzenal</li>
-        <li>Primera sessió d'exploració gratuita</li>
-      </ul>
-    </div>
-  </div>
 
   <!-- Acompanyament Individual vs Grupal -->
   <!-- EncàpAcompanyament -->
