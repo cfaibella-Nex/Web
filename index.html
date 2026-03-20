@@ -2188,12 +2188,9 @@ function doIntelLogin() {
 
 function showIntelApp() {
   document.getElementById('intel-login-wall').style.display = 'none';
-  document.getElementById('intel-app').style.display = 'block';
-  // Redirigeix al subdomini amb token de sessió
-  var email = sessionStorage.getItem('nexsocial_intel_auth');
-  var token = btoa(email + ':' + Date.now());
-  sessionStorage.setItem('nexsocial_intel_token', token);
-  window.location.href = 'https://nexlicitia.nexsocial.org?auth=' + encodeURIComponent(token);
+  // Guarda flag d'accés i redirigeix
+  sessionStorage.setItem('nex_ok', 'true');
+  window.location.href = 'https://nexlicitia.nexsocial.org';
 }
 
 function checkIntelLogin() {
