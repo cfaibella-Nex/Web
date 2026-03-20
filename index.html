@@ -1689,24 +1689,71 @@ function changeLogo(){
 <!-- Panel 3: NexlicitIA (àrea privada) -->
 <div id="proj-intel" class="proj-panel">
 
-<div id="intel-login-wall" style="padding:60px 48px;text-align:center;max-width:460px;margin:0 auto;">
-  <div style="font-size:36px;margin-bottom:16px;">🔒</div>
-  <div style="font-family:'Cormorant Garamond',serif;font-size:30px;color:var(--forest);font-weight:300;margin-bottom:8px;">Àrea privada</div>
-  <p style="font-size:13px;color:#5a6b56;line-height:1.7;margin-bottom:32px;">Eina exclusiva per als socis de NexSocial. Introdueix les teves credencials per accedir a la NexlicitIA de licitacions.</p>
-  <div style="display:flex;flex-direction:column;gap:12px;margin-bottom:16px;">
-    <input id="intel-email" type="email" placeholder="El teu email" autocomplete="email"
-      style="border:1px solid rgba(88,105,86,0.3);border-radius:4px;padding:12px 16px;font-size:13px;font-family:'DM Sans',sans-serif;outline:none;background:#fff;width:100%;box-sizing:border-box;">
-    <input id="intel-pass" type="password" placeholder="Contrasenya"
-      onkeydown="if(event.key==='Enter')nexDoLogin()"
-      style="border:1px solid rgba(88,105,86,0.3);border-radius:4px;padding:12px 16px;font-size:13px;font-family:'DM Sans',sans-serif;outline:none;background:#fff;width:100%;box-sizing:border-box;">
-    <div id="intel-error" style="color:#c0392b;font-size:12px;display:none;padding:8px;background:#fef2f2;border-radius:4px;">Credencials incorrectes. Torna-ho a intentar.</div>
-    <button onclick="nexDoLogin()" class="btn-primary" style="width:100%;justify-content:center;">Entrar →</button>
+<!-- Previsualització NexlicitIA -->
+<div style="padding:48px 48px 0;">
+  <div style="font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--green-mid);margin-bottom:12px;">Eina exclusiva · Membres NexSocial</div>
+  <h2 style="font-family:'Cormorant Garamond',serif;font-size:38px;font-weight:300;color:var(--forest);margin-bottom:12px;line-height:1.2;">Nex<em style="color:var(--green-mid);">licitIA</em></h2>
+  <p style="font-size:14px;color:#4a5e46;line-height:1.85;max-width:600px;margin-bottom:36px;">Intel·ligència competitiva per a licitacions públiques del sector social. Analitza convocatòries, detecta oportunitats i fa seguiment de competidors — tot en temps real.</p>
+
+  <!-- Features grid -->
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:40px;">
+
+    <div style="background:var(--cream);border:1px solid rgba(88,105,86,0.15);padding:24px 18px;text-align:center;">
+      <div style="margin-bottom:12px;">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--green-mid)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" style="display:block;margin:0 auto;"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      </div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--forest);margin-bottom:6px;">Analitzar</div>
+      <div style="font-size:11px;color:#5a6b56;line-height:1.6;">Cerca i filtra licitacions per CPV, import i termini.</div>
+    </div>
+
+    <div style="background:var(--cream);border:1px solid rgba(88,105,86,0.15);padding:24px 18px;text-align:center;">
+      <div style="margin-bottom:12px;">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--green-mid)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" style="display:block;margin:0 auto;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+      </div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--forest);margin-bottom:6px;">Oportunitats</div>
+      <div style="font-size:11px;color:#5a6b56;line-height:1.6;">Detecta convocatòries actives adaptades al teu perfil.</div>
+    </div>
+
+    <div style="background:var(--cream);border:1px solid rgba(88,105,86,0.15);padding:24px 18px;text-align:center;">
+      <div style="margin-bottom:12px;">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--green-mid)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" style="display:block;margin:0 auto;"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      </div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--forest);margin-bottom:6px;">Competidors</div>
+      <div style="font-size:11px;color:#5a6b56;line-height:1.6;">Rànquing d'empreses adjudicatàries del sector.</div>
+    </div>
+
+    <div style="background:var(--cream);border:1px solid rgba(88,105,86,0.15);padding:24px 18px;text-align:center;">
+      <div style="margin-bottom:12px;">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--green-mid)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" style="display:block;margin:0 auto;"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+      </div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--forest);margin-bottom:6px;">Licitacions</div>
+      <div style="font-size:11px;color:#5a6b56;line-height:1.6;">Historial complet de contractes públics adjudicats.</div>
+    </div>
+
   </div>
-  <p style="font-size:11px;color:#5a6b56;">Problemes d'accés? Escriu a <a href="/cdn-cgi/l/email-protection#cea7a0a8a1a0abb68ea0abb6bda1ada7afa2e0a1bca9" style="color:var(--forest);"><span class="__cf_email__" data-cfemail="b2dbdcd4dddcd7caf2dcd7cac1ddd1dbd3de9cddc0d5">[email&#160;protected]</span></a></p>
+
+  <!-- Fonts de dades -->
+  <div style="background:var(--forest);padding:24px 28px;margin-bottom:40px;display:flex;align-items:center;gap:32px;flex-wrap:wrap;">
+    <div style="font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--green-light);flex-shrink:0;">Fonts de dades</div>
+    <div style="display:flex;gap:24px;flex-wrap:wrap;">
+      <span style="font-size:12px;color:rgba(255,255,255,0.75);border:1px solid rgba(177,208,130,0.3);padding:4px 12px;">📊 Generalitat de Catalunya</span>
+      <span style="font-size:12px;color:rgba(255,255,255,0.75);border:1px solid rgba(177,208,130,0.3);padding:4px 12px;">📋 Ministeri d'Hisenda</span>
+      <span style="font-size:12px;color:rgba(255,255,255,0.75);border:1px solid rgba(177,208,130,0.3);padding:4px 12px;">🔄 Actualització en temps real</span>
+    </div>
+  </div>
+
+  <!-- Accés -->
+  <div style="background:var(--green-pale);border:1px solid rgba(88,105,86,0.2);padding:28px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:48px;">
+    <div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--forest);margin-bottom:6px;">Ets membre de NexSocial?</div>
+      <div style="font-size:12px;color:#5a6b56;">Introdueix la contrasenya per accedir a l'eina completa.</div>
+    </div>
+    <button onclick="var pw=prompt('Contrasenya NexlicitIA:');if(pw==='Nexsocial2026!')window.location.href='https://nexlicitia.nexsocial.org?k=nex2026';else if(pw!==null)alert('Contrasenya incorrecta');" class="area-btn" style="white-space:nowrap;">
+      🔒 Accedir a NexlicitIA →
+    </button>
+  </div>
+
 </div>
-
-<div id="intel-app" style="display:none;"></div>
-
 </div>
 
 
