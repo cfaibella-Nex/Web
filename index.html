@@ -579,8 +579,8 @@ function changeLogo(){
 <aside class="sidebar" id="sidebar"><div class="sidebar-logo"><img src="images/img_01.png" alt="NexSocial"><div><div class="logo-name">NexSocial</div><div class="logo-sub">Cooperativa d'Acompanyament<br>Sociovital</div></div></div><nav>
 <a class="active" onclick="showSection('inici',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>Inici</a>
 <a onclick="showSection('quisom',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>Qui som</a>
-<a onclick="showSection('serveis',this); toggleSubnav('subnav-serveis')" id="nav-serveis"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>Serveis Persones<span id="subnav-serveis-arrow" style="margin-left:auto; font-size:9px; transition:transform .25s; opacity:0.5;">▼</span></a>
-<div id="subnav-serveis" style="max-height:0; overflow:hidden; transition:max-height .35s ease; background:rgba(0,0,0,0.15);">
+<a onclick="showSection('serveis',this); toggleSubnav('subnav-serveis')" id="nav-serveis"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>Serveis Persones<span id="subnav-serveis-arrow" style="margin-left:auto; font-size:9px; transition:transform .25s; opacity:0.5; transform:rotate(180deg);">▼</span></a>
+<div id="subnav-serveis" style="max-height:120px; overflow:hidden; transition:max-height .35s ease; background:rgba(0,0,0,0.15);">
   <a onclick="showSection('nexacompanya',null)" style="padding:9px 20px 9px 44px; font-size:12px; opacity:0.8; border-left:2px solid var(--green-light);">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:13px;height:13px;"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
     NexAcompanya
@@ -594,8 +594,8 @@ function changeLogo(){
     Consulta Cas a Cas
   </a>
 </div>
-<a onclick="showSection('entitats',this); toggleSubnav('subnav-entitats')" id="nav-entitats"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>Serveis Entitats<span id="subnav-entitats-arrow" style="margin-left:auto; font-size:9px; transition:transform .25s; opacity:0.5;">▼</span></a>
-<div id="subnav-entitats" style="max-height:0; overflow:hidden; transition:max-height .35s ease; background:rgba(0,0,0,0.15);">
+<a onclick="showSection('entitats',this); toggleSubnav('subnav-entitats')" id="nav-entitats"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>Serveis Entitats<span id="subnav-entitats-arrow" style="margin-left:auto; font-size:9px; transition:transform .25s; opacity:0.5; transform:rotate(180deg);">▼</span></a>
+<div id="subnav-entitats" style="max-height:120px; overflow:hidden; transition:max-height .35s ease; background:rgba(0,0,0,0.15);">
   <a onclick="showSection('entitats',null); showProjPanel('proj-resum',document.querySelectorAll('.proj-subnav-btn')[0])" style="padding:9px 20px 9px 44px; font-size:12px; opacity:0.8; border-left:2px solid var(--green-light);">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:13px;height:13px;"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
     Acompanyament Entitats
@@ -1355,39 +1355,86 @@ function changeLogo(){
 <div id="proj-resum" class="proj-panel active">
 <div class="content" style="padding:40px 48px 60px; max-width:none;">
 
-<div class="srv-block" id="entitats-acomp">
-  <div class="srv-block-tag">Especial Entitats · Transformació Organitzacional</div>
-  <div class="srv-block-title">Acompanyament Entitats</div>
-  <div style="height:280px;background-image:url('images/img_28.png');background-size:cover;background-position:center top;margin-bottom:24px;border-radius:2px;"></div>
-  <p class="srv-block-desc">Acompanyem entitats que busquen transformació emocional i social en les seves pròpies organitzacions i equips.</p>
+<!-- Bloc 1: Programes d'Acompanyament -->
+<div class="srv-block" id="entitats-programes">
+  <div class="srv-block-tag">Serveis Entitats · Disseny i Implantació</div>
+  <div class="srv-block-title">Programes d'Acompanyament</div>
+  <div style="height:260px;background-image:url('images/img_28.png');background-size:cover;background-position:center top;margin-bottom:24px;border-radius:2px;"></div>
+  <p class="srv-block-desc">Dissenyem i implantem serveis d'acompanyament personalitzats per a col·lectius que la vostra organització gestiona o vol acompanyar. Cada programa s'adapta al context, al col·lectiu i als objectius de l'entitat.</p>
   <div class="srv-cols">
     <div class="srv-col-box">
-      <div class="srv-col-box-title">Situacions Crítiques</div>
+      <div class="srv-col-box-title">Per a qui</div>
       <ul>
-        <li>Equips polaritzats</li>
-        <li>Baix rendiment amb risc de pèrdua de projecte</li>
-        <li>Alta rotació</li>
-        <li>Pèrdua de qualitat</li>
+        <li>Grans propietats amb llogaters vulnerables</li>
+        <li>Empreses amb programes de benestar</li>
+        <li>Administracions amb col·lectius específics</li>
+        <li>Entitats que volen externalitzar l'acompanyament</li>
       </ul>
     </div>
     <div class="srv-col-box">
-      <div class="srv-col-box-title">Desenvolupament d'Equips</div>
+      <div class="srv-col-box-title">Què oferim</div>
       <ul>
-        <li>Lideratge</li>
-        <li>Cohesió d'equip</li>
-        <li>Unió del propòsit comú</li>
+        <li>Diagnosi inicial del col·lectiu</li>
+        <li>Disseny del programa a mida</li>
+        <li>Implantació i seguiment</li>
+        <li>Memòria d'impacte i resultats</li>
       </ul>
     </div>
   </div>
 </div>
 
-<div style="background:var(--green-pale);border:1px solid rgba(88,105,86,0.2);padding:32px 36px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;">
-  <div>
-    <div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--forest);margin-bottom:6px;">Vols saber com podem ajudar la teva entitat?</div>
-    <div style="font-size:12px;color:#5a6b56;">Contacta'ns i t'orientem sense compromís.</div>
+<!-- Bloc 2: Transformació Organitzacional -->
+<div class="srv-block" id="entitats-transform" style="margin-top:32px;">
+  <div class="srv-block-tag">Serveis Entitats · Equips i Organització</div>
+  <div class="srv-block-title">Transformació Organitzacional</div>
+  <p class="srv-block-desc">Acompanyem les organitzacions en processos de canvi intern, des de situacions crítiques fins al desenvolupament estratègic dels equips.</p>
+  <div class="srv-cols">
+    <div class="srv-col-box">
+      <div class="srv-col-box-title">Situacions Crítiques</div>
+      <ul>
+        <li>Equips polaritzats o en conflicte</li>
+        <li>Baix rendiment amb risc de pèrdua de projecte</li>
+        <li>Alta rotació i pèrdua de talent</li>
+        <li>Pèrdua de qualitat del servei</li>
+      </ul>
+    </div>
+    <div class="srv-col-box">
+      <div class="srv-col-box-title">Desenvolupament d'Equips</div>
+      <ul>
+        <li>Lideratge i gestió del canvi</li>
+        <li>Cohesió i propòsit comú</li>
+        <li>Comunicació i cultura organitzacional</li>
+        <li>Acompanyament de direcció</li>
+      </ul>
+    </div>
   </div>
-  <div style="display:flex;gap:12px;flex-wrap:wrap;">
-    <button onclick="showSection('contacte',null)" class="area-btn">Contactar →</button>
+</div>
+
+<!-- CTA -->
+<div style="background:var(--green-pale);border:1px solid rgba(88,105,86,0.2);padding:32px 36px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;margin-top:32px;">
+  <div>
+    <div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--forest);margin-bottom:6px;">Parlem del vostre cas</div>
+    <div style="font-size:12px;color:#5a6b56;">Primera consulta gratuïta i sense compromís.</div>
+  </div>
+  <button onclick="showSection('contacte',null)" class="area-btn">Contactar →</button>
+</div>
+
+<!-- Bottom banner eines -->
+<div style="margin-top:48px;border-top:1px solid rgba(88,105,86,0.15);padding-top:36px;">
+  <div style="font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--green-mid);margin-bottom:20px;">Eines per a entitats</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+    <div style="background:var(--forest);padding:28px 28px;cursor:pointer;transition:transform .2s,box-shadow .2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 12px 32px rgba(18,32,41,0.2)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'" onclick="showProjPanel('proj-diagnostic',document.querySelectorAll('.proj-subnav-btn')[1])">
+      <div style="font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:var(--green-light);opacity:.7;margin-bottom:10px;">Eina gratuïta</div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:22px;color:#fff;font-weight:300;margin-bottom:8px;">Diagnòstic d'Impacte Social</div>
+      <div style="font-size:12px;color:rgba(255,255,255,0.6);line-height:1.6;">Avalueu el vostre projecte en 10 preguntes i obteniu un pla d'acció personalitzat.</div>
+      <div style="margin-top:16px;font-size:11px;color:var(--green-light);letter-spacing:0.08em;text-transform:uppercase;">Accedir →</div>
+    </div>
+    <div style="background:var(--green-mid);padding:28px 28px;cursor:pointer;transition:transform .2s,box-shadow .2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 12px 32px rgba(18,32,41,0.2)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'" onclick="showProjPanel('proj-intel',document.querySelectorAll('.proj-subnav-btn')[2]); nexCheckLogin()">
+      <div style="font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:var(--green-pale);opacity:.7;margin-bottom:10px;">Eina membres · 🔒</div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:22px;color:#fff;font-weight:300;margin-bottom:8px;">Nex<em>licit</em>IA</div>
+      <div style="font-size:12px;color:rgba(255,255,255,0.7);line-height:1.6;">Intel·ligència competitiva per a licitacions públiques del sector social.</div>
+      <div style="margin-top:16px;font-size:11px;color:var(--green-pale);letter-spacing:0.08em;text-transform:uppercase;">Accedir →</div>
+    </div>
   </div>
 </div>
 
