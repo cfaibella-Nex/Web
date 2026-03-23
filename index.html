@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NexSocial — Cooperativa de Gestió Social</title>
+<title>NexSocial — Cooperativa d'Acompanyament Multifocal</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 :root{--forest:#122029;--green-deep:#586956;--green-mid:#6a8e4e;--green-light:#b1d082;--green-pale:#e8f0dc;--cream:#f4f1eb;--white:#fdfcf9;--text:#1a2e1f;--text-muted:#5a6b56;--sidebar-w:260px;--T:.35s cubic-bezier(.4,0,.2,1)}
@@ -576,10 +576,10 @@ function changeLogo(){
 </div>
 <button class="mobile-toggle" onclick="toggleSidebar()"><span></span><span></span><span></span></button>
 <div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
-<aside class="sidebar" id="sidebar"><div class="sidebar-logo"><img src="images/img_01.png" alt="NexSocial"><div><div class="logo-name">NexSocial</div><div class="logo-sub">Cooperativa de<br>Gestió Social</div></div></div><nav>
+<aside class="sidebar" id="sidebar"><div class="sidebar-logo"><img src="images/img_01.png" alt="NexSocial"><div><div class="logo-name">NexSocial</div><div class="logo-sub">Cooperativa d'Acompanyament<br>Multifocal</div></div></div><nav>
 <a class="active" onclick="showSection('inici',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>Inici</a>
 <a onclick="showSection('quisom',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>Qui som</a>
-<a onclick="showSection('serveis',this); toggleSubnav('subnav-serveis')" id="nav-serveis"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>Serveis<span id="subnav-serveis-arrow" style="margin-left:auto; font-size:9px; transition:transform .25s; opacity:0.5;">▼</span></a>
+<a onclick="showSection('serveis',this); toggleSubnav('subnav-serveis')" id="nav-serveis"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>Serveis Persones<span id="subnav-serveis-arrow" style="margin-left:auto; font-size:9px; transition:transform .25s; opacity:0.5;">▼</span></a>
 <div id="subnav-serveis" style="max-height:0; overflow:hidden; transition:max-height .35s ease; background:rgba(0,0,0,0.15);">
   <a onclick="showSection('nexacompanya',null)" style="padding:9px 20px 9px 44px; font-size:12px; opacity:0.8; border-left:2px solid var(--green-light);">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:13px;height:13px;"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
@@ -594,22 +594,21 @@ function changeLogo(){
     Consulta Cas a Cas
   </a>
 </div>
-<a onclick="showSection('diagnostic',this); toggleSubnav('subnav-projectes')" id="nav-projectes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>Projectes<span id="subnav-projectes-arrow" style="margin-left:auto; font-size:9px; transition:transform .25s; opacity:0.5;">▼</span></a>
-<div id="subnav-projectes" style="max-height:0; overflow:hidden; transition:max-height .35s ease; background:rgba(0,0,0,0.15);">
-  <a onclick="showSection('diagnostic',null); showProjPanel('proj-resum',document.querySelectorAll('.proj-subnav-btn')[0])" style="padding:9px 20px 9px 44px; font-size:12px; opacity:0.8; border-left:2px solid var(--green-light);">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:13px;height:13px;"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-    Tots els projectes
+<a onclick="showSection('entitats',this); toggleSubnav('subnav-entitats')" id="nav-entitats"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>Serveis Entitats<span id="subnav-entitats-arrow" style="margin-left:auto; font-size:9px; transition:transform .25s; opacity:0.5;">▼</span></a>
+<div id="subnav-entitats" style="max-height:0; overflow:hidden; transition:max-height .35s ease; background:rgba(0,0,0,0.15);">
+  <a onclick="showSection('entitats',null); showProjPanel('proj-resum',document.querySelectorAll('.proj-subnav-btn')[0])" style="padding:9px 20px 9px 44px; font-size:12px; opacity:0.8; border-left:2px solid var(--green-light);">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:13px;height:13px;"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+    Acompanyament Entitats
   </a>
-  <a onclick="showSection('diagnostic',null); setTimeout(function(){ showProjPanel('proj-diagnostic',document.querySelectorAll('.proj-subnav-btn')[1]); },50)" style="padding:9px 20px 9px 44px; font-size:12px; opacity:0.8; border-left:2px solid var(--green-light);">
+  <a onclick="showSection('entitats',null); setTimeout(function(){ showProjPanel('proj-diagnostic',document.querySelectorAll('.proj-subnav-btn')[1]); },50)" style="padding:9px 20px 9px 44px; font-size:12px; opacity:0.8; border-left:2px solid var(--green-light);">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:13px;height:13px;"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>
     Diagnòstic d'Impacte
   </a>
-  <a onclick="showSection('diagnostic',null); setTimeout(function(){ showProjPanel('proj-intel',document.querySelectorAll('.proj-subnav-btn')[2]); nexCheckLogin(); },50)" style="padding:9px 20px 9px 44px; font-size:12px; opacity:0.8; border-left:2px solid var(--green-light);">
+  <a onclick="showSection('entitats',null); setTimeout(function(){ showProjPanel('proj-intel',document.querySelectorAll('.proj-subnav-btn')[2]); nexCheckLogin(); },50)" style="padding:9px 20px 9px 44px; font-size:12px; opacity:0.8; border-left:2px solid var(--green-light);">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:13px;height:13px;"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
     NexlicitIA
   </a>
 </div>
-<a onclick="showSection('entitats',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>Especial Entitats</a>
 <a onclick="showSection('treballar',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>Col·laboracions</a>
 <a onclick="showSection('contacte',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.1 1.18 2 2 0 012.11 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l.44-.44a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>Contacte</a>
 </nav>
@@ -623,7 +622,7 @@ function changeLogo(){
   <img src="images/img_02.jpg" alt="NexSocial hero" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;">
   <div class="hero-overlay"></div>
   <div class="hero-content" style="position:relative;z-index:2;padding:80px 64px 60px;max-width:740px;">
-    <div class="hero-tag"><img src="images/img_03.png" alt="">Cooperativa de Gestió Social</div>
+    <div class="hero-tag"><img src="images/img_03.png" alt="">Cooperativa d'Acompanyament Multifocal</div>
     <h1 class="hero-title">Al servei de<br><em>les persones</em></h1>
     <p class="hero-sub" id="hero-sub">Acompanyament · Gestió · Transformació</p>
     <p class="hero-desc" id="hero-desc">NexSocial és una cooperativa que neix amb la voluntat de ser un nexe de suport i acompanyament global. Treballem per a la comunitat i per a les persones que necessiten suport en algun moment del seu cicle vital.</p>
@@ -1331,13 +1330,29 @@ function changeLogo(){
 </section>
 
 
-<section <section id="entitats">
+<section id="entitats">
 <div class="page-header">
 <div class="page-header-bg" style="background-image:url('images/img_29.png');"></div>
-<span class="page-header-tag">Servei Especialitzat</span>
-<h1>Especial <em>Entitats</em></h1>
-<p>Acompanyament emocional i social per a organitzacions i equips que busquen transformació.</p>
+<span class="page-header-tag">Serveis Entitats</span>
+<h1>Serveis <em>Entitats</em></h1>
+<p>Acompanyament multifocal per a organitzacions, equips i entitats que busquen transformació i impacte social.</p>
 </div>
+<style>
+.proj-subnav { display:flex; gap:0; border-bottom:1px solid rgba(88,105,86,0.15); margin-bottom:0; background:#fff; }
+.proj-subnav-btn { padding:16px 28px; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#5a6b56; border:none; background:transparent; cursor:pointer; border-bottom:2px solid transparent; transition:all .2s; font-family:"DM Sans",sans-serif; }
+.proj-subnav-btn:hover { color:var(--forest); }
+.proj-subnav-btn.active { color:var(--forest); border-bottom-color:var(--green-mid); font-weight:500; }
+.proj-panel { display:none; }
+.proj-panel.active { display:block; }
+</style>
+
+<div class="proj-subnav" id="proj-subnav-bar">
+  <button class="proj-subnav-btn active" onclick="showProjPanel('proj-resum',this)">Acompanyament Entitats</button>
+  <button class="proj-subnav-btn" onclick="showProjPanel('proj-diagnostic',this)">Diagnòstic d'Impacte Social</button>
+  <button class="proj-subnav-btn" onclick="showProjPanel('proj-intel',this)">🔒 NexlicitIA</button>
+</div>
+
+<div id="proj-resum" class="proj-panel active">
 <div class="content" style="padding:40px 48px 60px; max-width:none;">
 
 <div class="srv-block" id="entitats-acomp">
@@ -1377,208 +1392,7 @@ function changeLogo(){
 </div>
 
 </div>
-</section>
-
-<section id="consulta">
-<div class="page-header">
-<div class="page-header-bg" style="background-image:url('images/img_21.jpg')"></div>
-<span class="page-header-tag">Atenció personalitzada</span>
-<h1>Consulta <em>Cas a Cas</em></h1>
-<p>T'ajudem a identificar quin servei s'adapta millor a la teva situació. Primera trucada gratuïta i sense compromís.</p>
-</div>
-<div class="content" style="padding:40px 48px 60px; max-width:none;">
-<button onclick="showSection('serveis',null)" style="background:transparent;border:none;color:#5a6b56;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;margin-bottom:32px;padding:0;">← Tornar a Serveis</button>
-
-<div style="display:grid;grid-template-columns:1fr 380px;gap:48px;align-items:start;">
-
-  <!-- Esquerra: foto + passos estil qui-som -->
-  <div>
-
-    <!-- Foto amb fons difuminat -->
-    <div style="width:100%;height:340px;overflow:hidden;margin-bottom:36px;position:relative;">
-      <img src="images/img_22.png" alt="Consulta cas a cas" style="width:100%;height:100%;object-fit:cover;object-position:center 50%;">
-    </div>
-
-    <p style="font-size:13px;color:#4a5e46;line-height:1.85;margin-bottom:32px;">Cada persona i cada entitat té necessitats úniques. Per això oferim una primera trucada de consulta gratuïta i sense compromís, on escoltem la teva situació i t'orientem sobre quin servei de NexSocial s'adapta millor al teu cas.</p>
-
-    <!-- Passos estil mv-card de Qui Som -->
-    <style>
-    .cas-card { transition: transform .25s ease, box-shadow .25s ease, background .25s ease; cursor:default; }
-    .cas-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(18,32,41,0.12); background: var(--green-pale) !important; z-index:1; position:relative; }
-    .cas-card:hover .cas-title { color: var(--green-mid) !important; }
-    </style>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(88,105,86,0.15);margin-bottom:36px;">
-
-      <div class="cas-card" style="background:var(--cream);padding:36px 32px;">
-        <div style="font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--green-mid);margin-bottom:12px;">Pas 01</div>
-        <div class="cas-title" style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:400;color:var(--forest);margin-bottom:12px;">Explica'ns el teu cas</div>
-        <p style="font-size:13px;color:#4a5e46;line-height:1.8;">Omple el formulari de contacte explicant breument la teva situació o necessitat. Ens poses en context per poder-te ajudar millor.</p>
-      </div>
-
-      <div class="cas-card" style="background:#fff;padding:36px 32px;">
-        <div style="font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--green-mid);margin-bottom:12px;">Pas 02</div>
-        <div class="cas-title" style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:400;color:var(--forest);margin-bottom:12px;">Trucada gratuïta</div>
-        <p style="font-size:13px;color:#4a5e46;line-height:1.8;">Concertem una trucada per conèixer-te millor, sense pressa i sense cap comproms. El temps que necessitis.</p>
-      </div>
-
-      <div class="cas-card" style="background:#fff;padding:36px 32px;">
-        <div style="font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--green-mid);margin-bottom:12px;">Pas 03</div>
-        <div class="cas-title" style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:400;color:var(--forest);margin-bottom:12px;">Orientació personalitzada</div>
-        <p style="font-size:13px;color:#4a5e46;line-height:1.8;">Analitzem la teva situació i t'expliquem quin servei de NexSocial s'adapta millor al teu cas, amb tota la transparència i sense tecnicismes.</p>
-      </div>
-
-      <div class="cas-card" style="background:var(--forest);padding:36px 32px;">
-        <div style="font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--green-light);margin-bottom:12px;">Pas 04</div>
-        <div class="cas-title" style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:400;color:#fff;margin-bottom:12px;">Proposta d'acompanyament</div>
-        <p style="font-size:13px;color:rgba(255,255,255,0.8);line-height:1.8;">Si hi ha encaix, et presentem una proposta concreta adaptada a les teves necessitats i possibilitats reals.</p>
-      </div>
-
-    </div>
-
-    <!-- A qui va adreçat -->
-    <div>
-      <div style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--green-mid);margin-bottom:16px;">A qui va adreçat</div>
-      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;">
-        <div style="background:var(--green-pale);border:1px solid rgba(88,105,86,0.15);padding:18px 16px;">
-          <div style="margin-bottom:10px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--forest)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
-          <div style="font-size:12px;font-weight:600;color:var(--forest);margin-bottom:6px;text-transform:uppercase;letter-spacing:0.05em;">Persones</div>
-          <div style="font-size:12px;color:#5a6b56;line-height:1.6;">Qualsevol persona que no sap per on començar o quin servei necessita.</div>
-        </div>
-        <div style="background:var(--green-pale);border:1px solid rgba(88,105,86,0.15);padding:18px 16px;">
-          <div style="margin-bottom:10px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--forest)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-          <div style="font-size:12px;font-weight:600;color:var(--forest);margin-bottom:6px;text-transform:uppercase;letter-spacing:0.05em;">Famílies</div>
-          <div style="font-size:12px;color:#5a6b56;line-height:1.6;">Famílies en situació de dificultat que necessiten orientació global.</div>
-        </div>
-        <div style="background:var(--green-pale);border:1px solid rgba(88,105,86,0.15);padding:18px 16px;">
-          <div style="margin-bottom:10px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--forest)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
-          <div style="font-size:12px;font-weight:600;color:var(--forest);margin-bottom:6px;text-transform:uppercase;letter-spacing:0.05em;">Entitats</div>
-          <div style="font-size:12px;color:#5a6b56;line-height:1.6;">ONG, cooperatives o empreses que volen col·laborar o derivar casos.</div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- Dreta: targeta info pràctica -->
-  <div style="position:sticky;top:24px;">
-    <div style="border:1px solid rgba(88,105,86,0.2);overflow:hidden;margin-bottom:16px;">
-      <div style="background:var(--forest);padding:24px 28px;">
-        <div style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--green-light);margin-bottom:10px;">Primera consulta</div>
-        <div style="font-family:'Cormorant Garamond',serif;font-size:28px;color:white;line-height:1.1;">Gratuïta<br><span style="font-size:16px;opacity:0.8;">i sense compromís</span></div>
-      </div>
-      <div style="padding:24px 28px;background:var(--cream);">
-        <div style="display:flex;flex-direction:column;gap:16px;">
-          <div style="display:flex;gap:12px;align-items:flex-start;">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green-mid)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:2px;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 11.57 18 19.45 19.45 0 0 1 3 10.43 19.79 19.79 0 0 1 1.08 4.16 2 2 0 0 1 3.05 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21 16.92z"/></svg>
-            <div><div style="font-size:11px;font-weight:600;color:var(--forest);margin-bottom:2px;">Format</div><div style="font-size:12px;color:#5a6b56;">Trucada telefònica, sense desplaçaments</div></div>
-          </div>
-          <div style="display:flex;gap:12px;align-items:flex-start;">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green-mid)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:2px;"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-            <div><div style="font-size:11px;font-weight:600;color:var(--forest);margin-bottom:2px;">Disponibilitat</div><div style="font-size:12px;color:#5a6b56;">Dilluns a divendres · 9h – 18h</div></div>
-          </div>
-          <div style="display:flex;gap:12px;align-items:flex-start;">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green-mid)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-            <div><div style="font-size:11px;font-weight:600;color:var(--forest);margin-bottom:2px;">Resposta</div><div style="font-size:12px;color:#5a6b56;">En menys de 24h en dies laborables</div></div>
-          </div>
-          <div style="display:flex;gap:12px;align-items:flex-start;">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green-mid)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:2px;"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-            <div><div style="font-size:11px;font-weight:600;color:var(--forest);margin-bottom:2px;">Confidencialitat</div><div style="font-size:12px;color:#5a6b56;">Tota la informació és tractada amb total discreció</div></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <button onclick="showSection('contacte',null);setTimeout(function(){var s=document.querySelector('select[name=motiu]');if(s){s.value='Informacio general serveis';}},300);" class="area-btn" style="width:100%;text-align:center;justify-content:center;">Sol·licitar trucada gratuïta →</button>
-  </div>
-
-</div>
-
-</div>
-</section>
-
-<section id="diagnostic">
-<div class="page-header" id="proj-page-header">
-<div class="page-header-bg" style="background-image:url('images/img_23.png')"></div>
-<span class="page-header-tag">NexSocial</span>
-<h1>Els nostres <em>Projectes</em></h1>
-<p>Iniciatives i projectes que NexSocial porta a terme per generar canvi social real i mesurable.</p>
-</div>
-
-<style>
-.proj-subnav { display:flex; gap:0; border-bottom:1px solid rgba(88,105,86,0.15); margin-bottom:0; background:#fff; }
-.proj-subnav-btn { padding:16px 28px; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#5a6b56; border:none; background:transparent; cursor:pointer; border-bottom:2px solid transparent; transition:all .2s; font-family:"DM Sans",sans-serif; }
-.proj-subnav-btn:hover { color:var(--forest); }
-.proj-subnav-btn.active { color:var(--forest); border-bottom-color:var(--green-mid); font-weight:500; }
-.proj-panel { display:none; }
-.proj-panel.active { display:block; }
-</style>
-
-<!-- Subnavegació interna -->
-<div class="proj-subnav" id="proj-subnav-bar">
-  <button class="proj-subnav-btn active" onclick="showProjPanel('proj-resum',this)">Tots els projectes</button>
-  <button class="proj-subnav-btn" onclick="showProjPanel('proj-diagnostic',this)">Diagnòstic d'Impacte Social</button>
-  <button class="proj-subnav-btn" onclick="showProjPanel('proj-intel',this)">🔒 NexlicitIA</button>
-</div>
-
-<!-- Panel 1: Resum projectes -->
-<div id="proj-resum" class="proj-panel active">
-<div class="content" style="padding:40px 48px 60px; max-width:none;">
-
-  <p style="font-size:13px;color:#4a5e46;line-height:1.85;max-width:600px;margin-bottom:40px;">NexSocial impulsa i participa en projectes socials que complementen els nostres serveis i generen impacte real a les comunitats on treballem. Aquí trobareu un resum dels projectes actuals i futurs.</p>
-
-  <!-- Targeta Diagnòstic -->
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;margin-bottom:40px;">
-    <div style="border:1px solid rgba(88,105,86,0.2);background:var(--cream);overflow:hidden;display:flex;flex-direction:column;">
-      <div style="background:var(--forest);padding:28px 24px;">
-        <div style="font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--green-light);opacity:.7;margin-bottom:8px;">Eina gratuïta · Actiu</div>
-        <div style="font-family:'Cormorant Garamond',serif;font-size:24px;color:#fff;font-weight:300;">Diagnòstic d'Impacte Social</div>
-      </div>
-      <div style="padding:24px;display:flex;flex-direction:column;flex:1;">
-        <p style="font-size:13px;color:#4a5e46;line-height:1.7;margin-bottom:20px;flex:1;">Eina d'avaluació gratuïta per a ONG, cooperatives i institucions públiques. En 10 preguntes obteniu un diagnòstic personalitzat amb recomanacions concretes per millorar el vostre impacte social.</p>
-        <button onclick="showProjPanel('proj-diagnostic',document.querySelectorAll('.proj-subnav-btn')[1])" class="area-btn">Accedir a l'eina →</button>
-      </div>
-    </div>
-
-    <!-- Targeta NexlicitIA -->
-    <div style="border:1px solid rgba(88,105,86,0.35);background:var(--cream);overflow:hidden;display:flex;flex-direction:column;">
-      <div style="background:var(--green-mid);padding:28px 24px;position:relative;">
-        <div style="font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--green-pale);opacity:.7;margin-bottom:8px;">Eina interna · Socis NexSocial</div>
-        <div style="font-family:'Cormorant Garamond',serif;font-size:24px;color:#fff;font-weight:300;">Nex<em style="font-style:italic;">licit</em>IA</div>
-        <div style="position:absolute;top:20px;right:20px;font-size:18px;opacity:0.6;">🔒</div>
-      </div>
-      <div style="padding:24px;display:flex;flex-direction:column;flex:1;">
-        <p style="font-size:13px;color:#4a5e46;line-height:1.7;margin-bottom:20px;flex:1;">Eina exclusiva per als socis de NexSocial per analitzar licitacions públiques del sector social, identificar competència i detectar oportunitats.</p>
-        <button onclick="showProjPanel('proj-intel',document.querySelectorAll('.proj-subnav-btn')[2]); nexCheckLogin()" class="area-btn" style="background:var(--forest);color:#fff;border-color:var(--forest);">Accedir a l'eina →</button>
-      </div>
-    </div>
-
-    <!-- Targeta projecte futur 1 — Mapa de Recursos Socials -->
-    <div style="border:1px solid rgba(88,105,86,0.2);background:#fff;overflow:hidden;opacity:0.6;">
-      <div style="background:var(--green-mid);padding:28px 24px;">
-        <div style="font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--green-pale);opacity:.7;margin-bottom:8px;">Pròximament</div>
-        <div style="font-family:'Cormorant Garamond',serif;font-size:24px;color:#fff;font-weight:300;">Mapa de Recursos Socials</div>
-      </div>
-      <div style="padding:24px;">
-        <p style="font-size:13px;color:#4a5e46;line-height:1.7;margin-bottom:20px;">Directori col·laboratiu de recursos socials al territori per facilitar la derivació i el treball en xarxa entre entitats i professionals.</p>
-        <span style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#5a6b56;">En desenvolupament</span>
-      </div>
-    </div>
-
-    <!-- Targeta projecte futur 2 -->
-    <div style="border:1px solid rgba(88,105,86,0.2);background:#fff;overflow:hidden;opacity:0.6;">
-      <div style="background:var(--green-deep);padding:28px 24px;">
-        <div style="font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--green-pale);opacity:.7;margin-bottom:8px;">Pròximament</div>
-        <div style="font-family:'Cormorant Garamond',serif;font-size:24px;color:#fff;font-weight:300;">Comunitat NexSocial</div>
-      </div>
-      <div style="padding:24px;">
-        <p style="font-size:13px;color:#4a5e46;line-height:1.7;margin-bottom:20px;">Espai de connexió entre professionals socials, entitats i persones per compartir coneixement, experiències i oportunitats de col·laboració.</p>
-        <span style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#5a6b56;">En desenvolupament</span>
-      </div>
-    </div>
-
-  </div>
-
-</div>
-</div>
+</div><!-- /proj-resum -->
 
 <!-- Panel 2: Diagnòstic d'Impacte Social -->
 <div id="proj-diagnostic" class="proj-panel">
@@ -1756,8 +1570,124 @@ function changeLogo(){
 </div>
 </div>
 
-
 </section>
+
+<section id="consulta">
+<div class="page-header">
+<div class="page-header-bg" style="background-image:url('images/img_21.jpg')"></div>
+<span class="page-header-tag">Atenció personalitzada</span>
+<h1>Consulta <em>Cas a Cas</em></h1>
+<p>T'ajudem a identificar quin servei s'adapta millor a la teva situació. Primera trucada gratuïta i sense compromís.</p>
+</div>
+<div class="content" style="padding:40px 48px 60px; max-width:none;">
+<button onclick="showSection('serveis',null)" style="background:transparent;border:none;color:#5a6b56;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;margin-bottom:32px;padding:0;">← Tornar a Serveis</button>
+
+<div style="display:grid;grid-template-columns:1fr 380px;gap:48px;align-items:start;">
+
+  <!-- Esquerra: foto + passos estil qui-som -->
+  <div>
+
+    <!-- Foto amb fons difuminat -->
+    <div style="width:100%;height:340px;overflow:hidden;margin-bottom:36px;position:relative;">
+      <img src="images/img_22.png" alt="Consulta cas a cas" style="width:100%;height:100%;object-fit:cover;object-position:center 50%;">
+    </div>
+
+    <p style="font-size:13px;color:#4a5e46;line-height:1.85;margin-bottom:32px;">Cada persona i cada entitat té necessitats úniques. Per això oferim una primera trucada de consulta gratuïta i sense compromís, on escoltem la teva situació i t'orientem sobre quin servei de NexSocial s'adapta millor al teu cas.</p>
+
+    <!-- Passos estil mv-card de Qui Som -->
+    <style>
+    .cas-card { transition: transform .25s ease, box-shadow .25s ease, background .25s ease; cursor:default; }
+    .cas-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(18,32,41,0.12); background: var(--green-pale) !important; z-index:1; position:relative; }
+    .cas-card:hover .cas-title { color: var(--green-mid) !important; }
+    </style>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(88,105,86,0.15);margin-bottom:36px;">
+
+      <div class="cas-card" style="background:var(--cream);padding:36px 32px;">
+        <div style="font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--green-mid);margin-bottom:12px;">Pas 01</div>
+        <div class="cas-title" style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:400;color:var(--forest);margin-bottom:12px;">Explica'ns el teu cas</div>
+        <p style="font-size:13px;color:#4a5e46;line-height:1.8;">Omple el formulari de contacte explicant breument la teva situació o necessitat. Ens poses en context per poder-te ajudar millor.</p>
+      </div>
+
+      <div class="cas-card" style="background:#fff;padding:36px 32px;">
+        <div style="font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--green-mid);margin-bottom:12px;">Pas 02</div>
+        <div class="cas-title" style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:400;color:var(--forest);margin-bottom:12px;">Trucada gratuïta</div>
+        <p style="font-size:13px;color:#4a5e46;line-height:1.8;">Concertem una trucada per conèixer-te millor, sense pressa i sense cap comproms. El temps que necessitis.</p>
+      </div>
+
+      <div class="cas-card" style="background:#fff;padding:36px 32px;">
+        <div style="font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--green-mid);margin-bottom:12px;">Pas 03</div>
+        <div class="cas-title" style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:400;color:var(--forest);margin-bottom:12px;">Orientació personalitzada</div>
+        <p style="font-size:13px;color:#4a5e46;line-height:1.8;">Analitzem la teva situació i t'expliquem quin servei de NexSocial s'adapta millor al teu cas, amb tota la transparència i sense tecnicismes.</p>
+      </div>
+
+      <div class="cas-card" style="background:var(--forest);padding:36px 32px;">
+        <div style="font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--green-light);margin-bottom:12px;">Pas 04</div>
+        <div class="cas-title" style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:400;color:#fff;margin-bottom:12px;">Proposta d'acompanyament</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.8);line-height:1.8;">Si hi ha encaix, et presentem una proposta concreta adaptada a les teves necessitats i possibilitats reals.</p>
+      </div>
+
+    </div>
+
+    <!-- A qui va adreçat -->
+    <div>
+      <div style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--green-mid);margin-bottom:16px;">A qui va adreçat</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;">
+        <div style="background:var(--green-pale);border:1px solid rgba(88,105,86,0.15);padding:18px 16px;">
+          <div style="margin-bottom:10px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--forest)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+          <div style="font-size:12px;font-weight:600;color:var(--forest);margin-bottom:6px;text-transform:uppercase;letter-spacing:0.05em;">Persones</div>
+          <div style="font-size:12px;color:#5a6b56;line-height:1.6;">Qualsevol persona que no sap per on començar o quin servei necessita.</div>
+        </div>
+        <div style="background:var(--green-pale);border:1px solid rgba(88,105,86,0.15);padding:18px 16px;">
+          <div style="margin-bottom:10px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--forest)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          <div style="font-size:12px;font-weight:600;color:var(--forest);margin-bottom:6px;text-transform:uppercase;letter-spacing:0.05em;">Famílies</div>
+          <div style="font-size:12px;color:#5a6b56;line-height:1.6;">Famílies en situació de dificultat que necessiten orientació global.</div>
+        </div>
+        <div style="background:var(--green-pale);border:1px solid rgba(88,105,86,0.15);padding:18px 16px;">
+          <div style="margin-bottom:10px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--forest)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+          <div style="font-size:12px;font-weight:600;color:var(--forest);margin-bottom:6px;text-transform:uppercase;letter-spacing:0.05em;">Entitats</div>
+          <div style="font-size:12px;color:#5a6b56;line-height:1.6;">ONG, cooperatives o empreses que volen col·laborar o derivar casos.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Dreta: targeta info pràctica -->
+  <div style="position:sticky;top:24px;">
+    <div style="border:1px solid rgba(88,105,86,0.2);overflow:hidden;margin-bottom:16px;">
+      <div style="background:var(--forest);padding:24px 28px;">
+        <div style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--green-light);margin-bottom:10px;">Primera consulta</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:28px;color:white;line-height:1.1;">Gratuïta<br><span style="font-size:16px;opacity:0.8;">i sense compromís</span></div>
+      </div>
+      <div style="padding:24px 28px;background:var(--cream);">
+        <div style="display:flex;flex-direction:column;gap:16px;">
+          <div style="display:flex;gap:12px;align-items:flex-start;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green-mid)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:2px;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 11.57 18 19.45 19.45 0 0 1 3 10.43 19.79 19.79 0 0 1 1.08 4.16 2 2 0 0 1 3.05 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21 16.92z"/></svg>
+            <div><div style="font-size:11px;font-weight:600;color:var(--forest);margin-bottom:2px;">Format</div><div style="font-size:12px;color:#5a6b56;">Trucada telefònica, sense desplaçaments</div></div>
+          </div>
+          <div style="display:flex;gap:12px;align-items:flex-start;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green-mid)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:2px;"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <div><div style="font-size:11px;font-weight:600;color:var(--forest);margin-bottom:2px;">Disponibilitat</div><div style="font-size:12px;color:#5a6b56;">Dilluns a divendres · 9h – 18h</div></div>
+          </div>
+          <div style="display:flex;gap:12px;align-items:flex-start;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green-mid)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <div><div style="font-size:11px;font-weight:600;color:var(--forest);margin-bottom:2px;">Resposta</div><div style="font-size:12px;color:#5a6b56;">En menys de 24h en dies laborables</div></div>
+          </div>
+          <div style="display:flex;gap:12px;align-items:flex-start;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green-mid)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:2px;"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            <div><div style="font-size:11px;font-weight:600;color:var(--forest);margin-bottom:2px;">Confidencialitat</div><div style="font-size:12px;color:#5a6b56;">Tota la informació és tractada amb total discreció</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button onclick="showSection('contacte',null);setTimeout(function(){var s=document.querySelector('select[name=motiu]');if(s){s.value='Informacio general serveis';}},300);" class="area-btn" style="width:100%;text-align:center;justify-content:center;">Sol·licitar trucada gratuïta →</button>
+  </div>
+
+</div>
+
+</div>
+</section>
+
 <section id="treballar">
 <div class="page-header">
 <div class="page-header-bg" style="background-image:url('images/img_24.jpg')"></div>
@@ -1845,7 +1775,7 @@ function changeLogo(){
           <img src="images/img_27.png" id="footer-logo-img" alt="NexSocial">
           <span class="footer-brand-name" id="footer-brand-name">NexSocial</span>
         </div>
-        <p class="footer-desc" id="footer-desc">Cooperativa de Gestió Social. Acompanyament integral a persones i organitzacions.</p>
+        <p class="footer-desc" id="footer-desc">Cooperativa d'Acompanyament Multifocal a persones i entitats.</p>
         
       </div>
 
@@ -1854,7 +1784,8 @@ function changeLogo(){
         <ul class="footer-links" id="footer-links-serveis">
           <li><a href="#" onclick="showSection('serveis',document.querySelectorAll('nav a')[2])">NexAcompanya</a></li>
           <li><a href="#" onclick="showSection('nexgestio',null)">NexGestió</a></li>
-          <li><a href="#" onclick="showSection('diagnostic',document.querySelectorAll('nav a')[3])">Diagnòstic gratuït</a></li>
+          <li><a href="#" onclick="showSection('consulta',null)">Cas a Cas</a></li>
+          <li><a href="#" onclick="showSection('entitats',document.querySelectorAll('nav a')[4])">Serveis Entitats</a></li>
         </ul>
       </div>
 
