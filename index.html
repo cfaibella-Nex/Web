@@ -619,15 +619,13 @@ function changeLogo(){
 <style>
 .stack-wrap { position:relative; }
 .stack-item {
-  border-radius:12px 12px 0 0;
   will-change:transform;
-  position:relative;
 }
-.stack-item:nth-child(1){ z-index:10; }
-.stack-item:nth-child(2){ z-index:20; }
-.stack-item:nth-child(3){ z-index:30; }
-.stack-item:nth-child(4){ z-index:40; }
-.stack-item:nth-child(5){ z-index:50; }
+.stack-item:nth-child(1){ position:sticky; top:42px; z-index:10; border-radius:12px 12px 0 0; }
+.stack-item:nth-child(2){ position:sticky; top:46px; z-index:20; border-radius:12px 12px 0 0; }
+.stack-item:nth-child(3){ position:sticky; top:50px; z-index:30; }
+.stack-item:nth-child(4){ position:sticky; top:54px; z-index:40; }
+.stack-item:nth-child(5){ position:sticky; top:58px; z-index:50; }
 </style>
 
 <div class="stack-wrap">
@@ -716,42 +714,43 @@ function changeLogo(){
 
 <!-- BLOC 3: DESTAQUEM - Acompanyament Emocional i Terapèutic -->
 <div class="stack-item">
-<div style="position:relative;overflow:hidden;background-image:url('images/img_14.jpg');background-size:cover;background-position:center;">
+<div style="position:relative;overflow:hidden;background-image:url('images/img_14.jpg');background-size:cover;background-position:center;margin-top:-1px;">
 
   <!-- Part superior: text sobre degradat -->
   <div style="position:relative;min-height:420px;display:flex;align-items:center;">
     <div style="position:absolute;inset:0;background:linear-gradient(to right, var(--green-pale) 40%, rgba(232,240,220,0.85) 60%, rgba(232,240,220,0) 100%);"></div>
-    <div style="position:relative;z-index:1;max-width:780px;padding:64px 64px 72px;">
+    <div style="position:relative;z-index:1;width:100%;padding:64px 64px 72px;">
       <div style="display:inline-flex;align-items:center;gap:8px;font-size:13px;letter-spacing:0.18em;text-transform:uppercase;color:var(--green-mid);border:1px solid rgba(106,142,78,0.5);padding:8px 16px;margin-bottom:24px;font-weight:500;">✦ Destaquem</div>
       <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(28px,3.5vw,44px);font-weight:300;color:var(--forest);line-height:1.1;margin-bottom:16px;">Acompanyament<br><em style="font-style:italic;color:var(--green-mid);">Emocional i Terapèutic</em></h2>
-      <p style="font-size:14px;color:#4a5e46;line-height:1.85;margin-bottom:28px;">Un espai de suport proper i empàtic per expressar, comprendre i regular emocions. Treballem amb diferents estils terapèutics —coaching, Gestalt, psicologia i altres enfocaments— adaptats a cada persona i moment vital.</p>
-      <ul style="list-style:none;padding:0;margin-bottom:36px;">
+      <p style="font-size:14px;color:#4a5e46;line-height:1.85;margin-bottom:28px;max-width:560px;">Un espai de suport proper i empàtic per expressar, comprendre i regular emocions. Treballem amb diferents estils terapèutics —coaching, Gestalt, psicologia i altres enfocaments— adaptats a cada persona i moment vital.</p>
+      <ul style="list-style:none;padding:0;margin-bottom:36px;max-width:560px;">
         <li style="display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px solid rgba(88,105,86,0.15);font-size:13px;color:#4a5e46;"><span style="color:var(--green-mid);margin-top:2px;">—</span> Suport proper i empàtic per expressar i comprendre emocions</li>
         <li style="display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px solid rgba(88,105,86,0.15);font-size:13px;color:#4a5e46;"><span style="color:var(--green-mid);margin-top:2px;">—</span> Coaching, Gestalt, psicologia i altres enfocaments terapèutics</li>
         <li style="display:flex;gap:10px;align-items:flex-start;padding:8px 0;font-size:13px;color:#4a5e46;"><span style="color:var(--green-mid);margin-top:2px;">—</span> Retirs de 2-3 dies en connexió amb la natura</li>
       </ul>
 
       <!-- Caixetes beneficis -->
+      <div style="font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--green-mid);margin-bottom:14px;">Beneficis de l'acompanyament emocional</div>
       <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:32px;">
-        <div style="background:rgba(88,105,86,0.1);border:1px solid rgba(88,105,86,0.2);border-radius:8px;padding:16px 14px;">
+        <div style="background:rgba(255,255,255,0.55);border:1px solid rgba(177,208,130,0.4);border-radius:8px;padding:16px 14px;backdrop-filter:blur(6px);">
           <div style="font-size:9px;color:var(--green-mid);letter-spacing:0.12em;margin-bottom:8px;">01</div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:14px;color:var(--forest);line-height:1.3;">Salut mental i emocional</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--forest);line-height:1.3;">Salut mental i emocional</div>
         </div>
-        <div style="background:rgba(88,105,86,0.1);border:1px solid rgba(88,105,86,0.2);border-radius:8px;padding:16px 14px;">
+        <div style="background:rgba(255,255,255,0.55);border:1px solid rgba(177,208,130,0.4);border-radius:8px;padding:16px 14px;backdrop-filter:blur(6px);">
           <div style="font-size:9px;color:var(--green-mid);letter-spacing:0.12em;margin-bottom:8px;">02</div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:14px;color:var(--forest);line-height:1.3;">Gestió del dolor i el trauma</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--forest);line-height:1.3;">Gestió del dolor i el trauma</div>
         </div>
-        <div style="background:rgba(88,105,86,0.1);border:1px solid rgba(88,105,86,0.2);border-radius:8px;padding:16px 14px;">
+        <div style="background:rgba(255,255,255,0.55);border:1px solid rgba(177,208,130,0.4);border-radius:8px;padding:16px 14px;backdrop-filter:blur(6px);">
           <div style="font-size:9px;color:var(--green-mid);letter-spacing:0.12em;margin-bottom:8px;">03</div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:14px;color:var(--forest);line-height:1.3;">Millora Autoestima</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--forest);line-height:1.3;">Millora Autoestima</div>
         </div>
-        <div style="background:rgba(88,105,86,0.1);border:1px solid rgba(88,105,86,0.2);border-radius:8px;padding:16px 14px;">
+        <div style="background:rgba(255,255,255,0.55);border:1px solid rgba(177,208,130,0.4);border-radius:8px;padding:16px 14px;backdrop-filter:blur(6px);">
           <div style="font-size:9px;color:var(--green-mid);letter-spacing:0.12em;margin-bottom:8px;">04</div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:14px;color:var(--forest);line-height:1.3;">Desenvolupament personal</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--forest);line-height:1.3;">Desenvolupament personal</div>
         </div>
-        <div style="background:rgba(88,105,86,0.1);border:1px solid rgba(88,105,86,0.2);border-radius:8px;padding:16px 14px;">
+        <div style="background:rgba(255,255,255,0.55);border:1px solid rgba(177,208,130,0.4);border-radius:8px;padding:16px 14px;backdrop-filter:blur(6px);">
           <div style="font-size:9px;color:var(--green-mid);letter-spacing:0.12em;margin-bottom:8px;">05</div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:14px;color:var(--forest);line-height:1.3;">Millora relacions i Empatia</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--forest);line-height:1.3;">Millora relacions i Empatia</div>
         </div>
       </div>
 
@@ -764,7 +763,7 @@ function changeLogo(){
 
 <!-- BLOC 4: GESTALT -->
 <div class="stack-item">
-<div style="background:var(--cream);padding:80px 64px 88px;">
+<div style="background:var(--cream);padding:80px 64px 88px;margin-top:-1px;">
 
   <div style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--green-mid);margin-bottom:16px;">Enfocament Terapèutic</div>
   <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(36px,4.5vw,58px);font-weight:300;color:var(--forest);line-height:1.1;margin-bottom:20px;">Especialistes en teràpia<br><em style="font-style:italic;color:var(--green-mid);">integrativa i Gestalt</em></h2>
@@ -846,7 +845,7 @@ function changeLogo(){
       <img src="images/img_33.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;">
       <div style="position:absolute;inset:0;background:linear-gradient(to top, rgba(18,32,41,0.88) 0%, rgba(18,32,41,0.05) 50%);"></div>
       <div style="position:absolute;bottom:0;left:0;right:0;padding:32px 28px;">
-        <p style="font-family:'Cormorant Garamond',serif;font-size:18px;font-style:italic;color:rgba(253,252,249,0.95);line-height:1.8;margin:0;">"Sabem que l'acompanyament és essencial al llarg del cicle vital i que les figures que fan aquest rol van canviant: pares, familiars, professors, referents, amics, veïns... Són persones que ens ajuden a sostenir la torxa que il·lumina el camí."</p>
+        <p style="font-family:'Cormorant Garamond',serif;font-size:22px;font-style:italic;color:rgba(253,252,249,0.98);line-height:1.8;margin:0;">"Sabem que l'acompanyament és essencial al llarg del cicle vital i que les figures que fan aquest rol van canviant: pares, familiars, professors, referents, amics, veïns... Són persones que ens ajuden a sostenir la torxa que il·lumina el camí."</p>
       </div>
     </div>
 
@@ -2221,42 +2220,9 @@ document.addEventListener('keydown',function(e){ if(e.key==='Escape') document.q
 
 // ── Sticky Stack ──────────────────────────────────────────────
 function initStickyStack() {
-  var topbarH = 42;
-
-  function applySticky() {
-    var wraps = document.querySelectorAll('#inici .stack-wrap');
-    var wrap = wraps[wraps.length - 1];
-    if (!wrap) return;
-    var items = wrap.querySelectorAll('.stack-item');
-    if (!items.length) return;
-    items.forEach(function(item, i) {
-      item.style.position = 'sticky';
-      item.style.top = (topbarH + i * 4) + 'px';
-      item.style.zIndex = (i + 1) * 10;
-    });
-  }
-
-  function removeSticky() {
-    var items = document.querySelectorAll('#inici .stack-item');
-    items.forEach(function(item) {
-      item.style.position = '';
-      item.style.top = '';
-    });
-  }
-
-  var observer = new MutationObserver(function() {
-    var inici = document.getElementById('inici');
-    if (inici && inici.classList.contains('active')) {
-      setTimeout(applySticky, 50);
-    } else {
-      removeSticky();
-    }
-  });
-  observer.observe(document.body, {
-    childList: true, subtree: true, attributes: true, attributeFilter: ['class']
-  });
-
-  setTimeout(applySticky, 100);
+  // El sticky s'aplica via CSS directament
+  // Només cal assegurar que el scroll container és correcte
+  // El body/html fa scroll normal, el sticky funciona automàticament
 }
 
 document.addEventListener('DOMContentLoaded', initStickyStack);
