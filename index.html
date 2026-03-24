@@ -22,8 +22,8 @@ nav a svg{width:15px;height:15px;opacity:.6;flex-shrink:0;transition:opacity .2s
 nav a:hover svg,nav a.active svg{opacity:1}
 .sidebar-footer{padding:14px 22px;border-top:1px solid rgba(177,208,130,.12);font-size:10.5px;color:rgba(177,208,130,.45);line-height:1.7}
 .sidebar-footer a{color:rgba(177,208,130,.65);text-decoration:none}
-.main{margin-left:var(--sidebar-w);flex:1;min-height:100vh;margin-top:var(--topbar-h);background:var(--cream);display:flex;flex-direction:column}
-section{display:none;flex:1;animation:fadeIn .4s ease}
+.main{margin-left:var(--sidebar-w);flex:1;min-height:100vh;margin-top:var(--topbar-h);background:var(--cream);display:flex;flex-direction:column;overflow-x:hidden;overflow-y:auto;}
+section{display:none;flex:1;animation:fadeIn .4s ease;overflow:visible;}
 section.active{display:block}
 @keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
 #inici{position:relative;overflow:hidden;background:var(--forest)}
@@ -619,11 +619,10 @@ function changeLogo(){
 <style>
 .stack-wrap { position:relative; }
 .stack-item {
-  position:sticky;
-  top:42px;
   border-radius:12px 12px 0 0;
   overflow:hidden;
   will-change:transform;
+  position:relative;
 }
 .stack-item:nth-child(1){ z-index:1; }
 .stack-item:nth-child(2){ z-index:2; }
@@ -727,11 +726,72 @@ function changeLogo(){
       <li style="display:flex;gap:10px;align-items:flex-start;padding:8px 0;font-size:13px;color:#4a5e46;"><span style="color:var(--green-mid);margin-top:2px;">—</span> Retirs de 2-3 dies en connexió amb la natura</li>
     </ul>
     <div style="display:flex;gap:14px;flex-wrap:wrap;">
-      <a class="btn-primary" onclick="showSection('nexacompanya',null)" style="cursor:pointer;">Saber-ne més</a>
+      <a onclick="showSection('nexacompanya',null)" style="display:inline-flex;align-items:center;gap:10px;padding:14px 28px;background:var(--green-light);color:var(--forest);font-family:'DM Sans',sans-serif;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;transition:all .25s;border-radius:40px;border:none;" onmouseover="this.style.background='var(--green-mid)';this.style.color='#fff'" onmouseout="this.style.background='var(--green-light)';this.style.color='var(--forest)'">Saber-ne més →</a>
     </div>
   </div>
 </div>
 </div><!-- /stack-item 3 -->
+
+<!-- BLOC 4: GESTALT -->
+<div class="stack-item">
+<div style="background:var(--cream);padding:80px 64px 88px;">
+
+  <div style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--green-mid);margin-bottom:16px;">Enfocament Terapèutic</div>
+  <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(36px,4.5vw,58px);font-weight:300;color:var(--forest);line-height:1.1;margin-bottom:20px;">Especialistes en teràpia<br><em style="font-style:italic;color:var(--green-mid);">integrativa i Gestalt</em></h2>
+  <p style="font-size:15px;color:var(--text-muted);line-height:1.85;max-width:560px;margin-bottom:40px;">Un espai de presència i contacte on treballem des del moment present, reconnectant-te amb la teva experiència, les teves emocions i la teva capacitat de canvi.</p>
+
+  <div style="width:48px;height:2px;background:var(--green-light);margin-bottom:48px;"></div>
+
+  <!-- Grid: targetes + foto -->
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr 300px;gap:20px;margin-bottom:52px;align-items:stretch;">
+
+    <div style="background:var(--white);border:1px solid rgba(88,105,86,0.15);border-radius:12px;padding:32px 28px;display:flex;flex-direction:column;gap:20px;">
+      <div style="width:44px;height:44px;border-radius:50%;background:var(--green-pale);display:flex;align-items:center;justify-content:center;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--green-mid)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/>
+          <circle cx="12" cy="9" r="2.5"/>
+        </svg>
+      </div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--forest);line-height:1.2;">Consciència del present</div>
+      <p style="font-size:13px;color:#5a6b56;line-height:1.75;margin:0;">La Gestalt centra el treball en l'aquí i l'ara, explorant com et relaciones amb tu mateix i el teu entorn en cada moment.</p>
+    </div>
+
+    <div style="background:var(--white);border:1px solid rgba(88,105,86,0.15);border-radius:12px;padding:32px 28px;display:flex;flex-direction:column;gap:20px;">
+      <div style="width:44px;height:44px;border-radius:50%;background:var(--green-pale);display:flex;align-items:center;justify-content:center;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--green-mid)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 22c-4 0-7-3-7-7 0-2.5 1.5-5 4-6.5V5a3 3 0 016 0v3.5c2.5 1.5 4 4 4 6.5 0 4-3 7-7 7z"/>
+          <path d="M9 12c0 1.7 1.3 3 3 3s3-1.3 3-3"/>
+        </svg>
+      </div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--forest);line-height:1.2;">Integració cos i ment</div>
+      <p style="font-size:13px;color:#5a6b56;line-height:1.75;margin:0;">Treballem amb la totalitat de la persona: pensaments, emocions, sensacions corporals i patrons de comportament.</p>
+    </div>
+
+    <div style="background:var(--white);border:1px solid rgba(88,105,86,0.15);border-radius:12px;padding:32px 28px;display:flex;flex-direction:column;gap:20px;">
+      <div style="width:44px;height:44px;border-radius:50%;background:var(--green-pale);display:flex;align-items:center;justify-content:center;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--green-mid)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+        </svg>
+      </div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--forest);line-height:1.2;">Relació terapèutica</div>
+      <p style="font-size:13px;color:#5a6b56;line-height:1.75;margin:0;">El vincle entre terapeuta i consultant és l'eina principal del canvi: un espai segur d'autenticitat i confiança.</p>
+    </div>
+
+    <!-- Foto torxa -->
+    <div style="border-radius:12px;overflow:hidden;position:relative;min-height:320px;">
+      <img src="images/img_33.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:center;">
+      <div style="position:absolute;inset:0;background:linear-gradient(to top, rgba(18,32,41,0.75) 0%, rgba(18,32,41,0.1) 60%);"></div>
+      <div style="position:absolute;bottom:0;left:0;right:0;padding:24px 20px;">
+        <p style="font-family:'Cormorant Garamond',serif;font-size:14px;font-style:italic;color:rgba(253,252,249,0.9);line-height:1.7;margin:0;">"Sabem que l'acompanyament és essencial al llarg del cicle vital i que les figures que fan aquest rol van canviant: pares, familiars, professors, referents, amics, veïns... Són persones que ens ajuden a sostenir la torxa que il·lumina el camí."</p>
+      </div>
+    </div>
+
+  </div>
+
+  <a onclick="showSection('nexacompanya',null)" style="display:inline-flex;align-items:center;gap:10px;padding:14px 28px;background:var(--green-light);color:var(--forest);font-family:'DM Sans',sans-serif;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;transition:all .25s;border-radius:40px;border:none;" onmouseover="this.style.background='var(--green-mid)';this.style.color='#fff'" onmouseout="this.style.background='var(--green-light)';this.style.color='var(--forest)'">Descobreix la teràpia Gestalt →</a>
+
+</div>
+</div><!-- /stack-item 4 -->
 
 </div><!-- /stack-wrap -->
 
@@ -2094,6 +2154,41 @@ function openModal(id){ document.getElementById(id).classList.add('open'); docum
 function closeModal(id){ document.getElementById(id).classList.remove('open'); document.body.style.overflow=''; }
 function closeModalOutside(e,id){ if(e.target===document.getElementById(id)) closeModal(id); }
 document.addEventListener('keydown',function(e){ if(e.key==='Escape') document.querySelectorAll('.modal-overlay.open').forEach(function(m){ m.classList.remove('open'); document.body.style.overflow=''; }); });
+
+// ── Sticky Stack ──────────────────────────────────────────────
+function initStickyStack() {
+  var main = document.querySelector('.main');
+  if (!main) return;
+  var topbarH = 42;
+
+  function updateStack() {
+    var items = document.querySelectorAll('#inici .stack-item');
+    if (!items.length) return;
+    var scrollTop = main.scrollTop;
+
+    items.forEach(function(item, i) {
+      var offsetTop = item.offsetTop;
+      var stickyTop = topbarH + i * 6;
+
+      if (scrollTop + stickyTop >= offsetTop) {
+        item.style.position = 'sticky';
+        item.style.top = stickyTop + 'px';
+      } else {
+        item.style.position = 'relative';
+        item.style.top = '';
+      }
+    });
+  }
+
+  main.addEventListener('scroll', updateStack);
+  // Re-init quan canvia secció
+  document.addEventListener('click', function() {
+    setTimeout(updateStack, 100);
+  });
+  setTimeout(updateStack, 200);
+}
+
+document.addEventListener('DOMContentLoaded', initStickyStack);
 // Credencials dels socis (per producció, moure a Supabase/backend)
 var INTEL_USERS = {
   'infonex@nexsocial.org': 'Nexsocial2026!'
