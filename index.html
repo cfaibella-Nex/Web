@@ -648,14 +648,18 @@ function changeLogo(){
     </div>
   </div>
 </div>
+</div><!-- /stack-item 1 -->
+
+</div><!-- /stack-wrap -->
+
 <div class="hero-stats">
 <div class="stat"><div class="stat-num">10+</div><div class="stat-label">Anys d'experiència</div></div>
 <div class="stat"><div class="stat-num">∞</div><div class="stat-label">Atenció personalitzada</div></div>
 <div class="stat"><div class="stat-num">100%</div><div class="stat-label">Cooperativa social</div></div>
 </div>
-</div><!-- /stack-item 1 -->
 
 <!-- BLOC 2: SERVEIS - NexAcompanya i NexGestió -->
+<div class="stack-wrap">
 <div class="stack-item">
 <div style="background:var(--cream);padding:72px 64px 72px;">
   <div style="font-size:12px;letter-spacing:0.2em;text-transform:uppercase;color:var(--green-mid);margin-bottom:16px;">Els nostres serveis</div>
@@ -2220,7 +2224,8 @@ function initStickyStack() {
   var topbarH = 42;
 
   function applySticky() {
-    var wrap = document.querySelector('#inici .stack-wrap');
+    var wraps = document.querySelectorAll('#inici .stack-wrap');
+    var wrap = wraps[wraps.length - 1];
     if (!wrap) return;
     var items = wrap.querySelectorAll('.stack-item');
     if (!items.length) return;
