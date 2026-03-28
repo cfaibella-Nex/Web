@@ -1910,9 +1910,9 @@ function changeLogo(){
       <div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--forest);margin-bottom:6px;">Ets membre de NexSocial?</div>
       <div style="font-size:12px;color:#5a6b56;">Introdueix la contrasenya per accedir a l'eina completa.</div>
     </div>
-    <button onclick="var pw=prompt('Contrasenya NexlicitIA:');if(pw==='Nexsocial2026!')window.location.href='https://nexlicitia.nexsocial.org?k=nex2026';else if(pw!==null)alert('Contrasenya incorrecta');" class="area-btn" style="white-space:nowrap;">
+    <a href="https://nexlicitia.nexsocial.org" class="area-btn" style="white-space:nowrap;text-decoration:none;">
       🔒 Accedir a NexlicitIA →
-    </button>
+    </a>
   </div>
 
 </div>
@@ -2295,40 +2295,8 @@ function initStickyStack() {
 }
 
 document.addEventListener('DOMContentLoaded', initStickyStack);
-// Credencials dels socis (per producció, moure a Supabase/backend)
-var INTEL_USERS = {
-  'infonex@nexsocial.org': 'Nexsocial2026!'
-};
-// URL de l'eina (pujar intel_social.html a /tools/intel.html o similar)
-var INTEL_URL = 'intel.html';
-
-function nexDoLogin() {
-  var email = document.getElementById('intel-email').value.trim().toLowerCase();
-  var pass  = document.getElementById('intel-pass').value;
-  var err   = document.getElementById('intel-error');
-
-  if (INTEL_USERS[email] && INTEL_USERS[email] === pass) {
-    err.style.display = 'none';
-    sessionStorage.setItem('nexsocial_intel_auth', email);
-    nexShowApp();
-  } else {
-    err.style.display = 'block';
-    document.getElementById('intel-pass').value = '';
-  }
-}
-
-function nexShowApp() {
-  document.getElementById('intel-login-wall').style.display = 'none';
-  sessionStorage.setItem('nex_ok', 'true');
-  window.location.href = 'https://nexlicitia.nexsocial.org?k=nex2026';
-}
-
 function nexCheckLogin() {
-  setTimeout(function() {
-    if (sessionStorage.getItem('nexsocial_intel_auth')) {
-      nexShowApp();
-    }
-  }, 50);
+  window.location.href = 'https://nexlicitia.nexsocial.org';
 }
 </script>
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
