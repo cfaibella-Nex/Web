@@ -705,7 +705,8 @@ function changeLogo(){
           <li style="font-size:12.5px;color:#5a6b56;padding:8px 0;border-bottom:1px solid rgba(88,105,86,0.1);display:flex;gap:10px;align-items:center;"><span style="color:var(--green-mid);font-size:14px;">—</span> Arrelament, estrangeria i residència</li>
           <li style="font-size:12.5px;color:#5a6b56;padding:8px 0;border-bottom:1px solid rgba(88,105,86,0.1);display:flex;gap:10px;align-items:center;"><span style="color:var(--green-mid);font-size:14px;">—</span> Tràmits d'ajudes i prestacions socials</li>
           <li style="font-size:12.5px;color:#5a6b56;padding:8px 0;border-bottom:1px solid rgba(88,105,86,0.1);display:flex;gap:10px;align-items:center;"><span style="color:var(--green-mid);font-size:14px;">—</span> Tramitació de dependència i serveis socials</li>
-          <li style="font-size:12.5px;color:#5a6b56;padding:8px 0;display:flex;gap:10px;align-items:center;"><span style="color:var(--green-mid);font-size:14px;">—</span> Gestió de documentació i representació davant AAPP</li>
+          <li style="font-size:12.5px;color:#5a6b56;padding:8px 0;border-bottom:1px solid rgba(88,105,86,0.1);display:flex;gap:10px;align-items:center;"><span style="color:var(--green-mid);font-size:14px;">—</span> Ajudes d'habitatge i lloguer vigents</li>
+          <li style="font-size:12.5px;color:#5a6b56;padding:8px 0;display:flex;gap:10px;align-items:center;"><span style="color:var(--green-mid);font-size:14px;">—</span> Orientació sobre cost i viabilitat de cada tràmit</li>
         </ul>
         <a onclick="showSection('nexgestio',null)" style="display:inline-flex;align-items:center;gap:8px;padding:10px 20px;background:var(--forest);color:var(--green-light);font-family:'DM Sans',sans-serif;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;border-radius:40px;transition:all .25s;" onmouseover="this.style.background='var(--green-mid)';this.style.color='#fff'" onmouseout="this.style.background='var(--forest)';this.style.color='var(--green-light)'">Descobrir més →</a>
       </div>
@@ -898,58 +899,60 @@ function changeLogo(){
   </div>
 
   <!-- Context i Justificació -->
-  <div style="background:var(--forest);padding:48px 40px;margin-bottom:32px;">
+  <div style="margin-bottom:32px;">
 
-    <div style="font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:300;color:white;margin-bottom:8px;line-height:1.35;">Per què és necessari Nex<em style="font-style:italic;color:var(--green-light);">Social</em>, la cooperativa creada per acompanyar-te en el <em style="font-style:italic;color:var(--green-light);">camí de sanar</em></div>
-    <p style="font-size:13px;color:rgba(255,255,255,0.6);line-height:1.8;margin-bottom:36px;max-width:680px;">La salut mental és un dels reptes socials més urgents del nostre temps. Malgrat la creixent conscienciació, l'accés a un acompanyament emocional de qualitat continua sent un privilegi.</p>
+  <!-- Banner introductori -->
+  <div style="background:var(--forest);padding:40px;margin-bottom:2px;">
+    <div style="font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:300;color:white;margin-bottom:12px;line-height:1.35;">Per què és necessària Nex<em style="font-style:italic;color:var(--green-light);">Social</em>, la cooperativa creada per acompanyar-te en el <em style="font-style:italic;color:var(--green-light);">camí de sanar</em></div>
+    <p style="font-size:13px;color:rgba(255,255,255,0.75);line-height:1.8;max-width:680px;margin:0;">La salut mental és un dels reptes socials més urgents del nostre temps. Malgrat la creixent conscienciació, l'accés a un acompanyament emocional de qualitat continua sent un privilegi.</p>
+  </div>
 
-    <!-- Xifres -->
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-bottom:36px;">
+    <!-- 6 caixes banner: xifres + col·lectius -->
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-bottom:2px;">
 
-      <div style="background:rgba(255,255,255,0.06);padding:32px 28px;text-align:center;">
+      <div style="background:var(--forest);padding:32px 28px;text-align:center;">
         <div style="font-family:'Cormorant Garamond',serif;font-size:52px;font-weight:300;color:var(--green-light);line-height:1;margin-bottom:12px;">1 de cada 4</div>
         <div style="font-size:12px;color:rgba(255,255,255,0.7);line-height:1.65;">persones patirà un trastorn mental al llarg de la seva vida <span style="color:rgba(255,255,255,0.4);">(OMS)</span></div>
       </div>
 
-      <div style="background:rgba(74,124,89,0.35);padding:32px 28px;text-align:center;">
-        <div style="font-family:'Cormorant Garamond',serif;font-size:52px;font-weight:300;color:var(--green-light);line-height:1;margin-bottom:12px;">40%</div>
-        <div style="font-size:12px;color:rgba(255,255,255,0.7);line-height:1.65;">de les baixes laborals a Catalunya s'associen a causes emocionals o psicosocials</div>
+      <div style="background:var(--green-pale);padding:32px 28px;text-align:center;">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:52px;font-weight:300;color:var(--green-mid);line-height:1;margin-bottom:12px;">40%</div>
+        <div style="font-size:12px;color:var(--text-muted);line-height:1.65;">de les baixes laborals a Catalunya s'associen a causes emocionals o psicosocials</div>
       </div>
 
-      <div style="background:rgba(255,255,255,0.06);padding:32px 28px;text-align:center;">
+      <div style="background:var(--forest);padding:32px 28px;text-align:center;">
         <div style="font-family:'Cormorant Garamond',serif;font-size:52px;font-weight:300;color:var(--green-light);line-height:1;margin-bottom:12px;">70%</div>
         <div style="font-size:12px;color:rgba(255,255,255,0.7);line-height:1.65;">de les persones amb necessitat de suport psicològic no arriben mai a un professional</div>
       </div>
 
     </div>
 
-    <!-- 3 col·lectius -->
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2px;">
 
-      <div style="background:rgba(74,124,89,0.35);padding:24px 24px;">
-        <div style="font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:var(--green-light);margin-bottom:14px;border-bottom:1px solid rgba(177,208,130,0.25);padding-bottom:10px;">Persones i famílies</div>
+      <div style="background:var(--green-pale);padding:24px;">
+        <div style="font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:var(--green-mid);margin-bottom:14px;border-bottom:1px solid rgba(88,105,86,0.2);padding-bottom:10px;">Persones i famílies</div>
         <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;">
-          <li style="font-size:12px;color:rgba(255,255,255,0.65);line-height:1.6;display:flex;gap:8px;"><span style="color:var(--green-light);flex-shrink:0;">—</span>Crisi de salut mental post-pandèmia, especialment en joves i gent gran</li>
-          <li style="font-size:12px;color:rgba(255,255,255,0.65);line-height:1.6;display:flex;gap:8px;"><span style="color:var(--green-light);flex-shrink:0;">—</span>Llistes d'espera de mesos als serveis públics de salut mental</li>
-          <li style="font-size:12px;color:rgba(255,255,255,0.65);line-height:1.6;display:flex;gap:8px;"><span style="color:var(--green-light);flex-shrink:0;">—</span>Manca de serveis accessibles, propers i assequibles a les comunitats</li>
+          <li style="font-size:12px;color:var(--text-muted);line-height:1.6;display:flex;gap:8px;"><span style="color:var(--green-mid);flex-shrink:0;">—</span>Crisi de salut mental post-pandèmia, especialment en joves i gent gran</li>
+          <li style="font-size:12px;color:var(--text-muted);line-height:1.6;display:flex;gap:8px;"><span style="color:var(--green-mid);flex-shrink:0;">—</span>Llistes d'espera de mesos als serveis públics de salut mental</li>
+          <li style="font-size:12px;color:var(--text-muted);line-height:1.6;display:flex;gap:8px;"><span style="color:var(--green-mid);flex-shrink:0;">—</span>Manca de serveis accessibles, propers i assequibles a les comunitats</li>
         </ul>
       </div>
 
-      <div style="background:rgba(255,255,255,0.04);padding:24px 24px;">
+      <div style="background:var(--forest);padding:24px;">
         <div style="font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:var(--green-light);margin-bottom:14px;border-bottom:1px solid rgba(177,208,130,0.25);padding-bottom:10px;">Empreses i organitzacions</div>
         <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;">
-          <li style="font-size:12px;color:rgba(255,255,255,0.65);line-height:1.6;display:flex;gap:8px;"><span style="color:var(--green-light);flex-shrink:0;">—</span>L'estrès laboral i el burnout costen a les empreses fins a 3.000€ per treballador/any</li>
-          <li style="font-size:12px;color:rgba(255,255,255,0.65);line-height:1.6;display:flex;gap:8px;"><span style="color:var(--green-light);flex-shrink:0;">—</span>1 de 3 dels equips amb conflictes interns no rep cap suport professional</li>
-          <li style="font-size:12px;color:rgba(255,255,255,0.65);line-height:1.6;display:flex;gap:8px;"><span style="color:var(--green-light);flex-shrink:0;">—</span>Creixent demanda de programes de benestar emocional al lloc de treball</li>
+          <li style="font-size:12px;color:rgba(255,255,255,0.7);line-height:1.6;display:flex;gap:8px;"><span style="color:var(--green-light);flex-shrink:0;">—</span>L'estrès laboral i el burnout costen a les empreses fins a 3.000€ per treballador/any</li>
+          <li style="font-size:12px;color:rgba(255,255,255,0.7);line-height:1.6;display:flex;gap:8px;"><span style="color:var(--green-light);flex-shrink:0;">—</span>1 de 3 dels equips amb conflictes interns no rep cap suport professional</li>
+          <li style="font-size:12px;color:rgba(255,255,255,0.7);line-height:1.6;display:flex;gap:8px;"><span style="color:var(--green-light);flex-shrink:0;">—</span>Creixent demanda de programes de benestar emocional al lloc de treball</li>
         </ul>
       </div>
 
-      <div style="background:rgba(74,124,89,0.35);padding:24px 24px;">
-        <div style="font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:var(--green-light);margin-bottom:14px;border-bottom:1px solid rgba(177,208,130,0.25);padding-bottom:10px;">Administracions públiques</div>
+      <div style="background:var(--green-pale);padding:24px;">
+        <div style="font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:var(--green-mid);margin-bottom:14px;border-bottom:1px solid rgba(88,105,86,0.2);padding-bottom:10px;">Administracions públiques</div>
         <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;">
-          <li style="font-size:12px;color:rgba(255,255,255,0.65);line-height:1.6;display:flex;gap:8px;"><span style="color:var(--green-light);flex-shrink:0;">—</span>Els serveis socials municipals estan desbordats i necessiten serveis complementaris</li>
-          <li style="font-size:12px;color:rgba(255,255,255,0.65);line-height:1.6;display:flex;gap:8px;"><span style="color:var(--green-light);flex-shrink:0;">—</span>Necessitat urgent de programes preventius de salut mental comunitària</li>
-          <li style="font-size:12px;color:rgba(255,255,255,0.65);line-height:1.6;display:flex;gap:8px;"><span style="color:var(--green-light);flex-shrink:0;">—</span>Les licitacions de serveis d'acompanyament creixen any rere any</li>
+          <li style="font-size:12px;color:var(--text-muted);line-height:1.6;display:flex;gap:8px;"><span style="color:var(--green-mid);flex-shrink:0;">—</span>Els serveis socials municipals estan desbordats i necessiten serveis complementaris</li>
+          <li style="font-size:12px;color:var(--text-muted);line-height:1.6;display:flex;gap:8px;"><span style="color:var(--green-mid);flex-shrink:0;">—</span>Necessitat urgent de programes preventius de salut mental comunitària</li>
+          <li style="font-size:12px;color:var(--text-muted);line-height:1.6;display:flex;gap:8px;"><span style="color:var(--green-mid);flex-shrink:0;">—</span>Les licitacions de serveis d'acompanyament creixen any rere any</li>
         </ul>
       </div>
 
@@ -1131,7 +1134,7 @@ function changeLogo(){
         <li>Àrea familiar: estructura, relacions i suport parental</li>
         <li>Àrea econòmica i laboral: ingressos, inserció i ajudes</li>
         <li>Àrea personal: salut, dependència i inclusió social</li>
-        <li>Àrea d'habitatge: suministres, bono social i convivència</li>
+        <li>Àrea d'habitatge: suministres, bo social i convivència</li>
         <li>Àrea administrativa i legal: tràmits, empadronament i drets</li>
       </ul>
     </div>
@@ -1354,7 +1357,7 @@ function changeLogo(){
 <div class="page-header-bg" style="background-image:url('images/img_18.jpg')"></div>
 <span class="page-header-tag">Àrea de Gestió</span>
 <h1>Nex<em>Gestió</em></h1>
-<p>Gestoria Social accessible per a tothom on Gestionem, Mediem i Assessorem amb una visió centrada en la persona. Gestionem en el teu nom qualsevol tràmit complex o que necessita un major seguiment en el temps, prevenció de conflictes, gestió responsable en diferents àmbits.</p>
+<p>Gestoria Social accessible per a tothom. Gestionem, Mediem i Assessorem amb una visió centrada en la persona i els seus drets.</p>
 </div>
 <div class="content" style="padding:40px 48px 60px; max-width:none;">
 
@@ -1364,7 +1367,7 @@ function changeLogo(){
 <div class="srv-block" id="gestio-gestoria">
   <div class="srv-block-title">Gestió de Tràmits Socials</div>
   <div style="height:260px;background-size:cover;background-position:center top;background-image:url('images/img_19.jpg');background-size:cover;background-position:center top;margin-bottom:24px;"></div>
-  <p class="srv-block-desc">Som una gestoria social cooperativa especialitzada en tràmits de caire social. A diferència d'una gestoria convencional, el nostre equip el formen professionals que coneixen de primera mà la realitat de les persones que acompanyen. Gestionem íntegrament en nom de la persona, des de la sol·licitud fins a la resolució, amb traçabilitat total i transparència en els costos. Tant si es tracta d'un tràmit puntual com d'un procés complex com la dependència, l'estrangeria o l'accés a habitatge, acompanyem fins al final.</p>
+  <p class="srv-block-desc">Gestoria social cooperativa especialitzada en tràmits de caire social. El nostre equip coneix de primera mà la realitat de les persones que acompanya: gestionem íntegrament en el seu nom, amb traçabilitat total i transparència en els costos, des de la sol·licitud fins a la resolució.</p>
   <div class="srv-cols">
     <div class="srv-col-box">
       <div class="srv-col-box-title">Tràmits socials habituals</div>
@@ -1372,8 +1375,8 @@ function changeLogo(){
         <li>Estrangeria: residència, arrelament i reagrupament</li>
         <li>Ajudes de lloguer i accés a habitatge social</li>
         <li>Ingrés Mínim Vital i Renda Garantida de Ciutadania</li>
-        <li>Prestació per fills a càrrec i cheque bebè</li>
-        <li>Bonos socials de llum, gas i internet</li>
+        <li>Prestació per fills a càrrec i ajudes per naixement</li>
+        <li>Bons socials de llum, gas i internet</li>
         <li>Ajudes famílies monoparentals i nombroses</li>
       </ul>
     </div>
@@ -1382,10 +1385,19 @@ function changeLogo(){
       <ul>
         <li>Dependència i prestació per cuidador no professional</li>
         <li>Pensió no contributiva i complements a mínims</li>
-        <li>Ajudes per violència de gènere</li>
         <li>Subsidis i prestacions de desocupació (SEPE)</li>
         <li>Rendes autonòmiques d'inserció social</li>
         <li>Seguiment i traçabilitat fins a la resolució</li>
+      </ul>
+    </div>
+    <div class="srv-col-box">
+      <div class="srv-col-box-title">Suport en gestions del dia a dia</div>
+      <ul>
+        <li>Gestió de cites mèdiques i sanitàries</li>
+        <li>Suport a cuidadors sense temps per fer tràmits</li>
+        <li>Persones amb càrregues familiars que no poden atendre gestions bàsiques</li>
+        <li>Coordinació de gestions quan la persona no pot desplaçar-se</li>
+        <li>Acompanyament i representació davant organismes</li>
       </ul>
     </div>
   </div>
@@ -1412,7 +1424,6 @@ function changeLogo(){
         <li>Orientació sobre drets i recursos legals</li>
         <li>Assessorament en habitatge i arrendaments</li>
         <li>Situacions de deute i vulnerabilitat econòmica</li>
-        <li>Gestió de comunitats amb caire social: convivència, mediació preventiva i atenció centrada en les persones</li>
         <li>Derivació a serveis jurídics especialitzats</li>
       </ul>
     </div>
@@ -1432,38 +1443,59 @@ function changeLogo(){
   </div>
 
   <div style="font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--green-mid);margin-bottom:20px;">Àmbits d'actuació</div>
-  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;">
+
+  <!-- Banner nucli: servei de detecció i difusió d'ajudes -->
+  <div style="background:var(--forest);padding:36px 40px;margin-bottom:16px;">
+    <div style="display:flex;align-items:flex-start;gap:20px;margin-bottom:20px;">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--green-light)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:4px;"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:22px;color:#fff;margin-bottom:8px;line-height:1.3;">Detecció, Informació i Gestió d'Ajudes Vigents</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.8);line-height:1.8;max-width:640px;margin:0;">Estem al dia de totes les convocatòries obertes. Et detectem si et pots acollir a alguna ajuda, t'informem de les condicions i, si és el teu cas, ho gestionem íntegrament en el teu nom fins a la resolució. Un servei clau per a persones que no saben que existeixen ajudes o no tenen temps ni eines per tramitar-les.</p>
+      </div>
+    </div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;">
+      <span style="background:rgba(177,208,130,0.15);border:1px solid rgba(177,208,130,0.3);color:var(--green-light);font-size:11px;padding:4px 12px;border-radius:20px;">Bo Lloguer Jove</span>
+      <span style="background:rgba(177,208,130,0.15);border:1px solid rgba(177,208,130,0.3);color:var(--green-light);font-size:11px;padding:4px 12px;border-radius:20px;">Ajudes lloguer +65 anys</span>
+      <span style="background:rgba(177,208,130,0.15);border:1px solid rgba(177,208,130,0.3);color:var(--green-light);font-size:11px;padding:4px 12px;border-radius:20px;">Famílies monoparentals</span>
+      <span style="background:rgba(177,208,130,0.15);border:1px solid rgba(177,208,130,0.3);color:var(--green-light);font-size:11px;padding:4px 12px;border-radius:20px;">IMV · RGC · PNC</span>
+      <span style="background:rgba(177,208,130,0.15);border:1px solid rgba(177,208,130,0.3);color:var(--green-light);font-size:11px;padding:4px 12px;border-radius:20px;">Dependència</span>
+      <span style="background:rgba(177,208,130,0.15);border:1px solid rgba(177,208,130,0.3);color:var(--green-light);font-size:11px;padding:4px 12px;border-radius:20px;">Bons socials</span>
+    </div>
+  </div>
+
+  <!-- 4 àmbits -->
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:2px;">
 
     <div style="background:var(--green-pale);border:1px solid rgba(88,105,86,0.15);padding:28px 22px;text-align:center;transition:box-shadow .2s;" onmouseover="this.style.boxShadow='0 8px 24px rgba(18,32,41,0.1)'" onmouseout="this.style.boxShadow='none'">
-      <div style="margin-bottom:16px;">
-        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--green-mid)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" style="display:block;margin:0 auto;"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+      <div style="margin-bottom:14px;">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--green-mid)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" style="display:block;margin:0 auto;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="13" y2="17"/></svg>
       </div>
-      <div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--forest);margin-bottom:8px;line-height:1.3;">Estrangeria i arrelament</div>
-      <div style="font-size:11.5px;color:#5a6b56;line-height:1.65;">Residència, reagrupament, renovacions i documentació.</div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--forest);margin-bottom:8px;line-height:1.3;">Ajudes de caire social</div>
+      <div style="font-size:11px;color:#5a6b56;line-height:1.65;">Prestacions, dependència, IMV, RGC i tràmits de benestar social.</div>
     </div>
 
     <div style="background:var(--green-pale);border:1px solid rgba(88,105,86,0.15);padding:28px 22px;text-align:center;transition:box-shadow .2s;" onmouseover="this.style.boxShadow='0 8px 24px rgba(18,32,41,0.1)'" onmouseout="this.style.boxShadow='none'">
-      <div style="margin-bottom:16px;">
-        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--green-mid)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" style="display:block;margin:0 auto;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="13" y2="17"/></svg>
+      <div style="margin-bottom:14px;">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--green-mid)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" style="display:block;margin:0 auto;"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
       </div>
-      <div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--forest);margin-bottom:8px;line-height:1.3;">Ajudes i dependència</div>
-      <div style="font-size:11.5px;color:#5a6b56;line-height:1.65;">RGC, IMV, grau de dependència i prestacions socials.</div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--forest);margin-bottom:8px;line-height:1.3;">Ajudes d'habitatge</div>
+      <div style="font-size:11px;color:#5a6b56;line-height:1.65;">Lloguer, borsa social, convocatòries obertes i accés a habitatge protegit.</div>
     </div>
 
     <div style="background:var(--green-pale);border:1px solid rgba(88,105,86,0.15);padding:28px 22px;text-align:center;transition:box-shadow .2s;" onmouseover="this.style.boxShadow='0 8px 24px rgba(18,32,41,0.1)'" onmouseout="this.style.boxShadow='none'">
-      <div style="margin-bottom:16px;">
-        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--green-mid)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" style="display:block;margin:0 auto;"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      <div style="margin-bottom:14px;">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--green-mid)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" style="display:block;margin:0 auto;"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
       </div>
-      <div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--forest);margin-bottom:8px;line-height:1.3;">Habitatge social</div>
-      <div style="font-size:11.5px;color:#5a6b56;line-height:1.65;">Ajudes de lloguer, borsa social i accés a serveis municipals.</div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--forest);margin-bottom:8px;line-height:1.3;">Tràmits migratoris</div>
+      <div style="font-size:11px;color:#5a6b56;line-height:1.65;">Arrelament, residència, reagrupament familiar i renovacions.</div>
     </div>
 
-    <div style="background:var(--green-pale);border:1px solid rgba(88,105,86,0.15);padding:28px 22px;text-align:center;transition:box-shadow .2s;" onmouseover="this.style.boxShadow='0 8px 24px rgba(18,32,41,0.1)'" onmouseout="this.style.boxShadow='none'">
-      <div style="margin-bottom:16px;">
-        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--green-mid)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" style="display:block;margin:0 auto;"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+    <div style="background:var(--forest);border:1px solid rgba(88,105,86,0.15);padding:28px 22px;text-align:center;transition:box-shadow .2s;" onmouseover="this.style.boxShadow='0 8px 24px rgba(18,32,41,0.15)'" onmouseout="this.style.boxShadow='none'">
+      <div style="margin-bottom:14px;">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--green-light)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" style="display:block;margin:0 auto;"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
       </div>
-      <div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--forest);margin-bottom:8px;line-height:1.3;">Gestió de comunitats</div>
-      <div style="font-size:11.5px;color:#5a6b56;line-height:1.65;">Gestió amb caire social, centrada en les persones i la convivència.</div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:15px;color:#fff;margin-bottom:8px;line-height:1.3;">Suport en gestions del dia a dia</div>
+      <div style="font-size:11px;color:rgba(255,255,255,0.75);line-height:1.65;">Cuidadors, persones amb càrregues familiars, o qualsevol que necessiti ajuda per fer tràmits bàsics.</div>
     </div>
 
   </div>
