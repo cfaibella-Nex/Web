@@ -15,7 +15,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text);
 .logo-name{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;color:var(--white);letter-spacing:.04em;line-height:1}
 .logo-sub{font-size:9px;color:var(--green-light);letter-spacing:.1em;text-transform:uppercase;opacity:.75;margin-top:4px;line-height:1.4}
 nav{flex:1;padding:18px 0}
-nav a{display:flex;align-items:center;gap:11px;padding:12px 22px;color:rgba(253,252,249,.85);text-decoration:none;font-size:13px;font-weight:400;letter-spacing:.02em;transition:all var(--T);position:relative;cursor:pointer}
+nav a{display:flex;align-items:center;gap:11px;padding:12px 22px;color:rgba(177,208,130,.65);text-decoration:none;font-size:15px;font-weight:400;letter-spacing:.02em;transition:all var(--T);position:relative;cursor:pointer}
 nav a:hover,nav a.active{color:var(--white);background:rgba(177,208,130,.1)}
 nav a.active::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--green-light);border-radius:0 2px 2px 0}
 nav a svg{width:15px;height:15px;opacity:.6;flex-shrink:0;transition:opacity .2s}
@@ -142,11 +142,86 @@ section.active{display:block}
 @media(max-width:768px){
 .sidebar{transform:translateX(-100%)}.sidebar.open{transform:translateX(0)}
 .main{margin-left:0;margin-top:var(--topbar-h)}.mobile-toggle{display:flex}.overlay.show{display:block}
-.hero-content,.page-header,.content,.content-alt,.form-container{padding-left:22px;padding-right:22px}
-.hero-stats .stat{padding:18px 22px}
+.hero-content,.page-header,.content,.content-alt,.form-container{padding-left:18px;padding-right:18px}
+.content[style*="padding:40px 48px"],.content[style*="padding: 40px 48px"]{padding-left:18px !important;padding-right:18px !important;padding-top:28px !important;}
+.hero-stats .stat{padding:18px 14px}
 .mv-grid,.form-row,.servei-block,.contact-grid,.diagnostic-hero-content{grid-template-columns:1fr}
 .values-strip{flex-direction:column}.servei-photo{min-height:130px}
-.photo-strip{grid-template-columns:1fr 1fr}}
+.photo-strip{grid-template-columns:1fr 1fr}
+
+/* Hero */
+.hero-content{padding:40px 18px 32px !important;}
+.hero-cta{flex-direction:column;gap:10px;}
+.hero-stats{flex-wrap:wrap;}
+.stat{flex:1 1 45%;border-right:none !important;border-bottom:1px solid rgba(255,255,255,.07);}
+
+/* Page headers */
+.page-header{padding:36px 18px 28px !important;}
+.page-header-bg{display:none;}
+.page-header::after{display:none;}
+
+/* Grids inline de 3-4 columnes → 1 columna */
+div[style*="grid-template-columns:repeat(3"],
+div[style*="grid-template-columns:repeat(4"],
+div[style*="grid-template-columns: repeat(3"],
+div[style*="grid-template-columns: repeat(4"]{
+  grid-template-columns:1fr !important;
+}
+
+/* Grids inline de 2 columnes → 1 columna (excepte els que ja funcionen) */
+div[style*="grid-template-columns:1fr 1fr"],
+div[style*="grid-template-columns: 1fr 1fr"],
+div[style*="grid-template-columns:1fr 380px"],
+div[style*="grid-template-columns:1fr 1.5fr"],
+div[style*="grid-template-columns:220px 1fr"],
+div[style*="grid-template-columns:280px 1fr"],
+div[style*="grid-template-columns:1fr 380px"]{
+  grid-template-columns:1fr !important;
+}
+
+/* Galeries de fotos → 1 columna */
+div[style*="grid-template-columns:1.2fr 1fr 0.9fr"],
+div[style*="grid-template-columns:1.6fr 1fr 1fr 1fr"]{
+  grid-template-columns:1fr !important;
+  height:auto !important;
+}
+
+/* Padding excessiu en blocs inline */
+div[style*="padding:36px 40px"],
+div[style*="padding:48px 64px"],
+div[style*="padding:40px 44px"],
+div[style*="padding:28px 44px"]{
+  padding-left:18px !important;
+  padding-right:18px !important;
+}
+
+/* Alçades fixes d'imatges → reduir */
+div[style*="height:280px"],
+div[style*="height:260px"],
+div[style*="height:320px"]{
+  height:180px !important;
+}
+
+/* CTAs en fila → columna */
+div[style*="display:flex"][style*="justify-content:space-between"]{
+  flex-direction:column;
+  gap:16px;
+}
+
+/* Mida de text gran en mòbil */
+div[style*="font-size:52px"],
+div[style*="font-size:80px"]{
+  font-size:38px !important;
+}
+div[style*="font-size:38px"]{font-size:26px !important;}
+div[style*="font-size:32px"]{font-size:22px !important;}
+
+/* Subnav lateral */
+#subnav-serveis a{padding-left:28px !important;}
+
+/* Footer */
+.footer-top{grid-template-columns:1fr !important;}
+}
 
 .tsec-head{font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:#b1d082;background:var(--forest);padding:7px 12px;margin:18px 0 12px;font-weight:600}
 .tfield{margin-bottom:12px}
@@ -589,30 +664,30 @@ function changeLogo(){
 <a onclick="showSection('quisom',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>Qui som</a>
 <a onclick="showSection('serveis',this)" id="nav-serveis"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>Serveis Persones</a>
 <div id="subnav-serveis" style="max-height:120px; overflow:hidden; background:rgba(0,0,0,0.15);">
-  <a onclick="showSection('nexacompanya',null)" style="padding:9px 20px 9px 44px; font-size:12px; opacity:0.8; border-left:2px solid var(--green-light);">
+  <a onclick="showSection('nexacompanya',null)" style="padding:9px 20px 9px 44px; font-size:13px; opacity:0.8; border-left:2px solid var(--green-light);">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:13px;height:13px;"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
     NexAcompanya
   </a>
-  <a onclick="showSection('nexgestio',null)" style="padding:9px 20px 9px 44px; font-size:12px; opacity:0.8; border-left:2px solid var(--green-light);">
+  <a onclick="showSection('nexgestio',null)" style="padding:9px 20px 9px 44px; font-size:13px; opacity:0.8; border-left:2px solid var(--green-light);">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:13px;height:13px;"><path d="M9 12h6M9 16h6M17 21H7a2 2 0 01-2-2V5a2 2 0 012-2h7l5 5v11a2 2 0 01-2 2z"/></svg>
     NexGestió
   </a>
-  <a onclick="showSection('consulta',null)" style="padding:9px 20px 9px 44px; font-size:12px; opacity:0.8; border-left:2px solid var(--green-light);">
+  <a onclick="showSection('consulta',null)" style="padding:9px 20px 9px 44px; font-size:13px; opacity:0.8; border-left:2px solid var(--green-light);">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:13px;height:13px;"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
     Consulta Cas a Cas
   </a>
 </div>
 <a onclick="showSection('entitats',this); toggleSubnav('subnav-entitats')" id="nav-entitats"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>Serveis Entitats<span id="subnav-entitats-arrow" style="margin-left:auto; font-size:9px; transition:transform .25s; opacity:0.5;">▼</span></a>
 <div id="subnav-entitats" style="max-height:0; overflow:hidden; transition:max-height .35s ease; background:rgba(0,0,0,0.15);">
-  <a onclick="showSection('entitats-acomp',this)" style="padding:9px 20px 9px 44px; font-size:12px; opacity:0.8; border-left:2px solid var(--green-light);">
+  <a onclick="showSection('entitats-acomp',this)" style="padding:9px 20px 9px 44px; font-size:13px; opacity:0.8; border-left:2px solid var(--green-light);">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:13px;height:13px;"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
     Consultoria Social
   </a>
-  <a onclick="showSection('entitats-diagnostic',this)" style="padding:9px 20px 9px 44px; font-size:12px; opacity:0.8; border-left:2px solid var(--green-light);">
+  <a onclick="showSection('entitats-diagnostic',this)" style="padding:9px 20px 9px 44px; font-size:13px; opacity:0.8; border-left:2px solid var(--green-light);">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:13px;height:13px;"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>
     Diagnòstic d'Impacte
   </a>
-  <a onclick="showSection('entitats-intel',this); nexCheckLogin()" style="padding:9px 20px 9px 44px; font-size:12px; opacity:0.8; border-left:2px solid var(--green-light);">
+  <a onclick="showSection('entitats-intel',this); nexCheckLogin()" style="padding:9px 20px 9px 44px; font-size:13px; opacity:0.8; border-left:2px solid var(--green-light);">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:13px;height:13px;"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
     NexlicitIA
   </a>
@@ -969,6 +1044,70 @@ function changeLogo(){
     </div>
   </div>
 
+  <!-- Separador temàtic -->
+  <div style="margin:48px 0 0;border-top:1px solid rgba(88,105,86,0.15);padding-top:40px;">
+    <div style="font-size:9px;letter-spacing:0.22em;text-transform:uppercase;color:var(--green-mid);margin-bottom:10px;">Per què neix NexSocial · Col·lectiu Senior</div>
+    <div style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:300;color:var(--forest);line-height:1.3;max-width:680px;margin-bottom:6px;">La soledat no volguda és un risc real per a la salut. <em style="font-style:italic;color:var(--green-mid);">A Catalunya, és una emergència silenciosa.</em></div>
+    <p style="font-size:13px;color:#4a5e46;line-height:1.8;max-width:680px;margin-bottom:28px;">L'envelliment accelerat, la feminització de la vellesa i el creixement dels llars unipersonals de persones majors de 65 anys configuren un escenari en el qual la cohesió social i el benestar comunitari requereixen respostes concretes i de proximitat. NexSocial neix, en part, per donar aquesta resposta.</p>
+  </div>
+
+  <!-- Bloc dades: Col·lectiu Senior -->
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-bottom:2px;">
+
+    <div style="background:var(--forest);padding:32px 28px;text-align:center;">
+      <div style="font-family:'League Spartan',sans-serif;font-size:52px;font-weight:300;color:var(--green-light);line-height:1;margin-bottom:12px;">~20%</div>
+      <div style="font-size:12px;color:rgba(255,255,255,0.72);line-height:1.65;">de la població catalana té 65 anys o més — un envelliment en acceleració constant <span style="color:rgba(255,255,255,0.35);">· Idescat 2025</span></div>
+    </div>
+
+    <div style="background:var(--green-pale);padding:24px;">
+      <div style="font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:var(--green-mid);margin-bottom:14px;border-bottom:1px solid rgba(88,105,86,0.2);padding-bottom:10px;">Viure sol/a · Vulnerabilitat</div>
+      <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;">
+        <li style="font-size:12px;color:var(--text-muted);line-height:1.6;display:flex;gap:8px;"><span style="color:var(--green-mid);flex-shrink:0;">—</span>~300.000 persones majors de 65 anys viuen soles a Catalunya</li>
+        <li style="font-size:12px;color:var(--text-muted);line-height:1.6;display:flex;gap:8px;"><span style="color:var(--green-mid);flex-shrink:0;">—</span>18,2% dels 65–79 anys i fins al 30,5% dels majors de 80 viuen sols</li>
+        <li style="font-size:12px;color:var(--text-muted);line-height:1.6;display:flex;gap:8px;"><span style="color:var(--green-mid);flex-shrink:0;">—</span>49,2% de totes les persones que viuen soles a Catalunya son majors de 65</li>
+      </ul>
+    </div>
+
+    <div style="background:var(--forest);padding:32px 28px;text-align:center;">
+      <div style="font-family:'League Spartan',sans-serif;font-size:52px;font-weight:300;color:var(--green-light);line-height:1;margin-bottom:12px;">17,3%</div>
+      <div style="font-size:12px;color:rgba(255,255,255,0.72);line-height:1.65;">de les persones majors de 65 anys estan en risc de pobresa o exclusió social <span style="color:rgba(255,255,255,0.35);">· AROPE / Idescat 2025</span></div>
+    </div>
+
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-bottom:40px;">
+
+    <div style="background:var(--green-pale);padding:24px;">
+      <div style="font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:var(--green-mid);margin-bottom:14px;border-bottom:1px solid rgba(88,105,86,0.2);padding-bottom:10px;">Feminització de la vellesa</div>
+      <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;">
+        <li style="font-size:12px;color:var(--text-muted);line-height:1.6;display:flex;gap:8px;"><span style="color:var(--green-mid);flex-shrink:0;">—</span>223.000 dones vs 73.400 homes majors de 65 viuen sols a Catalunya</li>
+        <li style="font-size:12px;color:var(--text-muted);line-height:1.6;display:flex;gap:8px;"><span style="color:var(--green-mid);flex-shrink:0;">—</span>83,5% de les persones centenàries a Catalunya son dones</li>
+        <li style="font-size:12px;color:var(--text-muted);line-height:1.6;display:flex;gap:8px;"><span style="color:var(--green-mid);flex-shrink:0;">—</span>Dones majors de 65: 15,5% en risc de pobresa vs 12,6% dels homes</li>
+      </ul>
+    </div>
+
+    <div style="background:var(--forest);padding:32px 28px;text-align:center;">
+      <div style="font-family:'League Spartan',sans-serif;font-size:52px;font-weight:300;color:var(--green-light);line-height:1;margin-bottom:12px;">18,4%</div>
+      <div style="font-size:12px;color:rgba(255,255,255,0.72);line-height:1.65;">dels adults a Catalunya se senten sols — xifra que s'eleva al ~20% en majors de 75 anys <span style="color:rgba(255,255,255,0.35);">· ECV 2025</span></div>
+    </div>
+
+    <div style="background:var(--green-pale);padding:24px;">
+      <div style="font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:var(--green-mid);margin-bottom:14px;border-bottom:1px solid rgba(88,105,86,0.2);padding-bottom:10px;">Vulnerabilitat econòmica</div>
+      <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;">
+        <li style="font-size:12px;color:var(--text-muted);line-height:1.6;display:flex;gap:8px;"><span style="color:var(--green-mid);flex-shrink:0;">—</span>35,5% de les llars no pot afrontar una despesa imprevista de 900€</li>
+        <li style="font-size:12px;color:var(--text-muted);line-height:1.6;display:flex;gap:8px;"><span style="color:var(--green-mid);flex-shrink:0;">—</span>16,8% no pot mantenir una temperatura adequada a casa</li>
+        <li style="font-size:12px;color:var(--text-muted);line-height:1.6;display:flex;gap:8px;"><span style="color:var(--green-mid);flex-shrink:0;">—</span>Afecta especialment pensionistes amb ingressos baixos i dones soles</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Cita de transició + font -->
+  <div style="background:rgba(88,105,86,0.07);border-left:3px solid var(--green-mid);padding:20px 28px;margin-bottom:48px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;">
+    <div style="font-size:13px;color:#4a5e46;font-style:italic;line-height:1.75;max-width:600px;">&ldquo;El grup més vulnerable a Catalunya el formen les dones majors, que viuen soles, amb pensió baixa i creixent risc d'exclusió social. Davant d'aquesta realitat, NexSocial actua.&rdquo;</div>
+    <div style="font-size:10px;color:var(--text-muted);letter-spacing:0.06em;line-height:1.8;text-align:right;">Fonts: Idescat · ECV 2025<br>INE · Indicador AROPE</div>
+  </div>
+
   <!-- Galeria de 3 fotos -->
   <div style="display:grid; grid-template-columns:1.2fr 1fr 0.9fr; gap:12px; height:320px;">
     <div style="background-image:url('images/img_05.jpg'); background-size:cover; background-position:center; position:relative;">
@@ -1171,27 +1310,6 @@ function changeLogo(){
         <li>Pensió no contributiva i complements a mínims</li>
         <li>Coordinació amb serveis socials i entitats del territori</li>
       </ul>
-    </div>
-  </div>
-
-  <!-- Banner soledat no volguda -->
-  <div style="margin-top:24px;background:var(--forest);padding:24px 32px;display:flex;align-items:center;gap:24px;flex-wrap:wrap;">
-    <div style="flex:1;min-width:220px;">
-      <div style="font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--green-light);opacity:.8;margin-bottom:8px;">Dades · Catalunya 2024</div>
-      <div style="display:flex;gap:32px;flex-wrap:wrap;">
-        <div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:30px;color:#fff;font-weight:300;line-height:1;">342.000</div>
-          <div style="font-size:11px;color:rgba(255,255,255,0.55);margin-top:3px;">persones +65 anys vivint soles</div>
-        </div>
-        <div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:30px;color:#fff;font-weight:300;line-height:1;">49,2%</div>
-          <div style="font-size:11px;color:rgba(255,255,255,0.55);margin-top:3px;">de les persones soles a Catalunya son majors de 65</div>
-        </div>
-        <div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:30px;color:var(--green-light);font-weight:300;line-height:1;">245.700</div>
-          <div style="font-size:11px;color:rgba(255,255,255,0.55);margin-top:3px;">dones majors de 65 anys en situació de soledat</div>
-        </div>
-      </div>
     </div>
   </div>
 
