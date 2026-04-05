@@ -230,8 +230,11 @@ div[style*="font-size:32px"]{font-size:22px !important;}
 /* Bloc emocional mòbil: padding i caixetes 2 col */
 .bloc-emocional-text{padding:28px 18px 36px !important;}
 .bloc-emocional div[style*="grid-template-columns:repeat(5,1fr)"]{grid-template-columns:1fr 1fr !important;}
-.gestalt-foto{display:none !important;}
-#inici div[style*="padding:48px 48px 56px 64px"]{padding:28px 18px 32px !important;}
+/* Gestalt mòbil: foto dalt amb altura fixa, text a sota */
+.gestalt-grid{grid-template-columns:1fr !important;min-height:auto !important;}
+.gestalt-text{padding:28px 18px 36px !important;}
+.gestalt-foto{height:240px !important;display:block !important;position:relative !important;}
+.gestalt-foto img{position:absolute !important;}
 /* Cards de serveis: padding inferior prou gran perquè el botó es vegi */
 #inici div[style*="padding-bottom:120px"]{padding-bottom:48px !important;}
 #inici div[style*="padding:32px 32px 48px"]{padding:24px 20px 40px !important;}
@@ -894,10 +897,10 @@ function changeLogo(){
 <div style="background:var(--cream);padding:0;margin-top:-1px;position:relative;overflow:hidden;">
 
   <!-- Layout: contingut esquerra + foto dreta cobrint tota l'alçada -->
-  <div style="display:grid;grid-template-columns:1fr 400px;min-height:600px;">
+  <div class="gestalt-grid" style="display:grid;grid-template-columns:1fr 400px;min-height:600px;">
 
     <!-- Columna esquerra: títol + descripció + targetes + botó -->
-    <div style="padding:48px 48px 56px 64px;display:flex;flex-direction:column;">
+    <div class="gestalt-text" style="padding:48px 48px 56px 64px;display:flex;flex-direction:column;">
 
       <div style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--green-mid);margin-bottom:10px;">Enfocament Terapèutic</div>
       <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(30px,3.5vw,48px);font-weight:300;color:var(--forest);line-height:1.1;margin-bottom:12px;">Especialistes en teràpia<br><em style="font-style:italic;color:var(--green-mid);">integrativa i Gestalt</em></h2>
