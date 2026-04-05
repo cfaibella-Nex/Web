@@ -216,6 +216,18 @@ div[style*="font-size:80px"]{
 div[style*="font-size:38px"]{font-size:26px !important;}
 div[style*="font-size:32px"]{font-size:22px !important;}
 
+/* ── INICI: desactivar sticky stack al mòbil ── */
+.stack-item{position:static !important;top:auto !important;z-index:auto !important;border-radius:0 !important;}
+#inici div[style*="padding:36px 64px 600px"]{padding:28px 18px 40px !important;}
+#inici div[style*="padding:64px 64px 100px"]{padding:28px 18px 36px !important;}
+#inici div[style*="min-height:600px"]{min-height:auto !important;grid-template-columns:1fr !important;}
+#inici div[style*="height:600px"]{height:280px !important;}
+#inici div[style*="height:260px"]{height:180px !important;}
+#inici div[style*="grid-template-columns:repeat(5,1fr)"]{grid-template-columns:1fr 1fr !important;}
+#inici div[style*="grid-template-columns:1fr 400px"]{grid-template-columns:1fr !important;}
+#inici div[style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr !important;}
+#inici div[style*="min-height:420px"]{min-height:auto !important;}
+
 /* Subnav lateral */
 #subnav-serveis a{padding-left:28px !important;}
 
@@ -1065,7 +1077,7 @@ function changeLogo(){
   <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-bottom:2px;">
 
     <div style="background:var(--forest);padding:32px 28px;text-align:center;">
-      <div style="font-family:'League Spartan',sans-serif;font-size:52px;font-weight:300;color:var(--green-light);line-height:1;margin-bottom:12px;">~20%</div>
+      <div style="font-family:'League Spartan',sans-serif;font-size:80px;font-weight:300;color:var(--green-light);line-height:1;margin-bottom:12px;">~20%</div>
       <div style="font-size:12px;color:rgba(255,255,255,0.72);line-height:1.65;">de la població catalana té 65 anys o més — un envelliment en acceleració constant <span style="color:rgba(255,255,255,0.35);">· Idescat 2025</span></div>
     </div>
 
@@ -1079,7 +1091,7 @@ function changeLogo(){
     </div>
 
     <div style="background:var(--forest);padding:32px 28px;text-align:center;">
-      <div style="font-family:'League Spartan',sans-serif;font-size:52px;font-weight:300;color:var(--green-light);line-height:1;margin-bottom:12px;">17,3%</div>
+      <div style="font-family:'League Spartan',sans-serif;font-size:80px;font-weight:300;color:var(--green-light);line-height:1;margin-bottom:12px;">17,3%</div>
       <div style="font-size:12px;color:rgba(255,255,255,0.72);line-height:1.65;">de les persones majors de 65 anys estan en risc de pobresa o exclusió social <span style="color:rgba(255,255,255,0.35);">· AROPE / Idescat 2025</span></div>
     </div>
 
@@ -1097,7 +1109,7 @@ function changeLogo(){
     </div>
 
     <div style="background:var(--forest);padding:32px 28px;text-align:center;">
-      <div style="font-family:'League Spartan',sans-serif;font-size:52px;font-weight:300;color:var(--green-light);line-height:1;margin-bottom:12px;">18,4%</div>
+      <div style="font-family:'League Spartan',sans-serif;font-size:80px;font-weight:300;color:var(--green-light);line-height:1;margin-bottom:12px;">18,4%</div>
       <div style="font-size:12px;color:rgba(255,255,255,0.72);line-height:1.65;">dels adults a Catalunya se senten sols — xifra que s'eleva al ~20% en majors de 75 anys <span style="color:rgba(255,255,255,0.35);">· ECV 2025</span></div>
     </div>
 
