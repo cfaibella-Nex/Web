@@ -227,7 +227,9 @@ div[style*="font-size:32px"]{font-size:22px !important;}
 #inici div[style*="grid-template-columns:1fr 400px"]{grid-template-columns:1fr !important;}
 #inici div[style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr !important;}
 #inici div[style*="min-height:420px"]{min-height:auto !important;}
-/* Gestalt: amagar foto lateral al mòbil */
+/* Bloc emocional mòbil: padding i caixetes 2 col */
+.bloc-emocional-text{padding:28px 18px 36px !important;}
+.bloc-emocional div[style*="grid-template-columns:repeat(5,1fr)"]{grid-template-columns:1fr 1fr !important;}
 .gestalt-foto{display:none !important;}
 #inici div[style*="padding:48px 48px 56px 64px"]{padding:28px 18px 32px !important;}
 /* Cards de serveis: padding inferior prou gran perquè el botó es vegi */
@@ -829,12 +831,12 @@ function changeLogo(){
 
 <!-- BLOC 3: DESTAQUEM - Acompanyament Emocional i Terapèutic -->
 <div class="stack-item">
-<div style="position:relative;overflow:hidden;background-image:url('images/img_14.jpg');background-size:cover;background-position:center;margin-top:-1px;">
+<div class="bloc-emocional" style="position:relative;overflow:hidden;background-image:url('images/img_14.jpg');background-size:cover;background-position:center;margin-top:-1px;">
 
   <!-- Part superior: text sobre degradat -->
-  <div style="position:relative;min-height:420px;display:flex;align-items:center;">
+  <div class="bloc-emocional-inner" style="position:relative;min-height:420px;display:flex;align-items:center;">
     <div style="position:absolute;inset:0;background:linear-gradient(to right, var(--green-pale) 40%, rgba(232,240,220,0.85) 60%, rgba(232,240,220,0) 100%);"></div>
-    <div style="position:relative;z-index:1;width:100%;padding:64px 64px 100px;">
+    <div class="bloc-emocional-text" style="position:relative;z-index:1;width:100%;padding:64px 64px 100px;">
       <div style="display:inline-flex;align-items:center;gap:8px;font-size:13px;letter-spacing:0.18em;text-transform:uppercase;color:var(--green-mid);border:1px solid rgba(106,142,78,0.5);padding:8px 16px;margin-bottom:24px;font-weight:500;">✦ Destaquem</div>
       <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(28px,3.5vw,44px);font-weight:300;color:var(--forest);line-height:1.1;margin-bottom:16px;">Acompanyament<br><em style="font-style:italic;color:var(--green-mid);">Emocional i Terapèutic</em></h2>
       <p style="font-size:14px;color:#4a5e46;line-height:1.85;margin-bottom:28px;max-width:560px;">Un espai de suport proper i empàtic per expressar, comprendre i regular emocions. Treballem amb diferents estils terapèutics —coaching, Gestalt, psicologia i altres enfocaments— adaptats a cada persona i moment vital.</p>
