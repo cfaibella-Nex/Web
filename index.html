@@ -6,7 +6,7 @@
 <title>NexSocial — Cooperativa d'Acompanyament Sociovital</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=League+Spartan:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--forest:#0f5c34;--forest-hero:#1e7d4f;--green-deep:#2d6b48;--green-mid:#0d7040;--green-light:#6dbf85;--green-pale:#e8f2ec;--cream:#f2f5f0;--white:#fdfcf9;--text:#0f2d1e;--text-muted:#4a6858;--sidebar-w:260px;--topbar-h:42px;--footer-h:auto;--T:.35s cubic-bezier(.4,0,.2,1)}
+:root{--forest:#2d6b48;--forest-hero:#d4e8d0;--green-deep:#2d6b48;--green-mid:#0d7040;--green-light:#6dbf85;--green-pale:#e8f2ec;--cream:#f2f5f0;--white:#fdfcf9;--text:#0f2d1e;--text-muted:#4a6858;--sidebar-w:260px;--topbar-h:42px;--footer-h:auto;--T:.35s cubic-bezier(.4,0,.2,1)}
 *{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth;overflow-x:clip;}
 body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text);min-height:100vh;}
 .sidebar{width:var(--sidebar-w);min-height:100vh;background:var(--forest);position:fixed;left:0;top:var(--topbar-h);display:flex;flex-direction:column;z-index:100;transition:transform var(--T)}
@@ -20,41 +20,41 @@ nav a:hover,nav a.active{color:rgba(220,225,215,.95);background:rgba(109,191,133
 nav a.active::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--green-light);border-radius:0 2px 2px 0}
 nav a svg{width:15px;height:15px;opacity:.6;flex-shrink:0;transition:opacity .2s}
 nav a:hover svg,nav a.active svg{opacity:1}
-.sidebar-footer{padding:14px 22px;border-top:1px solid rgba(109,191,133,.12);font-size:10.5px;color:rgba(109,191,133,.45);line-height:1.7}
-.sidebar-footer a{color:rgba(109,191,133,.65);text-decoration:none}
+.sidebar-footer{padding:14px 22px;border-top:1px solid rgba(255,255,255,.12);font-size:10.5px;color:rgba(255,255,255,.4);line-height:1.7}
+.sidebar-footer a{color:rgba(255,255,255,.6);text-decoration:none}
 .main{margin-left:var(--sidebar-w);min-height:100vh;margin-top:var(--topbar-h);background:var(--cream);}
 section{display:none;animation:fadeIn .4s ease;}
 section.active{display:block}
 @keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
 #inici{position:relative;background:var(--forest-hero)}
 .hero-img{position:absolute;inset:0;background-size:cover;background-position:center}
-.hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(30,125,79,.82) 0%,rgba(30,125,79,.48) 55%,rgba(13,112,64,.18) 100%)}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(212,232,208,.75) 0%,rgba(212,232,208,.5) 55%,rgba(212,232,208,.1) 100%)}
 .hero-content{position:relative;z-index:2;padding:80px 64px 60px;max-width:740px}
-.hero-tag{display:inline-flex;align-items:center;gap:8px;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--green-light);border:1px solid rgba(109,191,133,.3);padding:6px 14px;margin-bottom:28px}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--green-mid);border:1px solid rgba(13,112,64,.25);padding:6px 14px;margin-bottom:28px}
 .hero-tag img{width:18px;height:18px;object-fit:contain}
-.hero-title{font-family:'League Spartan',sans-serif;font-size:clamp(54px,7.5vw,98px);font-weight:500;color:var(--white);line-height:1;margin-bottom:10px;letter-spacing:-0.01em}
-.hero-title em{font-style:italic;color:var(--green-light)}
-.hero-sub{font-family:'DM Sans',sans-serif;font-size:clamp(15px,1.6vw,19px);font-weight:300;color:rgba(253,252,249,.8);margin-bottom:28px;letter-spacing:.02em}
-.hero-desc{font-size:14.5px;line-height:1.8;color:rgba(253,252,249,.78);max-width:500px;margin-bottom:40px}
+.hero-title{font-family:'League Spartan',sans-serif;font-size:clamp(54px,7.5vw,98px);font-weight:500;color:var(--text);line-height:1;margin-bottom:10px;letter-spacing:-0.01em}
+.hero-title em{font-style:italic;color:var(--green-mid)}
+.hero-sub{font-family:'DM Sans',sans-serif;font-size:clamp(15px,1.6vw,19px);font-weight:300;color:var(--text-muted);margin-bottom:28px;letter-spacing:.02em}
+.hero-desc{font-size:14.5px;line-height:1.8;color:var(--text-muted);max-width:500px;margin-bottom:40px}
 .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
-.btn-primary{background:var(--green-light);color:var(--forest);padding:14px 32px;border:none;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;text-decoration:none;display:inline-block;transition:all .3s;border-radius:40px;box-shadow:0 4px 20px rgba(109,191,133,0.3)}
-.btn-primary:hover{background:var(--white);transform:translateY(-3px);box-shadow:0 8px 28px rgba(109,191,133,0.4)}
+.btn-primary{background:var(--forest);color:var(--white);padding:14px 32px;border:none;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;text-decoration:none;display:inline-block;transition:all .3s;border-radius:40px;box-shadow:0 4px 20px rgba(109,191,133,0.3)}
+.btn-primary:hover{background:var(--green-mid);transform:translateY(-3px);box-shadow:0 8px 28px rgba(109,191,133,0.4)}
 .btn-outline{background:rgba(255,255,255,0.1);backdrop-filter:blur(8px);color:rgba(253,252,249,.9);padding:14px 32px;border:1px solid rgba(253,252,249,.3);font-family:'DM Sans',sans-serif;font-size:12px;font-weight:400;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;text-decoration:none;display:inline-block;transition:all .3s;border-radius:40px}
 .btn-outline:hover{background:rgba(255,255,255,0.18);border-color:var(--green-light);color:var(--green-light);transform:translateY(-3px)}
-.hero-stats{position:relative;z-index:1;display:flex;border-top:1px solid rgba(255,255,255,.1);background:rgba(30,125,79,.72);backdrop-filter:blur(8px);margin-bottom:8px;}
+.hero-stats{position:relative;z-index:1;display:flex;border-top:1px solid rgba(255,255,255,.1);background:rgba(194,221,191,.9);backdrop-filter:blur(8px);margin-bottom:8px;}
 .stat{flex:1;padding:26px 44px;border-right:1px solid rgba(255,255,255,.07);cursor:default;transition:all .25s;}
 .stat:last-child{border-right:none}
-.stat:hover{background:rgba(109,191,133,.1);}
-.stat:hover .stat-num,.stat:hover .stat-label{color:var(--green-light);}
-.stat-num{font-family:'Cormorant Garamond',serif;font-size:44px;font-weight:300;color:rgba(220,225,215,.7);line-height:1;margin-bottom:4px;transition:color .25s;}
-.stat-label{font-size:12px;color:rgba(220,225,215,.55);letter-spacing:.04em;transition:color .25s;}
+.stat:hover{background:rgba(13,112,64,.08);}
+.stat:hover .stat-num,.stat:hover .stat-label{color:var(--green-mid);}
+.stat-num{font-family:'Cormorant Garamond',serif;font-size:44px;font-weight:300;color:var(--text);line-height:1;margin-bottom:4px;transition:color .25s;}
+.stat-label{font-size:12px;color:var(--text-muted);letter-spacing:.04em;transition:color .25s;}
 .page-header{background:var(--forest-hero);padding:52px 64px 40px;position:relative;overflow:hidden}
 .page-header-bg{position:absolute;right:0;top:0;bottom:0;width:45%;background-size:cover;background-position:center;opacity:.55}
 .page-header::after{content:'';position:absolute;right:0;top:0;bottom:0;width:45%;background:linear-gradient(to right,var(--forest-hero) 0%,transparent 40%)}
-.page-header-tag{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--green-light);margin-bottom:12px;display:block;position:relative;z-index:1}
-.page-header h1{font-family:'Cormorant Garamond',serif;font-size:clamp(30px,4vw,48px);font-weight:300;color:var(--white);line-height:1.1;position:relative;z-index:1}
-.page-header h1 em{font-style:italic;color:var(--green-light)}
-.page-header p{margin-top:12px;font-size:14px;color:rgba(253,252,249,.52);max-width:460px;line-height:1.7;position:relative;z-index:1}
+.page-header-tag{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--green-mid);margin-bottom:12px;display:block;position:relative;z-index:1}
+.page-header h1{font-family:'Cormorant Garamond',serif;font-size:clamp(30px,4vw,48px);font-weight:300;color:var(--text);line-height:1.1;position:relative;z-index:1}
+.page-header h1 em{font-style:italic;color:var(--green-mid)}
+.page-header p{margin-top:12px;font-size:14px;color:var(--text-muted);max-width:460px;line-height:1.7;position:relative;z-index:1}
 .content{padding:52px 64px;background:var(--cream)}
 .content-alt{padding:52px 64px;background:var(--white)}
 .section-title{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:300;color:var(--forest);line-height:1.2;margin-bottom:6px}
@@ -93,10 +93,10 @@ section.active{display:block}
 .servei-list li::before{content:'→';position:absolute;left:0;color:var(--green-mid);font-size:11px}
 .diagnostic-hero{position:relative;overflow:hidden;min-height:280px;display:flex;align-items:center}
 .diagnostic-hero-img{position:absolute;inset:0;background-size:cover;background-position:center}
-.diagnostic-hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(18,32,41,.75) 0%,rgba(18,32,41,.45) 60%,rgba(106,142,78,.2) 100%)}
+.diagnostic-hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(212,232,208,.8) 0%,rgba(212,232,208,.5) 60%,rgba(212,232,208,.1) 100%)}
 .diagnostic-hero-content{position:relative;z-index:2;padding:48px 64px;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;width:100%}
-.diagnostic-hero h2{font-family:'Cormorant Garamond',serif;font-size:38px;font-weight:300;color:var(--white);line-height:1.15}
-.diagnostic-hero h2 em{font-style:italic;color:var(--green-light)}
+.diagnostic-hero h2{font-family:'Cormorant Garamond',serif;font-size:38px;font-weight:300;color:var(--text);line-height:1.15}
+.diagnostic-hero h2 em{font-style:italic;color:var(--green-mid)}
 .form-container{padding:48px 64px;background:var(--cream)}
 .form-wrapper{max-width:620px;background:var(--white);border:1px solid rgba(45,107,72,.12);padding:40px}
 .form-wrapper h3{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:400;color:var(--forest);margin-bottom:6px}
@@ -113,8 +113,8 @@ section.active{display:block}
 .value-item{flex:1;padding:26px 18px;border-right:1px solid rgba(109,191,133,.15);text-align:center}
 .value-item:last-child{border-right:none}
 .value-icon{font-size:21px;margin-bottom:7px}
-.value-item h4{font-family:'Cormorant Garamond',serif;font-size:17px;color:var(--green-light);margin-bottom:3px}
-.value-item p{font-size:11px;color:rgba(253,252,249,.42);line-height:1.5}
+.value-item h4{font-family:'Cormorant Garamond',serif;font-size:17px;color:var(--text);margin-bottom:3px}
+.value-item p{font-size:11px;color:var(--text-muted);line-height:1.5}
 .oferta{background:var(--white);border:1px solid rgba(45,107,72,.12);padding:26px 30px;margin-bottom:10px;display:flex;align-items:center;justify-content:space-between;gap:18px;transition:all .3s}
 .oferta:hover{border-color:var(--green-mid);transform:translateX(4px)}
 .oferta-info h3{font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:600;color:var(--forest);margin-bottom:4px}
@@ -125,17 +125,17 @@ section.active{display:block}
 .contact-info-bg{position:absolute;inset:0;background-size:cover;background-position:center bottom;opacity:0.25;filter:blur(2px);transform:scale(1.05)}.12}
 .contact-info h2{font-family:'Cormorant Garamond',serif;font-size:42px;font-weight:600;color:var(--white);margin-bottom:5px;position:relative;z-index:1;text-shadow:0 2px 20px rgba(0,0,0,0.8),0 0 40px rgba(0,0,0,0.6)}
 .contact-info h2 em{font-style:italic;color:var(--green-light)}
-.contact-info>p{font-size:13px;color:rgba(253,252,249,.48);line-height:1.7;margin-bottom:36px;position:relative;z-index:1}
+.contact-info>p{font-size:13px;color:rgba(255,255,255,.72);line-height:1.7;margin-bottom:36px;position:relative;z-index:1}
 .contact-item{margin-bottom:24px;position:relative;z-index:1}
-.contact-item-label{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--green-light);margin-bottom:4px;opacity:.7}
-.contact-item-val{font-size:14px;color:var(--white);font-weight:300}
-.contact-item-val a{color:var(--white);text-decoration:none;border-bottom:1px solid rgba(109,191,133,.22);transition:border-color .2s}
+.contact-item-label{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--green-light);margin-bottom:4px;opacity:1}
+.contact-item-val{font-size:14px;color:rgba(255,255,255,.92);font-weight:300}
+.contact-item-val a{color:rgba(255,255,255,.92);text-decoration:none;border-bottom:1px solid rgba(109,191,133,.4);transition:border-color .2s}
 .contact-item-val a:hover{border-color:var(--green-light)}
 .contact-form{background:var(--cream);padding:48px 40px}
 .contact-form h3{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:400;color:var(--forest);margin-bottom:24px}
 .contact-logo{display:flex;align-items:center;gap:10px;margin-bottom:28px;position:relative;z-index:1}
 .contact-logo img{width:34px;height:34px;object-fit:contain;opacity:.8}
-.contact-logo span{font-family:'Cormorant Garamond',serif;font-size:15px;color:rgba(253,252,249,.55);letter-spacing:.04em}
+.contact-logo span{font-family:'Cormorant Garamond',serif;font-size:15px;color:rgba(255,255,255,.65);letter-spacing:.04em}
 .mobile-toggle{display:none;position:fixed;top:12px;left:12px;z-index:200;background:var(--forest);border:none;color:var(--white);width:40px;height:40px;cursor:pointer;flex-direction:column;align-items:center;justify-content:center;gap:5px}
 .mobile-toggle span{display:block;width:20px;height:2px;background:var(--white)}
 .overlay{display:none;position:fixed;inset:0;background:rgba(14,30,22,.6);z-index:99}
@@ -289,7 +289,7 @@ div[style*="font-size:32px"]{font-size:22px !important;}
 .topbar-left{display:flex;align-items:center;gap:20px}
 .topbar-logo-wrap{display:flex;align-items:center;gap:8px}
 .topbar-logo-wrap img{height:24px;width:auto;object-fit:contain}
-.topbar-brand{font-family:'Cormorant Garamond',serif;font-size:16px;font-weight:400;color:#f2f5f0;letter-spacing:0.04em}
+.topbar-brand{font-family:'Cormorant Garamond',serif;font-size:16px;font-weight:400;color:rgba(255,255,255,.92);letter-spacing:0.04em}
 .topbar-tagline{font-size:11px;color:rgba(253,252,249,.85);letter-spacing:0.05em;display:block}
 .topbar-right{display:flex;align-items:center;gap:8px}
 .topbar-btn{display:flex;align-items:center;gap:5px;padding:5px 11px;border:1px solid rgba(109,191,133,.2);color:rgba(253,252,249,.85);font-size:11px;text-decoration:none;letter-spacing:0.05em;transition:all .2s;cursor:pointer;background:transparent;white-space:nowrap}
@@ -774,7 +774,7 @@ function changeLogo(){
     <div class="hero-tag" style="display:none"><img src="images/img_03.png" alt="">Cooperativa d'Acompanyament Sociovital</div>
     <h1 class="hero-title" style="font-family:'Cormorant Garamond',serif;font-weight:300;letter-spacing:0.02em;">Al servei de<br><em style="font-style:italic;">les persones</em></h1>
     <p class="hero-sub" id="hero-sub">Acompanyament · Gestió · Transformació</p>
-    <p class="hero-desc" id="hero-desc"><span style="font-family:'Cormorant Garamond',serif;font-size:1.15em;">Nex<em style="color:var(--green-light);">Social</em></span> és una cooperativa que neix amb la voluntat de ser un nexe de suport i acompanyament global. Treballem per a la comunitat i per a les persones que necessiten suport en algun moment del seu cicle vital.</p>
+    <p class="hero-desc" id="hero-desc"><span style="font-family:'Cormorant Garamond',serif;font-size:1.15em;">Nex<em style="color:var(--green-mid);">Social</em></span> és una cooperativa que neix amb la voluntat de ser un nexe de suport i acompanyament global. Treballem per a la comunitat i per a les persones que necessiten suport en algun moment del seu cicle vital.</p>
     <div class="hero-cta">
       <a class="btn-primary" onclick="showSection('serveis',document.querySelectorAll('nav a')[2])">Els nostres serveis</a>
       <a class="btn-outline" onclick="showSection('consulta',document.querySelectorAll('nav a')[2])">Consulta el teu cas →</a>
@@ -841,7 +841,7 @@ function changeLogo(){
           <li style="font-size:12.5px;color:#4a6858;padding:8px 0;display:flex;gap:10px;align-items:center;"><span style="color:var(--green-mid);font-size:14px;">—</span> Mediació i assessorament jurídic social</li>
         </ul>
         <div style="margin-top:28px;">
-          <a onclick="showSection('nexgestio',null)" style="display:inline-flex;align-items:center;gap:8px;padding:12px 24px;background:var(--forest);color:var(--green-light);font-family:'DM Sans',sans-serif;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;border-radius:40px;transition:all .25s;box-shadow:0 4px 16px rgba(15,92,52,0.2);" onmouseover="this.style.background='var(--green-mid)';this.style.color='#fff'" onmouseout="this.style.background='var(--forest)';this.style.color='var(--green-light)'">Descobrir més →</a>
+          <a onclick="showSection('nexgestio',null)" style="display:inline-flex;align-items:center;gap:8px;padding:12px 24px;background:var(--forest);color:var(--green-light);font-family:'DM Sans',sans-serif;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;border-radius:40px;transition:all .25s;box-shadow:0 4px 16px rgba(45,107,72,0.2);" onmouseover="this.style.background='var(--green-mid)';this.style.color='#fff'" onmouseout="this.style.background='var(--forest)';this.style.color='var(--green-light)'">Descobrir més →</a>
         </div>
       </div>
     </div>
@@ -1211,10 +1211,10 @@ function changeLogo(){
 .area-card-list { list-style:none; padding:0; margin:0 0 28px; }
 .area-card-list li { font-size:12px; color:#4a6858; padding:5px 0; border-bottom:1px solid rgba(45,107,72,0.1); display:flex; align-items:center; gap:8px; }
 .area-card-list li::before { content:""; width:5px; height:5px; border-radius:50%; background:var(--green-mid); flex-shrink:0; }
-.area-btn { display:inline-flex; align-items:center; justify-content:center; background:var(--forest); color:var(--green-light); border:none; padding:13px 28px; font-family:"DM Sans",sans-serif; font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; cursor:pointer; transition:all .3s; text-align:center; border-radius:40px; box-shadow:0 4px 16px rgba(15,92,52,0.25); }
-.area-btn:hover { background:var(--green-mid); color:#fff; transform:translateY(-3px); box-shadow:0 8px 24px rgba(15,92,52,0.35); }
-.area-btn-outline { background:rgba(255,255,255,0.55); backdrop-filter:blur(8px); color:var(--forest); border:1px solid rgba(15,92,52,0.25); }
-.area-btn-outline:hover { background:var(--forest); color:var(--green-light); transform:translateY(-3px); box-shadow:0 8px 24px rgba(15,92,52,0.25); }
+.area-btn { display:inline-flex; align-items:center; justify-content:center; background:var(--forest); color:var(--green-light); border:none; padding:13px 28px; font-family:"DM Sans",sans-serif; font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; cursor:pointer; transition:all .3s; text-align:center; border-radius:40px; box-shadow:0 4px 16px rgba(45,107,72,0.25); }
+.area-btn:hover { background:var(--green-mid); color:#fff; transform:translateY(-3px); box-shadow:0 8px 24px rgba(45,107,72,0.35); }
+.area-btn-outline { background:rgba(255,255,255,0.55); backdrop-filter:blur(8px); color:var(--forest); border:1px solid rgba(45,107,72,0.25); }
+.area-btn-outline:hover { background:var(--forest); color:var(--green-light); transform:translateY(-3px); box-shadow:0 8px 24px rgba(45,107,72,0.25); }
 @media(max-width:768px){ .area-card { grid-template-columns:1fr; } .area-card-img { min-height:200px; } }
 </style>
 
@@ -1695,7 +1695,7 @@ function changeLogo(){
         <div style="font-size:12px;color:#4a6858;">La nostra eina pròpia detecta automàticament convocatòries obertes de la Generalitat, BDNS i DIBA cada dia.</div>
       </div>
     </div>
-    <button onclick="showSection('nexlicita',null)" style="background:var(--forest);border:none;color:var(--green-light);font-size:11px;letter-spacing:0.08em;text-transform:uppercase;padding:10px 24px;cursor:pointer;white-space:nowrap;border-radius:40px;box-shadow:0 4px 16px rgba(15,92,52,0.25);transition:all .3s;">Veure NexlicitIA →</button>
+    <button onclick="showSection('nexlicita',null)" style="background:var(--forest);border:none;color:var(--green-light);font-size:11px;letter-spacing:0.08em;text-transform:uppercase;padding:10px 24px;cursor:pointer;white-space:nowrap;border-radius:40px;box-shadow:0 4px 16px rgba(45,107,72,0.25);transition:all .3s;">Veure NexlicitIA →</button>
   </div>
 </div>
 
@@ -2326,7 +2326,7 @@ function changeLogo(){
     </div>
     <div class="form-group" style="margin-top:16px;"><label style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#4a6858;display:block;margin-bottom:6px;">Motivació *</label><textarea name="motivacio" required placeholder="Per què vols formar part de NexSocial?" rows="4" style="width:100%;padding:11px 14px;border:1px solid rgba(45,107,72,0.3);background:#fff;font-family:'DM Sans',sans-serif;font-size:13px;color:var(--forest);box-sizing:border-box;resize:vertical;"></textarea></div>
     <div id="treballar-ok" style="display:none;background:var(--green-pale);border:1px solid rgba(45,107,72,0.3);padding:14px 18px;margin-bottom:16px;font-size:13px;color:var(--forest);">✓ Candidatura enviada! Et contactarem aviat.</div>
-    <button type="submit" style="margin-top:20px;background:var(--forest);color:var(--green-light);border:none;padding:13px 32px;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;border-radius:40px;box-shadow:0 4px 16px rgba(15,92,52,0.25);transition:all .3s;">Enviar candidatura / proposta →</button>
+    <button type="submit" style="margin-top:20px;background:var(--forest);color:var(--green-light);border:none;padding:13px 32px;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;border-radius:40px;box-shadow:0 4px 16px rgba(45,107,72,0.25);transition:all .3s;">Enviar candidatura / proposta →</button>
   </form>
 </div>
 </section>
