@@ -6,7 +6,7 @@
 <title>NexSocial — Cooperativa d'Acompanyament Sociovital</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=League+Spartan:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--forest:#2d6b48;--forest-hero:#dff0db;--green-mid:#0d7040;--green-light:#6dbf85;--green-dark1:#a8cca5;--green-dark2:#8eba8b;--green-pale:#98be95;--cream:#d4e8d0;--card:#ffffff;--white:#f5f0e8;--text:#2a3d28;--text-muted:#4a6858;--sidebar-w:260px;--topbar-h:42px;--footer-h:auto;--T:.35s cubic-bezier(.4,0,.2,1)}
+:root{--forest:#2d6b48;--forest-hero:#dff0db;--green-mid:#3d8a62;--green-light:#6dbf85;--green-dark1:#a8cca5;--green-dark2:#8eba8b;--green-pale:#98be95;--cream:#d4e8d0;--card:#ffffff;--white:#f5f0e8;--text:#2a3d28;--text-muted:#4a6858;--sidebar-w:260px;--topbar-h:42px;--footer-h:auto;--T:.35s cubic-bezier(.4,0,.2,1)}
 *{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth;overflow-x:clip;}
 body{font-family:'DM Sans',sans-serif;background:#f5f0e8;color:var(--text);min-height:100vh;}
 .sidebar{width:var(--sidebar-w);min-height:100vh;background:var(--cream);position:fixed;left:0;top:var(--topbar-h);display:flex;flex-direction:column;z-index:100;transition:transform var(--T)}
@@ -37,8 +37,8 @@ section.active{display:block}
 .hero-sub{font-family:'DM Sans',sans-serif;font-size:clamp(15px,1.6vw,19px);font-weight:300;color:var(--text-muted);margin-bottom:28px;letter-spacing:.02em}
 .hero-desc{font-size:14.5px;line-height:1.8;color:var(--text-muted);max-width:500px;margin-bottom:40px}
 .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
-.btn-primary{background:var(--green-mid);color:#fff;padding:14px 32px;border:none;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;text-decoration:none;display:inline-block;transition:all .3s;border-radius:40px;box-shadow:0 6px 24px rgba(13,112,64,0.25)}
-.btn-primary:hover{background:#0a5c34;transform:translateY(-2px);box-shadow:0 8px 28px rgba(13,112,64,0.35)}
+.btn-primary{background:#2d6b48;color:#fff;padding:14px 32px;border:none;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;text-decoration:none;display:inline-block;transition:all .3s;border-radius:40px;box-shadow:0 6px 24px rgba(13,112,64,0.25)}
+.btn-primary:hover{background:#1e5a38;transform:translateY(-2px);box-shadow:0 8px 28px rgba(13,112,64,0.35)}
 .btn-outline{background:rgba(152,190,149,0.88);backdrop-filter:blur(8px);color:var(--forest);padding:14px 32px;border:1.5px solid rgba(45,107,72,0.4);font-family:'DM Sans',sans-serif;font-size:12px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;text-decoration:none;display:inline-block;transition:all .3s;border-radius:40px}
 .btn-outline:hover{background:rgba(45,107,72,0.22);border-color:var(--green-mid);color:var(--green-mid);transform:translateY(-3px)}
 .hero-stats{position:relative;z-index:1;display:flex;border-top:1px solid rgba(255,255,255,.1);background:rgba(194,221,191,.85);backdrop-filter:blur(8px);margin-bottom:8px;}
@@ -53,12 +53,12 @@ section.active{display:block}
 .page-header::after{content:'';position:absolute;right:0;top:0;bottom:0;width:45%;background:linear-gradient(to right,var(--forest-hero) 0%,transparent 40%)}
 .page-header-tag{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#0d7040;font-weight:600;margin-bottom:12px;display:block;position:relative;z-index:1}
 .page-header h1{font-family:'Cormorant Garamond',serif;font-size:clamp(30px,4vw,48px);font-weight:400;color:#0f2d1e;line-height:1.1;position:relative;z-index:1}
-.page-header h1 em{font-style:italic;color:#0d7040}
+.page-header h1 em{font-style:italic;color:#2d6b48}
 .page-header p{margin-top:12px;font-size:14px;color:var(--text-muted);max-width:640px;line-height:1.7;position:relative;z-index:1}
 .content{padding:52px 56px;background:#f5f0e8}
 .content-alt{padding:52px 64px;background:#f5f0e8}
 .section-title{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:400;color:#0f2d1e;line-height:1.2;margin-bottom:6px}
-.section-title em{font-style:italic;color:#0d7040;font-weight:400}
+.section-title em{font-style:italic;color:#2d6b48;font-weight:400}
 .section-lead{font-size:14px;color:var(--text-muted);line-height:1.7;max-width:720px}
 .divider{width:48px;height:2px;background:var(--green-mid);margin:16px 0 32px}
 .mv-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-top:32px}
@@ -351,7 +351,7 @@ div[style*="font-size:32px"]{font-size:22px !important;}
 .footer-top{grid-template-columns:1fr !important;}
 }
 
-.tsec-head{font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:#6dbf85;background:var(--forest);padding:7px 12px;margin:18px 0 12px;font-weight:600}
+.tsec-head{font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:#fff;background:#2d6b48;padding:7px 12px;margin:18px 0 12px;font-weight:600}
 .tfield{margin-bottom:12px}
 .tlabel{display:block;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:#2d6b48;margin-bottom:5px;font-weight:500}
 .tinput{width:100%;padding:10px 13px;border:1px solid rgba(45,107,72,0.2);background:#f5f0e8;font-family:'DM Sans',sans-serif;font-size:14px;color:#0f2d1e;outline:none;box-sizing:border-box}
@@ -459,6 +459,17 @@ nav a {
 
 
 img{max-width:100%;height:auto;}
+
+/* Em cursiva sobre fons verd → color fosc per contrast */
+[style*="background:#98be95"] em,
+[style*="background:var(--forest-hero)"] em,
+[style*="background:#dff0db"] em,
+[style*="background:#d4e8d0"] em {
+  color: #2d6b48 !important;
+}
+.page-header em { color: #2d6b48 !important; }
+.hero-title em { color: #2d6b48 !important; }
+
 </style>
 <script>
 function handleContactForm(e){
@@ -932,7 +943,7 @@ function changeLogo(){
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;padding-bottom:120px;align-items:stretch;">
 
     <!-- NexAcompanya -->
-    <div style="background:var(--forest);border-radius:2px;cursor:pointer;transition:transform .25s,box-shadow .25s;display:flex;flex-direction:column;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 20px 48px rgba(18,32,41,0.22)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'" onclick="showSection('nexacompanya',null)">
+    <div style="background:#98be95;border-radius:2px;cursor:pointer;transition:transform .25s,box-shadow .25s;display:flex;flex-direction:column;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 20px 48px rgba(18,32,41,0.22)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'" onclick="showSection('nexacompanya',null)">
       <div style="height:260px;background-image:url('images/img_09.jpg');background-size:cover;background-position:center;position:relative;flex-shrink:0;border-radius:2px 2px 0 0;overflow:hidden;">
         <div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(18,32,41,0.05),rgba(18,32,41,0.65));"></div>
         <div style="position:absolute;bottom:20px;left:24px;">
@@ -950,7 +961,7 @@ function changeLogo(){
           <li style="font-size:12.5px;color:rgba(253,252,249,0.6);padding:8px 0;display:flex;gap:10px;align-items:center;"><span style="color:var(--green-light);font-size:14px;">—</span> Tallers grupals i activitats comunitàries de barri</li>
         </ul>
         <div style="margin-top:28px;">
-          <a onclick="showSection('nexacompanya',null)" style="display:inline-flex;align-items:center;gap:8px;padding:12px 24px;background:#98be95;color:#0f2d1e;font-family:'DM Sans',sans-serif;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;border-radius:40px;transition:all .25s;box-shadow:0 4px 16px rgba(109,191,133,0.25);" onmouseover="this.style.background='var(--green-mid)';this.style.color='#fff'" onmouseout="this.style.background='#98be95';this.style.color='#0f2d1e'">Descobrir més →</a>
+          <a onclick="showSection('nexacompanya',null)" style="display:inline-flex;align-items:center;gap:8px;padding:12px 24px;background:#98be95;color:#2a3d28;font-family:'DM Sans',sans-serif;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;border-radius:40px;transition:all .25s;box-shadow:0 4px 16px rgba(109,191,133,0.25);" onmouseover="this.style.background='#2d6b48';this.style.color='#fff'" onmouseout="this.style.background='#98be95';this.style.color='#0f2d1e'">Descobrir més →</a>
         </div>
       </div>
     </div>
@@ -974,7 +985,7 @@ function changeLogo(){
           <li style="font-size:12.5px;color:#4a6858;padding:8px 0;display:flex;gap:10px;align-items:center;"><span style="color:var(--green-mid);font-size:14px;">—</span> Mediació i assessorament jurídic social</li>
         </ul>
         <div style="margin-top:28px;">
-          <a onclick="showSection('nexgestio',null)" style="display:inline-flex;align-items:center;gap:8px;padding:12px 24px;background:var(--forest);color:var(--green-light);font-family:'DM Sans',sans-serif;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;border-radius:40px;transition:all .25s;box-shadow:0 4px 16px rgba(45,107,72,0.2);" onmouseover="this.style.background='var(--green-mid)';this.style.color='#fff'" onmouseout="this.style.background='var(--forest)';this.style.color='var(--green-light)'">Descobrir més →</a>
+          <a onclick="showSection('nexgestio',null)" style="display:inline-flex;align-items:center;gap:8px;padding:12px 24px;background:var(--forest);color:var(--green-light);font-family:'DM Sans',sans-serif;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;border-radius:40px;transition:all .25s;box-shadow:0 4px 16px rgba(45,107,72,0.2);" onmouseover="this.style.background='#2d6b48';this.style.color='#fff'" onmouseout="this.style.background='var(--forest)';this.style.color='var(--green-light)'">Descobrir més →</a>
         </div>
       </div>
     </div>
@@ -1036,7 +1047,7 @@ function changeLogo(){
 
       </div>
 
-      <a onclick="showSection('nexacompanya',null)" style="display:inline-flex;align-items:center;gap:10px;padding:14px 28px;background:#98be95;color:#0f2d1e;font-family:'DM Sans',sans-serif;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;transition:all .25s;border-radius:40px;border:none;" onmouseover="this.style.background='var(--green-mid)';this.style.color='#fff'" onmouseout="this.style.background='#98be95';this.style.color='#0f2d1e'">Saber-ne més →</a>
+      <a onclick="showSection('nexacompanya',null)" style="display:inline-flex;align-items:center;gap:10px;padding:14px 28px;background:#98be95;color:#2a3d28;font-family:'DM Sans',sans-serif;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;transition:all .25s;border-radius:40px;border:none;" onmouseover="this.style.background='#2d6b48';this.style.color='#fff'" onmouseout="this.style.background='#98be95';this.style.color='#0f2d1e'">Saber-ne més →</a>
     </div>
   </div>
 
@@ -1112,7 +1123,7 @@ function changeLogo(){
 
       </div>
 
-      <a onclick="showSection('nexacompanya',null)" style="display:inline-flex;align-items:center;gap:10px;padding:12px 24px;background:#98be95;color:#0f2d1e;font-family:'DM Sans',sans-serif;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;transition:all .25s;border-radius:40px;border:none;align-self:flex-start;" onmouseover="this.style.background='var(--green-mid)';this.style.color='#fff'" onmouseout="this.style.background='#98be95';this.style.color='#0f2d1e'">Descobreix la teràpia Gestalt →</a>
+      <a onclick="showSection('nexacompanya',null)" style="display:inline-flex;align-items:center;gap:10px;padding:12px 24px;background:#98be95;color:#2a3d28;font-family:'DM Sans',sans-serif;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;transition:all .25s;border-radius:40px;border:none;align-self:flex-start;" onmouseover="this.style.background='#2d6b48';this.style.color='#fff'" onmouseout="this.style.background='#98be95';this.style.color='#0f2d1e'">Descobreix la teràpia Gestalt →</a>
 
     </div>
 
@@ -1180,18 +1191,18 @@ function changeLogo(){
   <div style="margin-bottom:32px;">
 
   <!-- Banner fosc únic introductori -->
-  <div style="background:var(--forest);padding:40px;margin-bottom:24px;">
-    <div style="font-size:9px;letter-spacing:0.22em;text-transform:uppercase;color:var(--green-light);opacity:.8;margin-bottom:14px;">Per què neix NexSocial · Salut Mental i Acompanyament Emocional</div>
-    <div style="font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:300;color:white;margin-bottom:12px;line-height:1.35;">Per què és necessària Nex<em style="font-style:italic;color:var(--green-light);">Social</em>, la cooperativa creada per acompanyar-te en el <em style="font-style:italic;color:var(--green-light);">camí de sanar</em></div>
-    <p style="font-size:13px;color:rgba(255,255,255,0.75);line-height:1.8;max-width:680px;margin:0;">La salut mental és un dels reptes socials més urgents del nostre temps. Malgrat la creixent conscienciació, l'accés a un acompanyament emocional de qualitat continua sent un privilegi. NexSocial neix per apropar aquest acompanyament a les persones que més ho necessiten, des de la proximitat, l'accessibilitat i el treball cooperatiu.</p>
+  <div style="background:#98be95;padding:40px;margin-bottom:24px;">
+    <div style="font-size:9px;letter-spacing:0.22em;text-transform:uppercase;color:var(--green-mid);opacity:1;margin-bottom:14px;">Per què neix NexSocial · Salut Mental i Acompanyament Emocional</div>
+    <div style="font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:300;color:#0f2d1e;margin-bottom:12px;line-height:1.35;">Per què és necessària Nex<em style="font-style:italic;color:var(--green-light);">Social</em>, la cooperativa creada per acompanyar-te en el <em style="font-style:italic;color:#2d6b48;">camí de sanar</em></div>
+    <p style="font-size:13px;color:#4a6858;line-height:1.8;max-width:680px;margin:0;">La salut mental és un dels reptes socials més urgents del nostre temps. Malgrat la creixent conscienciació, l'accés a un acompanyament emocional de qualitat continua sent un privilegi. NexSocial neix per apropar aquest acompanyament a les persones que més ho necessiten, des de la proximitat, l'accessibilitat i el treball cooperatiu.</p>
   </div>
 
     <!-- 6 caixes banner: xifres + col·lectius -->
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-bottom:2px;">
 
-      <div style="background:var(--forest);padding:32px 28px;text-align:center;">
-        <div style="font-family:'League Spartan',sans-serif;font-size:52px;font-weight:300;color:var(--green-light);line-height:1;margin-bottom:12px;">1 de cada 4</div>
-        <div style="font-size:12px;color:rgba(255,255,255,0.7);line-height:1.65;">persones patirà un trastorn mental al llarg de la seva vida <span style="color:rgba(255,255,255,0.4);">(OMS)</span></div>
+      <div style="background:#98be95;padding:32px 28px;text-align:center;">
+        <div style="font-family:'League Spartan',sans-serif;font-size:52px;font-weight:300;color:#2d6b48;line-height:1;margin-bottom:12px;">1 de cada 4</div>
+        <div style="font-size:12px;color:#4a6858;line-height:1.65;">persones patirà un trastorn mental al llarg de la seva vida <span style="color:#4a6858;opacity:.6">(OMS)</span></div>
       </div>
 
       <div style="background:#f0f9ed;padding:24px;">
@@ -1203,9 +1214,9 @@ function changeLogo(){
         </ul>
       </div>
 
-      <div style="background:var(--forest);padding:32px 28px;text-align:center;">
-        <div style="font-family:'League Spartan',sans-serif;font-size:80px;font-weight:300;color:var(--green-light);line-height:1;margin-bottom:12px;">70%</div>
-        <div style="font-size:12px;color:rgba(255,255,255,0.7);line-height:1.65;">de les persones amb necessitat de suport psicològic no arriben mai a un professional</div>
+      <div style="background:#98be95;padding:32px 28px;text-align:center;">
+        <div style="font-family:'League Spartan',sans-serif;font-size:80px;font-weight:300;color:#2d6b48;line-height:1;margin-bottom:12px;">70%</div>
+        <div style="font-size:12px;color:#4a6858;line-height:1.65;">de les persones amb necessitat de suport psicològic no arriben mai a un professional</div>
       </div>
 
     </div>
@@ -1221,9 +1232,9 @@ function changeLogo(){
         </ul>
       </div>
 
-      <div style="background:var(--forest);padding:32px 28px;text-align:center;">
-        <div style="font-family:'League Spartan',sans-serif;font-size:80px;font-weight:300;color:var(--green-light);line-height:1;margin-bottom:12px;">40%</div>
-        <div style="font-size:12px;color:rgba(255,255,255,0.7);line-height:1.65;">de les baixes laborals a Catalunya s'associen a causes emocionals o psicosocials</div>
+      <div style="background:#98be95;padding:32px 28px;text-align:center;">
+        <div style="font-family:'League Spartan',sans-serif;font-size:80px;font-weight:300;color:#2d6b48;line-height:1;margin-bottom:12px;">40%</div>
+        <div style="font-size:12px;color:#4a6858;line-height:1.65;">de les baixes laborals a Catalunya s'associen a causes emocionals o psicosocials</div>
       </div>
 
       <div style="background:#e8f5e4;padding:24px;">
@@ -1239,18 +1250,18 @@ function changeLogo(){
   </div>
 
   <!-- Títol + text Col·lectiu Senior -->
-  <div style="background:var(--forest);padding:40px;margin-top:2px;margin-bottom:2px;">
-    <div style="font-size:9px;letter-spacing:0.22em;text-transform:uppercase;color:var(--green-light);opacity:.8;margin-bottom:14px;">Per què neix NexSocial · Col·lectiu Senior</div>
-    <div style="font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:300;color:white;margin-bottom:12px;line-height:1.35;">La soledat no volguda és un risc real per a la salut. <em style="font-style:italic;color:var(--green-light);">A Catalunya, és una emergència silenciosa.</em></div>
-    <p style="font-size:13px;color:rgba(255,255,255,0.75);line-height:1.8;max-width:680px;margin:0;">L'envelliment accelerat, la feminització de la vellesa i el creixement dels llars unipersonals de persones majors de 65 anys configuren un escenari en el qual la cohesió social i el benestar comunitari requereixen respostes concretes i de proximitat. NexSocial neix, en part, per donar aquesta resposta.</p>
+  <div style="background:#98be95;padding:40px;margin-top:2px;margin-bottom:2px;">
+    <div style="font-size:9px;letter-spacing:0.22em;text-transform:uppercase;color:var(--green-mid);opacity:1;margin-bottom:14px;">Per què neix NexSocial · Col·lectiu Senior</div>
+    <div style="font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:300;color:#0f2d1e;margin-bottom:12px;line-height:1.35;">La soledat no volguda és un risc real per a la salut. <em style="font-style:italic;color:#2d6b48;">A Catalunya, és una emergència silenciosa.</em></div>
+    <p style="font-size:13px;color:#4a6858;line-height:1.8;max-width:680px;margin:0;">L'envelliment accelerat, la feminització de la vellesa i el creixement dels llars unipersonals de persones majors de 65 anys configuren un escenari en el qual la cohesió social i el benestar comunitari requereixen respostes concretes i de proximitat. NexSocial neix, en part, per donar aquesta resposta.</p>
   </div>
 
   <!-- Bloc dades: Col·lectiu Senior -->
   <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-bottom:2px;">
 
-    <div style="background:var(--forest);padding:32px 28px;text-align:center;">
-      <div style="font-family:'League Spartan',sans-serif;font-size:80px;font-weight:300;color:var(--green-light);line-height:1;margin-bottom:12px;">~20%</div>
-      <div style="font-size:12px;color:rgba(255,255,255,0.72);line-height:1.65;">de la població catalana té 65 anys o més — un envelliment en acceleració constant <span style="color:rgba(255,255,255,0.35);">· Idescat 2025</span></div>
+    <div style="background:#98be95;padding:32px 28px;text-align:center;">
+      <div style="font-family:'League Spartan',sans-serif;font-size:80px;font-weight:300;color:#2d6b48;line-height:1;margin-bottom:12px;">~20%</div>
+      <div style="font-size:12px;color:#4a6858;line-height:1.65;">de la població catalana té 65 anys o més — un envelliment en acceleració constant <span style="color:#4a6858;opacity:.6">· Idescat 2025</span></div>
     </div>
 
     <div style="background:#f5f0e8;padding:24px;">
@@ -1262,9 +1273,9 @@ function changeLogo(){
       </ul>
     </div>
 
-    <div style="background:var(--forest);padding:32px 28px;text-align:center;">
-      <div style="font-family:'League Spartan',sans-serif;font-size:80px;font-weight:300;color:var(--green-light);line-height:1;margin-bottom:12px;">17,3%</div>
-      <div style="font-size:12px;color:rgba(255,255,255,0.72);line-height:1.65;">de les persones majors de 65 anys estan en risc de pobresa o exclusió social <span style="color:rgba(255,255,255,0.35);">· AROPE / Idescat 2025</span></div>
+    <div style="background:#98be95;padding:32px 28px;text-align:center;">
+      <div style="font-family:'League Spartan',sans-serif;font-size:80px;font-weight:300;color:#2d6b48;line-height:1;margin-bottom:12px;">17,3%</div>
+      <div style="font-size:12px;color:#4a6858;line-height:1.65;">de les persones majors de 65 anys estan en risc de pobresa o exclusió social <span style="color:#4a6858;opacity:.6">· AROPE / Idescat 2025</span></div>
     </div>
 
   </div>
@@ -1280,9 +1291,9 @@ function changeLogo(){
       </ul>
     </div>
 
-    <div style="background:var(--forest);padding:32px 28px;text-align:center;">
-      <div style="font-family:'League Spartan',sans-serif;font-size:80px;font-weight:300;color:var(--green-light);line-height:1;margin-bottom:12px;">18,4%</div>
-      <div style="font-size:12px;color:rgba(255,255,255,0.72);line-height:1.65;">dels adults a Catalunya se senten sols — xifra que s'eleva al ~20% en majors de 75 anys <span style="color:rgba(255,255,255,0.35);">· ECV 2025</span></div>
+    <div style="background:#98be95;padding:32px 28px;text-align:center;">
+      <div style="font-family:'League Spartan',sans-serif;font-size:80px;font-weight:300;color:#2d6b48;line-height:1;margin-bottom:12px;">18,4%</div>
+      <div style="font-size:12px;color:#4a6858;line-height:1.65;">dels adults a Catalunya se senten sols — xifra que s'eleva al ~20% en majors de 75 anys <span style="color:#4a6858;opacity:.6">· ECV 2025</span></div>
     </div>
 
     <div style="background:#f5f0e8;padding:24px;">
@@ -1316,7 +1327,7 @@ function changeLogo(){
   </div>
 
   <!-- Cita final -->
-  <div style="margin-top:32px; padding:32px 40px; background:var(--forest); display:flex; align-items:center; gap:32px; flex-wrap:wrap;">
+  <div style="margin-top:32px; padding:32px 40px; background:#98be95; display:flex; align-items:center; gap:32px; flex-wrap:wrap;">
     <div style="font-family:'Cormorant Garamond',serif; font-size:22px; font-style:italic; font-weight:300; color:rgba(253,252,249,0.9); flex:1; min-width:260px; line-height:1.5;">"Treballem per a la comunitat i per a les persones que necessiten suport en algun moment del seu cicle vital."</div>
     <button onclick="showSection('serveis', document.querySelectorAll('nav a')[2])" style="background:var(--green-light); color:var(--forest); border:none; padding:14px 28px; font-family:'DM Sans',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; cursor:pointer; white-space:nowrap; flex-shrink:0; border-radius:40px; box-shadow:0 4px 16px rgba(109,191,133,0.3); transition:all .3s;">Descobreix els nostres serveis →</button>
   </div>
@@ -1344,7 +1355,7 @@ function changeLogo(){
 .area-card-list { list-style:none; padding:0; margin:0 0 28px; }
 .area-card-list li { font-size:12px; color:#4a6858; padding:5px 0; border-bottom:1px solid rgba(45,107,72,0.1); display:flex; align-items:center; gap:8px; }
 .area-card-list li::before { content:""; width:5px; height:5px; border-radius:50%; background:var(--green-mid); flex-shrink:0; }
-.area-btn { display:inline-flex; align-items:center; justify-content:center; background:var(--forest); color:var(--green-light); border:none; padding:13px 28px; font-family:"DM Sans",sans-serif; font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; cursor:pointer; transition:all .3s; text-align:center; border-radius:40px; box-shadow:0 4px 16px rgba(45,107,72,0.25); }
+.area-btn { display:inline-flex; align-items:center; justify-content:center; background:#2d6b48; color:#fff; border:none; padding:13px 28px; font-family:"DM Sans",sans-serif; font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; cursor:pointer; transition:all .3s; text-align:center; border-radius:40px; box-shadow:0 4px 16px rgba(45,107,72,0.25); }
 .area-btn:hover { background:var(--green-mid); color:#fff; transform:translateY(-3px); box-shadow:0 8px 24px rgba(45,107,72,0.35); }
 .area-btn-outline { background:rgba(255,255,255,0.55); backdrop-filter:blur(8px); color:var(--forest); border:1px solid rgba(45,107,72,0.25); }
 .area-btn-outline:hover { background:var(--forest); color:var(--green-light); transform:translateY(-3px); box-shadow:0 8px 24px rgba(45,107,72,0.25); }
@@ -1452,18 +1463,18 @@ function changeLogo(){
 .srv-block-desc { font-size:13px; color:#4a5e46; line-height:1.85; margin-bottom:24px; max-width:100%; }
 .srv-cols { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:16px; }
 .srv-col-box { background:#f5f0e8; border:1px solid rgba(45,107,72,0.15); padding:20px; }
-.srv-col-box-title { font-size:12px; font-weight:600; color:var(--forest); letter-spacing:0.06em; text-transform:uppercase; margin-bottom:10px; }
+.srv-col-box-title { font-size:12px; font-weight:600; color:#0f2d1e; letter-spacing:0.06em; text-transform:uppercase; margin-bottom:10px; }
 .srv-col-box ul { list-style:none; padding:0; margin:0; }
 .srv-col-box li { font-size:12px; color:#4a6858; padding:4px 0; border-bottom:1px solid rgba(45,107,72,0.08); display:flex; gap:8px; align-items:flex-start; }
 .srv-col-box li::before { content:"–"; color:var(--green-mid); flex-shrink:0; }
-.col-dark { background:var(--forest) !important; }
-.col-dark .srv-col-box-title { color:var(--green-light) !important; }
-.srv-col-box.col-dark { background:#2d6b48 !important; }
-.srv-col-box.col-dark .srv-col-box-title { color:var(--green-light) !important; }
-.srv-col-box.col-dark li { color:rgba(255,255,255,0.75) !important; border-bottom-color:rgba(255,255,255,0.1) !important; }
-.srv-col-box.col-dark li::before { color:var(--green-light) !important; }
-.col-dark li { color:rgba(255,255,255,0.8) !important; border-bottom-color:rgba(255,255,255,0.1) !important; }
-.col-dark li::before { color:var(--green-light) !important; }
+.col-dark { background:#98be95 !important; }
+.col-dark .srv-col-box-title { color:#0f2d1e !important; }
+.srv-col-box.col-dark { background:#98be95 !important; }
+.srv-col-box.col-dark .srv-col-box-title { color:#0f2d1e !important; }
+.srv-col-box.col-dark li { color:#4a6858 !important; border-bottom-color:rgba(45,107,72,0.15) !important; }
+.srv-col-box.col-dark li::before { color:#2d6b48 !important; }
+.col-dark li { color:#4a6858 !important; border-bottom-color:rgba(45,107,72,0.15) !important; }
+.col-dark li::before { color:#2d6b48 !important; }
 @media(max-width:768px){ .srv-detail-grid { grid-template-columns:1fr; } .srv-detail-nav { display:none; } }
 </style>
 
@@ -1515,7 +1526,7 @@ function changeLogo(){
   <!-- Nexe NexGestio + NexAcompanya emocional -->
   <div style="margin-top:2px;display:grid;grid-template-columns:1fr 1fr;gap:2px;">
     <div style="#f0f9ed;border:1px solid rgba(45,107,72,0.2);padding:18px 24px;display:flex;align-items:center;gap:14px;">
-      <div style="width:32px;height:32px;border-radius:50%;background:var(--forest);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+      <div style="width:32px;height:32px;border-radius:50%;background:#98be95;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="1.8"><path d="M9 12h6M9 16h6M17 21H7a2 2 0 01-2-2V5a2 2 0 012-2h7l5 5v11a2 2 0 01-2 2z"/></svg>
       </div>
       <div style="flex:1;">
@@ -1525,7 +1536,7 @@ function changeLogo(){
       <button onclick="showSection('nexgestio',null)" style="background:var(--forest);border:none;color:var(--green-light);font-size:10px;letter-spacing:0.06em;text-transform:uppercase;padding:8px 16px;cursor:pointer;white-space:nowrap;border-radius:40px;transition:all .3s;">Veure →</button>
     </div>
     <div style="#f0f9ed;border:1px solid rgba(45,107,72,0.2);padding:18px 24px;display:flex;align-items:center;gap:14px;">
-      <div style="width:32px;height:32px;border-radius:50%;background:var(--forest);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+      <div style="width:32px;height:32px;border-radius:50%;background:#98be95;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
       </div>
       <div style="flex:1;">
@@ -1679,7 +1690,7 @@ function changeLogo(){
   </div>
 
   <!-- Banner retirs -->
-  <div style="background:var(--forest);padding:28px 44px;margin-bottom:0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;">
+  <div style="background:#98be95;padding:28px 44px;margin-bottom:0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;">
     <div>
       <div style="font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--green-light);margin-bottom:8px;">Una experiència diferent</div>
       <div style="font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:300;color:var(--white);line-height:1.2;">Desconnecta del soroll. <em style="font-style:italic;color:var(--green-light);">Reconnecta amb tu.</em></div>
@@ -1692,9 +1703,9 @@ function changeLogo(){
     <div style="position:absolute;inset:0;background-image:url('images/img_17.jpg');background-size:cover;background-position:center 65%;"></div>
     <div style="position:absolute;inset:0;background:linear-gradient(to right, rgba(20,40,20,0.75) 0%, rgba(20,40,20,0.4) 55%, transparent 100%);"></div>
     <div style="position:relative;padding:40px 44px;height:100%;display:flex;flex-direction:column;justify-content:center;max-width:480px;">
-      <div style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.7);margin-bottom:10px;">Retirs &middot; Creixement Personal</div>
-      <div style="font-family:'Cormorant Garamond',serif;font-size:28px;color:white;margin-bottom:16px;line-height:1.2;">Retirs de 2-3 dies en contacte amb la natura</div>
-      <p style="font-size:13px;color:rgba(255,255,255,0.88);line-height:1.75;margin:0;">Sessions d'adonar-se, pres&egrave;ncia, meditaci&oacute; i aprenentatge de t&egrave;cniques de connexi&oacute; amb l'aqu&iacute; i ara. Un espai per desconnectar i reconnectar amb un mateix.</p>
+      <div style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:#4a6858;margin-bottom:10px;">Retirs &middot; Creixement Personal</div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:28px;color:#0f2d1e;margin-bottom:16px;line-height:1.2;">Retirs de 2-3 dies en contacte amb la natura</div>
+      <p style="font-size:13px;color:#4a6858;line-height:1.75;margin:0;">Sessions d'adonar-se, pres&egrave;ncia, meditaci&oacute; i aprenentatge de t&egrave;cniques de connexi&oacute; amb l'aqu&iacute; i ara. Un espai per desconnectar i reconnectar amb un mateix.</p>
     </div>
   </div>
 
@@ -1772,11 +1783,11 @@ function changeLogo(){
   <div class="srv-block-title">Detecció, Informació i <em style="font-style:italic;color:var(--green-mid);">Gestió d'Ajudes Vigents</em></div>
 
   <!-- Banner fosc principal -->
-  <div style="background:var(--forest);padding:36px 40px;margin-bottom:16px;">
+  <div style="background:#98be95;padding:36px 40px;margin-bottom:16px;">
     <div style="display:flex;align-items:flex-start;gap:20px;margin-bottom:20px;">
       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--green-light)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:4px;"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
       <div>
-        <p style="font-size:13px;color:rgba(255,255,255,0.82);line-height:1.8;max-width:640px;margin:0;">Estem al dia de totes les convocatòries obertes. Et detectem si et pots acollir a alguna ajuda, t'informem de les condicions i, si és el teu cas, ho gestionem íntegrament en el teu nom fins a la resolució. Un servei clau per a persones que no saben que existeixen ajudes o no tenen temps ni eines per tramitar-les.</p>
+        <p style="font-size:13px;color:#4a6858;line-height:1.8;max-width:640px;margin:0;">Estem al dia de totes les convocatòries obertes. Et detectem si et pots acollir a alguna ajuda, t'informem de les condicions i, si és el teu cas, ho gestionem íntegrament en el teu nom fins a la resolució. Un servei clau per a persones que no saben que existeixen ajudes o no tenen temps ni eines per tramitar-les.</p>
       </div>
     </div>
     <div style="display:flex;gap:8px;flex-wrap:wrap;">
@@ -1795,14 +1806,14 @@ function changeLogo(){
       <div style="margin-bottom:14px;">
         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--green-mid)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" style="display:block;margin:0 auto;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="13" y2="17"/></svg>
       </div>
-      <div style="font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--forest);margin-bottom:8px;line-height:1.3;">Ajudes de caire social</div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:15px;color:#0f2d1e;margin-bottom:8px;line-height:1.3;">Ajudes de caire social</div>
       <div style="font-size:11px;color:#4a6858;line-height:1.65;">Prestacions, dependència, IMV, RGC i tràmits de benestar social.</div>
     </div>
     <div style="background:#f0f9ed;border:1px solid rgba(45,107,72,0.15);padding:28px 22px;text-align:center;transition:box-shadow .2s;" onmouseover="this.style.boxShadow='0 8px 24px rgba(18,32,41,0.1)'" onmouseout="this.style.boxShadow='none'">
       <div style="margin-bottom:14px;">
         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--green-mid)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" style="display:block;margin:0 auto;"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
       </div>
-      <div style="font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--forest);margin-bottom:8px;line-height:1.3;">Ajudes d'habitatge</div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:15px;color:#0f2d1e;margin-bottom:8px;line-height:1.3;">Ajudes d'habitatge</div>
       <div style="font-size:11px;color:#4a6858;line-height:1.65;">Lloguer, borsa social, convocatòries obertes i accés a habitatge protegit.</div>
     </div>
     <div style="background:#f0f9ed;border:1px solid rgba(45,107,72,0.1);padding:28px 22px;text-align:center;transition:box-shadow .2s;" onmouseover="this.style.boxShadow='0 8px 24px rgba(18,32,41,0.1)'" onmouseout="this.style.boxShadow='none'">
@@ -1812,11 +1823,11 @@ function changeLogo(){
       <div style="font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--forest);margin-bottom:8px;line-height:1.3;">Tràmits migratoris</div>
       <div style="font-size:11px;color:#4a6858;line-height:1.65;">Arrelament, residència, reagrupament familiar i renovacions.</div>
     </div>
-    <div style="background:var(--forest);border:1px solid rgba(45,107,72,0.15);padding:28px 22px;text-align:center;transition:box-shadow .2s;" onmouseover="this.style.boxShadow='0 8px 24px rgba(18,32,41,0.1)'" onmouseout="this.style.boxShadow='none'">
+    <div style="background:#98be95;border:1px solid rgba(45,107,72,0.1);padding:28px 22px;text-align:center;transition:box-shadow .2s;" onmouseover="this.style.boxShadow='0 8px 24px rgba(18,32,41,0.1)'" onmouseout="this.style.boxShadow='none'">
       <div style="margin-bottom:14px;">
         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--green-light)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" style="display:block;margin:0 auto;"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
       </div>
-      <div style="font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--green-mid);margin-bottom:8px;line-height:1.3;">Suport en gestions del dia a dia</div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:15px;color:#0f2d1e;margin-bottom:8px;line-height:1.3;">Suport en gestions del dia a dia</div>
       <div style="font-size:11px;color:rgba(253,252,249,0.65);line-height:1.65;">Cuidadors, persones amb càrregues familiars, o qualsevol que necessiti ajuda per fer tràmits bàsics.</div>
     </div>
   </div>
@@ -1824,7 +1835,7 @@ function changeLogo(){
   <!-- CTA NexlicitIA -->
   <div style="margin-top:2px;background:rgba(30,125,79,0.06);border:1px solid rgba(45,107,72,0.18);padding:20px 28px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;">
     <div style="display:flex;align-items:center;gap:14px;">
-      <div style="width:34px;height:34px;border-radius:50%;background:var(--forest);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+      <div style="width:34px;height:34px;border-radius:50%;background:#98be95;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green-light)" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
       </div>
       <div>
@@ -1878,12 +1889,12 @@ function changeLogo(){
 </div>
 
 <!-- CTA -->
-<div style="background:var(--forest);padding:32px 36px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;">
+<div style="background:#98be95;padding:32px 36px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;">
   <div>
-    <div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:#fff;margin-bottom:6px;">Explica'ns el teu cas i mirem quines accions podem realitzar per donar-te suport o gestionar-ho íntegrament, amb traçabilitat i confiança.</div>
-    <div style="font-size:12px;color:rgba(255,255,255,0.75);">Primera orientació sense compromís.</div>
+    <div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:#0f2d1e;margin-bottom:6px;">Explica'ns el teu cas i mirem quines accions podem realitzar per donar-te suport o gestionar-ho íntegrament, amb traçabilitat i confiança.</div>
+    <div style="font-size:12px;color:#4a6858;">Primera orientació sense compromís.</div>
   </div>
-  <button onclick="showSection('contacte',null)" class="area-btn" style="background:#98be95;color:#0f2d1e;white-space:nowrap;">Contactar →</button>
+  <button onclick="showSection('contacte',null)" class="area-btn" style="background:#98be95;color:#2a3d28;white-space:nowrap;">Contactar →</button>
 </div>
 
 </div>
@@ -1953,16 +1964,16 @@ function changeLogo(){
 <div style="margin-top:48px;border-top:1px solid rgba(45,107,72,0.15);padding-top:36px;">
   <div style="font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--green-mid);margin-bottom:20px;">Eines per a entitats</div>
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
-    <div style="background:var(--forest);padding:28px;cursor:pointer;transition:transform .2s,box-shadow .2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 12px 32px rgba(18,32,41,0.2)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'" onclick="showSection('entitats-diagnostic',null)">
+    <div style="background:#98be95;padding:28px;cursor:pointer;transition:transform .2s,box-shadow .2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 12px 32px rgba(18,32,41,0.2)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'" onclick="showSection('entitats-diagnostic',null)">
       <div style="font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:var(--green-light);opacity:.7;margin-bottom:10px;">Eina gratuïta</div>
       <div style="font-family:'Cormorant Garamond',serif;font-size:22px;color:#fff;font-weight:300;margin-bottom:8px;">Diagnòstic d'Impacte Social</div>
-      <div style="font-size:12px;color:rgba(255,255,255,0.6);line-height:1.6;">Avalueu el vostre projecte en 10 preguntes i obteniu un pla d'acció personalitzat.</div>
+      <div style="font-size:12px;color:#4a6858;line-height:1.6;">Avalueu el vostre projecte en 10 preguntes i obteniu un pla d'acció personalitzat.</div>
       <div style="margin-top:16px;font-size:11px;color:var(--green-light);letter-spacing:0.08em;text-transform:uppercase;">Accedir →</div>
     </div>
     <div style="background:var(--green-mid);padding:28px;cursor:pointer;transition:transform .2s,box-shadow .2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 12px 32px rgba(18,32,41,0.2)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'" onclick="showSection('entitats-intel',null); nexCheckLogin()">
       <div style="font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:var(--green-pale);opacity:.7;margin-bottom:10px;">Eina membres · 🔒</div>
       <div style="font-family:'Cormorant Garamond',serif;font-size:22px;color:#fff;font-weight:300;margin-bottom:8px;">Nex<em>licit</em>IA</div>
-      <div style="font-size:12px;color:rgba(255,255,255,0.7);line-height:1.6;">Intel·ligència competitiva per a licitacions públiques del sector social.</div>
+      <div style="font-size:12px;color:#4a6858;line-height:1.6;">Intel·ligència competitiva per a licitacions públiques del sector social.</div>
       <div style="margin-top:16px;font-size:11px;color:var(--green-pale);letter-spacing:0.08em;text-transform:uppercase;">Accedir →</div>
     </div>
   </div>
@@ -2077,14 +2088,14 @@ function changeLogo(){
 <div id="diag-intro">
 
   <!-- Hero horitzontal -->
-  <div style="background:var(--forest);padding:48px 64px;margin-bottom:40px;display:flex;align-items:center;justify-content:space-between;gap:48px;flex-wrap:wrap;">
+  <div style="background:#98be95;padding:48px 64px;margin-bottom:40px;display:flex;align-items:center;justify-content:space-between;gap:48px;flex-wrap:wrap;">
     <div style="flex:1;min-width:300px;">
       <div style="font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--green-light);opacity:.7;margin-bottom:16px;">Eina gratuïta · Serveis Entitats</div>
       <div style="font-family:'Cormorant Garamond',serif;font-size:38px;font-weight:300;color:#fff;line-height:1.15;margin-bottom:16px;">Avalueu i Enfortiu<br><em style="color:var(--green-light);">els Vostres Projectes Socials</em></div>
-      <p style="font-size:14px;color:rgba(255,255,255,0.75);line-height:1.8;max-width:520px;">Una eina d'avaluació gratuïta per a ONG, cooperatives i institucions públiques per mesurar i millorar el seu impacte social. 10 preguntes, 5 minuts, pla d'acció personalitzat.</p>
+      <p style="font-size:14px;color:#4a6858;line-height:1.8;max-width:520px;">Una eina d'avaluació gratuïta per a ONG, cooperatives i institucions públiques per mesurar i millorar el seu impacte social. 10 preguntes, 5 minuts, pla d'acció personalitzat.</p>
     </div>
     <div style="flex-shrink:0;">
-      <button onclick="startDiag()" style="background:#98be95;color:#0f2d1e;border:none;padding:16px 36px;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;border-radius:40px;white-space:nowrap;">Comença l'Avaluació Gratuïta →</button>
+      <button onclick="startDiag()" style="background:#98be95;color:#2a3d28;border:none;padding:16px 36px;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;border-radius:40px;white-space:nowrap;">Comença l'Avaluació Gratuïta →</button>
     </div>
   </div>
 
@@ -2128,10 +2139,10 @@ function changeLogo(){
           <span style="border:1px solid rgba(45,107,72,0.4);padding:5px 14px;font-size:11.5px;color:var(--forest);border-radius:20px;">Empreses Socials</span>
         </div>
       </div>
-      <div style="background:var(--forest);padding:32px 28px;text-align:center;">
-        <div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:#fff;margin-bottom:8px;">Llest per començar?</div>
-        <p style="font-size:12px;color:rgba(255,255,255,0.65);margin-bottom:20px;line-height:1.6;">Gratuït, sense registre i en menys de 5 minuts.</p>
-        <button onclick="startDiag()" style="background:#98be95;color:#0f2d1e;border:none;padding:14px 32px;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;width:100%;border-radius:40px;box-shadow:0 4px 16px rgba(109,191,133,0.3);transition:all .3s;">Comença ara →</button>
+      <div style="background:#98be95;padding:32px 28px;text-align:center;">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:#0f2d1e;margin-bottom:8px;">Llest per começar?</div>
+        <p style="font-size:12px;color:#4a6858;margin-bottom:20px;line-height:1.6;">Gratuït, sense registre i en menys de 5 minuts.</p>
+        <button onclick="startDiag()" style="background:#98be95;color:#2a3d28;border:none;padding:14px 32px;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;width:100%;border-radius:40px;box-shadow:0 4px 16px rgba(109,191,133,0.3);transition:all .3s;">Comença ara →</button>
       </div>
     </div>
 
@@ -2181,7 +2192,7 @@ function changeLogo(){
   <button id="diag-next" onclick="diagNav(1)" disabled style="background:var(--forest);color:var(--green-light);border:none;padding:11px 28px;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;opacity:0.4;transition:opacity .2s;">Següent →</button>
 </div>
 </div>
-<div id="diag-results" style="display:none;"><div class="dres" id="dres-0" style="display:none;"><div class="dres-header" style="background:#e8a87c;color:#122029;"><div class="dres-label">Resultat del diagnòstic</div><div class="dres-title">Impacte Emergent</div><div class="dres-desc">El vostre projecte es troba en les fases inicials. Hi ha oportunitats significatives per enfortir les bases.</div></div><div class="dres-recs"><div class="drecs-title">Recomanacions personalitzades</div><ul><li>Feu una avaluació formal de necessitats comunitàries</li><li>Definiu objectius clars i mesurables</li><li>Identifiqueu i impliqueu almenys 3 agents clau del territori</li><li>Desenvolupeu un marc bàsic de seguiment dels resultats</li><li>Exploreu oportunitats de finançament diverses</li></ul></div><div class="dres-cta"><div><div class="dres-cta-t">Vols aprofundir en els resultats?</div><div class="dres-cta-s">NexSocial t'acompanya en el procés de millora.</div></div><button onclick="showSection('contacte',null)" class="btn-primary">Contactar NexSocial →</button></div><button onclick="resetDiag()" class="dres-reset">← Refer el diagnòstic</button></div><div class="dres" id="dres-1" style="display:none;"><div class="dres-header" style="background:#6dbf85;color:#122029;"><div class="dres-label">Resultat del diagnòstic</div><div class="dres-title">Impacte en Desenvolupament</div><div class="dres-desc">El vostre projecte té bases sòlides però podria beneficiar-se d'enfocaments més estructurats. Aneu pel bon camí.</div></div><div class="dres-recs"><div class="drecs-title">Recomanacions personalitzades</div><ul><li>Creeu una Teoria del Canvi per mapear el camí d'impacte</li><li>Establiu col·laboracions formals amb organitzacions complementàries</li><li>Implementeu mecanismes regulars de retroalimentació</li><li>Desenvolupeu una auditoria d'inclusió i accessibilitat</li><li>Elaboreu un pla de sostenibilitat amb fonts diversificades</li></ul></div><div class="dres-cta"><div><div class="dres-cta-t">Vols aprofundir en els resultats?</div><div class="dres-cta-s">NexSocial t'acompanya en el procés de millora.</div></div><button onclick="showSection('contacte',null)" class="btn-primary">Contactar NexSocial →</button></div><button onclick="resetDiag()" class="dres-reset">← Refer el diagnòstic</button></div><div class="dres" id="dres-2" style="display:none;"><div class="dres-header" style="background:#0d7040;color:#fff;"><div class="dres-label">Resultat del diagnòstic</div><div class="dres-title">Impacte Consolidat</div><div class="dres-desc">El vostre projecte demostra pràctiques sòlides. Teniu sistemes robustos i esteu marcant una diferència significativa.</div></div><div class="dres-recs"><div class="drecs-title">Recomanacions personalitzades</div><ul><li>Invertiu en metodologies rigoroses d'avaluació d'impacte</li><li>Documenteu el vostre model per a la seva possible replicació</li><li>Defenseu canvis en les polítiques basant-vos en evidències</li><li>Acompanyeu organitzacions emergents del vostre sector</li><li>Exploreu models de finançament innovadors</li></ul></div><div class="dres-cta"><div><div class="dres-cta-t">Vols aprofundir en els resultats?</div><div class="dres-cta-s">NexSocial t'acompanya en el procés de millora.</div></div><button onclick="showSection('contacte',null)" class="btn-primary">Contactar NexSocial →</button></div><button onclick="resetDiag()" class="dres-reset">← Refer el diagnòstic</button></div><div class="dres" id="dres-3" style="display:none;"><div class="dres-header" style="background:var(--forest);color:#fff;"><div class="dres-label">Resultat del diagnòstic</div><div class="dres-title">Impacte Líder</div><div class="dres-desc">El vostre projecte és un model d'excel·lència. Demostreu bones pràctiques en totes les dimensions.</div></div><div class="dres-recs"><div class="drecs-title">Recomanacions personalitzades</div><ul><li>Compartiu les vostres dades d'impacte públicament</li><li>Lidereu coalicions d'agents múltiples per al canvi sistèmic</li><li>Desenvolupeu una plataforma de compartició de coneixement</li><li>Busqueu col·laboracions internacionals per a la replicació</li><li>Considereu establir un laboratori d'innovació social</li></ul></div><div class="dres-cta"><div><div class="dres-cta-t">Vols aprofundir en els resultats?</div><div class="dres-cta-s">NexSocial t'acompanya en el procés de millora.</div></div><button onclick="showSection('contacte',null)" class="btn-primary">Contactar NexSocial →</button></div><button onclick="resetDiag()" class="dres-reset">← Refer el diagnòstic</button></div></div>
+<div id="diag-results" style="display:none;"><div class="dres" id="dres-0" style="display:none;"><div class="dres-header" style="background:#e8a87c;color:#122029;"><div class="dres-label">Resultat del diagnòstic</div><div class="dres-title">Impacte Emergent</div><div class="dres-desc">El vostre projecte es troba en les fases inicials. Hi ha oportunitats significatives per enfortir les bases.</div></div><div class="dres-recs"><div class="drecs-title">Recomanacions personalitzades</div><ul><li>Feu una avaluació formal de necessitats comunitàries</li><li>Definiu objectius clars i mesurables</li><li>Identifiqueu i impliqueu almenys 3 agents clau del territori</li><li>Desenvolupeu un marc bàsic de seguiment dels resultats</li><li>Exploreu oportunitats de finançament diverses</li></ul></div><div class="dres-cta"><div><div class="dres-cta-t">Vols aprofundir en els resultats?</div><div class="dres-cta-s">NexSocial t'acompanya en el procés de millora.</div></div><button onclick="showSection('contacte',null)" class="btn-primary">Contactar NexSocial →</button></div><button onclick="resetDiag()" class="dres-reset">← Refer el diagnòstic</button></div><div class="dres" id="dres-1" style="display:none;"><div class="dres-header" style="background:#6dbf85;color:#122029;"><div class="dres-label">Resultat del diagnòstic</div><div class="dres-title">Impacte en Desenvolupament</div><div class="dres-desc">El vostre projecte té bases sòlides però podria beneficiar-se d'enfocaments més estructurats. Aneu pel bon camí.</div></div><div class="dres-recs"><div class="drecs-title">Recomanacions personalitzades</div><ul><li>Creeu una Teoria del Canvi per mapear el camí d'impacte</li><li>Establiu col·laboracions formals amb organitzacions complementàries</li><li>Implementeu mecanismes regulars de retroalimentació</li><li>Desenvolupeu una auditoria d'inclusió i accessibilitat</li><li>Elaboreu un pla de sostenibilitat amb fonts diversificades</li></ul></div><div class="dres-cta"><div><div class="dres-cta-t">Vols aprofundir en els resultats?</div><div class="dres-cta-s">NexSocial t'acompanya en el procés de millora.</div></div><button onclick="showSection('contacte',null)" class="btn-primary">Contactar NexSocial →</button></div><button onclick="resetDiag()" class="dres-reset">← Refer el diagnòstic</button></div><div class="dres" id="dres-2" style="display:none;"><div class="dres-header" style="background:#98be95;color:#0f2d1e;"><div class="dres-label">Resultat del diagnòstic</div><div class="dres-title">Impacte Consolidat</div><div class="dres-desc">El vostre projecte demostra pràctiques sòlides. Teniu sistemes robustos i esteu marcant una diferència significativa.</div></div><div class="dres-recs"><div class="drecs-title">Recomanacions personalitzades</div><ul><li>Invertiu en metodologies rigoroses d'avaluació d'impacte</li><li>Documenteu el vostre model per a la seva possible replicació</li><li>Defenseu canvis en les polítiques basant-vos en evidències</li><li>Acompanyeu organitzacions emergents del vostre sector</li><li>Exploreu models de finançament innovadors</li></ul></div><div class="dres-cta"><div><div class="dres-cta-t">Vols aprofundir en els resultats?</div><div class="dres-cta-s">NexSocial t'acompanya en el procés de millora.</div></div><button onclick="showSection('contacte',null)" class="btn-primary">Contactar NexSocial →</button></div><button onclick="resetDiag()" class="dres-reset">← Refer el diagnòstic</button></div><div class="dres" id="dres-3" style="display:none;"><div class="dres-header" style="background:var(--forest);color:#fff;"><div class="dres-label">Resultat del diagnòstic</div><div class="dres-title">Impacte Líder</div><div class="dres-desc">El vostre projecte és un model d'excel·lència. Demostreu bones pràctiques en totes les dimensions.</div></div><div class="dres-recs"><div class="drecs-title">Recomanacions personalitzades</div><ul><li>Compartiu les vostres dades d'impacte públicament</li><li>Lidereu coalicions d'agents múltiples per al canvi sistèmic</li><li>Desenvolupeu una plataforma de compartició de coneixement</li><li>Busqueu col·laboracions internacionals per a la replicació</li><li>Considereu establir un laboratori d'innovació social</li></ul></div><div class="dres-cta"><div><div class="dres-cta-t">Vols aprofundir en els resultats?</div><div class="dres-cta-s">NexSocial t'acompanya en el procés de millora.</div></div><button onclick="showSection('contacte',null)" class="btn-primary">Contactar NexSocial →</button></div><button onclick="resetDiag()" class="dres-reset">← Refer el diagnòstic</button></div></div>
 </div>
 
 </div>
@@ -2237,11 +2248,11 @@ function changeLogo(){
       <div style="font-size:11px;color:#4a6858;line-height:1.6;">Ajudes de grans municipis classificades per perfil i accessible al client.</div>
     </div>
 
-    <div style="background:var(--forest);border:1px solid rgba(45,107,72,0.15);padding:24px 18px;text-align:center;">
+    <div style="background:#98be95;border:1px solid rgba(45,107,72,0.1);padding:24px 18px;text-align:center;">
       <div style="margin-bottom:12px;">
         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--green-light)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" style="display:block;margin:0 auto;"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
       </div>
-      <div style="font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--green-mid);margin-bottom:6px;">Perfil Client</div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:15px;color:#0f2d1e;margin-bottom:6px;">Perfil Client</div>
       <div style="font-size:11px;color:rgba(253,252,249,0.65);line-height:1.6;">Assistida per IA per identificar quines ajudes encaixen amb cada persona.</div>
     </div>
 
@@ -2251,42 +2262,42 @@ function changeLogo(){
   <div style="margin-bottom:32px;">
     <div style="font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--green-mid);margin-bottom:16px;">Com funciona · Pipeline automatitzat</div>
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2px;">
-      <div style="background:var(--forest);padding:22px 24px;">
+      <div style="background:#98be95;padding:22px 24px;">
         <div style="font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:var(--green-light);opacity:0.7;margin-bottom:8px;">① Lectura diària</div>
         <div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:#fff;margin-bottom:8px;line-height:1.3;">3 fonts, cada dia</div>
-        <div style="font-size:11.5px;color:rgba(255,255,255,0.65);line-height:1.65;">Gmail llegeix automàticament els correus de la Generalitat, BDNS i CIDO/DIBA i n'extreu les convocatòries.</div>
+        <div style="font-size:11.5px;color:#4a6858;line-height:1.65;">Gmail llegeix automàticament els correus de la Generalitat, BDNS i CIDO/DIBA i n'extreu les convocatòries.</div>
       </div>
-      <div style="background:var(--forest);padding:22px 24px;">
+      <div style="background:#98be95;padding:22px 24px;">
         <div style="font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:var(--green-light);opacity:0.7;margin-bottom:8px;">② Processament</div>
         <div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:#fff;margin-bottom:8px;line-height:1.3;">Classificació automàtica</div>
-        <div style="font-size:11.5px;color:rgba(255,255,255,0.65);line-height:1.65;">Les ajudes de grans municipis van al Catàleg. Les de municipis petits, a Pendents per revisió manual del tècnic.</div>
+        <div style="font-size:11.5px;color:#4a6858;line-height:1.65;">Les ajudes de grans municipis van al Catàleg. Les de municipis petits, a Pendents per revisió manual del tècnic.</div>
       </div>
       <div style="background:var(--green-mid);padding:22px 24px;">
         <div style="font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:#fff;opacity:0.75;margin-bottom:8px;">③ Base de dades</div>
         <div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:#fff;margin-bottom:8px;line-height:1.3;">Supabase · Temps real</div>
-        <div style="font-size:11.5px;color:rgba(255,255,255,0.8);line-height:1.65;">Tot queda registrat amb upsert intel·ligent, traçabilitat de canvis i alertes de termini pròxim.</div>
+        <div style="font-size:11.5px;color:#4a6858;line-height:1.65;">Tot queda registrat amb upsert intel·ligent, traçabilitat de canvis i alertes de termini pròxim.</div>
       </div>
     </div>
   </div>
 
   <!-- Fonts de dades -->
-  <div style="background:var(--forest);padding:24px 28px;margin-bottom:40px;display:flex;align-items:center;gap:32px;flex-wrap:wrap;">
-    <div style="font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:var(--green-light);opacity:.8;flex-shrink:0;">Fonts de dades</div>
+  <div style="background:#98be95;padding:24px 28px;margin-bottom:40px;display:flex;align-items:center;gap:32px;flex-wrap:wrap;">
+    <div style="font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:#2d6b48;opacity:1;flex-shrink:0;">Fonts de dades</div>
     <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;">
 
-      <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.07);border:1px solid rgba(109,191,133,0.2);padding:7px 14px;border-radius:4px;">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--green-light)" stroke-width="1.5" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-        <span style="font-size:11.5px;color:rgba(255,255,255,0.8);letter-spacing:0.03em;">Generalitat de Catalunya</span>
+      <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.5);border:1px solid rgba(45,107,72,0.2);padding:7px 14px;border-radius:4px;">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2d6b48" stroke-width="1.5" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        <span style="font-size:11.5px;color:#4a6858;letter-spacing:0.03em;">Generalitat de Catalunya</span>
       </div>
 
-      <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.07);border:1px solid rgba(109,191,133,0.2);padding:7px 14px;border-radius:4px;">
+      <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.5);border:1px solid rgba(45,107,72,0.2);padding:7px 14px;border-radius:4px;">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--green-light)" stroke-width="1.5" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-        <span style="font-size:11.5px;color:rgba(255,255,255,0.8);letter-spacing:0.03em;">BDNS · Ministeri d'Hisenda</span>
+        <span style="font-size:11.5px;color:#4a6858;letter-spacing:0.03em;">BDNS · Ministeri d'Hisenda</span>
       </div>
 
-      <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.07);border:1px solid rgba(109,191,133,0.2);padding:7px 14px;border-radius:4px;">
+      <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.5);border:1px solid rgba(45,107,72,0.2);padding:7px 14px;border-radius:4px;">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--green-light)" stroke-width="1.5" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
-        <span style="font-size:11.5px;color:rgba(255,255,255,0.8);letter-spacing:0.03em;">CIDO · DIBA</span>
+        <span style="font-size:11.5px;color:#4a6858;letter-spacing:0.03em;">CIDO · DIBA</span>
       </div>
 
       <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(109,191,133,0.12);border:1px solid rgba(109,191,133,0.35);padding:7px 14px;border-radius:4px;">
@@ -2363,10 +2374,10 @@ function changeLogo(){
         <p style="font-size:13px;color:#4a5e46;line-height:1.8;">Analitzem la teva situació i t'expliquem quin servei de <span style="font-family:'Cormorant Garamond',serif;font-size:1.15em;">Nex<em style="color:var(--green-mid);">Social</em></span> s'adapta millor al teu cas, amb tota la transparència i sense tecnicismes.</p>
       </div>
 
-      <div class="cas-card" style="background:#2d6b48 !important;padding:36px 32px;">
-        <div style="font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--green-light);margin-bottom:12px;">Pas 04</div>
-        <div class="cas-title" style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:400;color:#fff;margin-bottom:12px;">Proposta d'acompanyament</div>
-        <p style="font-size:13px;color:rgba(255,255,255,0.8);line-height:1.8;">Si hi ha encaix, et presentem una proposta concreta adaptada a les teves necessitats i possibilitats reals.</p>
+      <div class="cas-card" style="background:#98be95 !important;padding:36px 32px;">
+        <div style="font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:#2d6b48;margin-bottom:12px;">Pas 04</div>
+        <div class="cas-title" style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:400;color:#0f2d1e;margin-bottom:12px;">Proposta d'acompanyament</div>
+        <p style="font-size:13px;color:#4a6858;line-height:1.8;">Si hi ha encaix, et presentem una proposta concreta adaptada a les teves necessitats i possibilitats reals.</p>
       </div>
 
     </div>
@@ -2398,9 +2409,9 @@ function changeLogo(){
   <!-- Dreta: targeta info pràctica -->
   <div style="position:sticky;top:24px;">
     <div style="border:1px solid rgba(45,107,72,0.2);overflow:hidden;margin-bottom:16px;">
-      <div style="background:var(--forest);padding:24px 28px;">
-        <div style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--green-light);margin-bottom:10px;">Primera consulta</div>
-        <div style="font-family:'Cormorant Garamond',serif;font-size:28px;color:white;line-height:1.1;">Gratuïta<br><span style="font-size:16px;opacity:0.8;">i sense compromís</span></div>
+      <div style="background:#98be95;padding:24px 28px;">
+        <div style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:#2d6b48;margin-bottom:10px;">Primera consulta</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:28px;color:#0f2d1e;line-height:1.1;">Gratuïta<br><span style="font-size:16px;opacity:0.8;">i sense compromís</span></div>
       </div>
       <div style="padding:24px 28px;background:#f5f0e8;">
         <div style="display:flex;flex-direction:column;gap:16px;">
