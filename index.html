@@ -210,8 +210,6 @@ section.active{display:block}
   
   /* srv-cols */
   .srv-cols{grid-template-columns:1fr 1fr !important}
-  .gestalt-grid{grid-template-columns:1fr !important}
-  .gestalt-foto{height:260px !important}
 }
 
 @media(max-width:768px){
@@ -339,13 +337,6 @@ div[style*="font-size:32px"]{font-size:22px !important;}
 /* NexAcompanya / NexGestio: content padding */
 #nexacompanya .content,#nexgestio .content{padding:24px 18px 40px !important;}
 
-/* Gestalt mobile */
-.gestalt-wrap{overflow:visible !important;}
-.gestalt-grid{display:block !important;min-height:auto !important;overflow:visible !important;}
-.gestalt-foto{display:block !important;height:220px !important;position:relative !important;overflow:hidden !important;}
-.gestalt-foto img{position:absolute !important;inset:0 !important;width:100% !important;height:100% !important;object-fit:cover !important;object-position:top center !important;}
-.gestalt-text{display:block !important;padding:28px 18px 40px !important;min-height:auto !important;}
-.gestalt-text > div{flex:none !important;display:block !important;}
 
 /* Footer */
 .footer-top{grid-template-columns:1fr !important;}
@@ -513,7 +504,13 @@ img{max-width:100%;height:auto;}
   
   
 }
-@media(max-width:860px){}</style>
+@media(max-width:860px){}
+@media(max-width:600px){
+.gestalt-grid{display:block !important;grid-template-columns:1fr !important;min-height:auto !important;}
+.gestalt-foto{display:block !important;height:240px !important;position:relative !important;overflow:hidden !important;}
+.gestalt-foto img{position:absolute !important;inset:0 !important;width:100% !important;height:100% !important;object-fit:cover !important;object-position:top center !important;}
+.gestalt-text{display:block !important;padding:24px 18px 32px !important;}
+}</style>
 <script>
 function handleContactForm(e){
   e.preventDefault();
@@ -1165,82 +1162,83 @@ function changeLogo(){
   <div class="gestalt-grid" style="display:grid;grid-template-columns:1fr 400px;min-height:600px;">
 
     <!-- Columna esquerra: títol + descripció + targetes + botó -->
-    <div class="gestalt-text" style="padding:48px 48px 56px 64px;display:flex;flex-direction:column;">
+    <div class="gestalt-text" style="padding:36px 36px 40px 48px;display:flex;flex-direction:column;">
 
       <div style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--green-mid);margin-bottom:10px;">Enfocament Terapèutic</div>
       <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(30px,3.5vw,48px);font-weight:300;color:#0f2d1e;line-height:1.1;margin-bottom:12px;">Especialistes en teràpia<br><em style="font-style:italic;color:var(--green-mid);">integrativa i Gestalt</em></h2>
       <p style="font-size:14px;color:var(--text-muted);line-height:1.8;max-width:620px;margin-bottom:24px;">Un espai de presència i contacte on treballem des del moment present, reconnectant-te amb la teva experiència, les teves emocions i la teva capacitat de canvi.</p>
 
       <!-- 5 targetes -->
-      <div style="display:flex;flex-direction:column;gap:8px;flex:1;margin-bottom:28px;">
+      <div style="display:flex;flex-direction:column;gap:5px;margin-bottom:20px;max-width:480px;">
 
-        <div style="background:#f5f0e8;border:1px solid rgba(45,107,72,.12);border-radius:10px;padding:14px 18px;display:flex;gap:12px;align-items:flex-start;cursor:pointer;transition:all .22s;" onmouseover="this.style.background='#dff0db';this.style.borderColor='rgba(45,107,72,.3)';this.style.boxShadow='0 6px 20px rgba(45,107,72,0.12)';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f5f0e8';this.style.borderColor='rgba(45,107,72,.12)';this.style.boxShadow='none';this.style.transform='translateY(0)'">
-          <div style="width:32px;height:32px;flex-shrink:0;border-radius:50%;background:#e8f5e4;display:flex;align-items:center;justify-content:center;">
+        <div style="background:#f5f0e8;border:1px solid rgba(45,107,72,.12);border-radius:6px;padding:9px 12px;display:flex;gap:10px;align-items:flex-start;cursor:pointer;transition:all .22s;" onmouseover="this.style.background='#dff0db';this.style.borderColor='rgba(45,107,72,.3)';this.style.boxShadow='0 6px 20px rgba(45,107,72,0.12)';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f5f0e8';this.style.borderColor='rgba(45,107,72,.12)';this.style.boxShadow='none';this.style.transform='translateY(0)'">
+          <div style="width:22px;height:22px;flex-shrink:0;border-radius:50%;background:#e8f5e4;display:flex;align-items:center;justify-content:center;">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--green-mid)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
           </div>
           <div>
-            <div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--forest);margin-bottom:3px;">Consciència del present</div>
-            <p style="font-size:11.5px;color:#4a6858;line-height:1.6;margin:0;">Treballem l'aquí i l'ara: com et relaciones amb tu mateix i el teu entorn en cada moment.</p>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:14px;color:var(--forest);margin-bottom:2px;">Consciència del present</div>
+            <p style="font-size:11px;color:#4a6858;line-height:1.5;margin:0;">Treballem l'aquí i l'ara: com et relaciones amb tu mateix i el teu entorn en cada moment.</p>
           </div>
         </div>
 
-        <div style="background:#f5f0e8;border:1px solid rgba(45,107,72,.12);border-radius:10px;padding:14px 18px;display:flex;gap:12px;align-items:flex-start;cursor:pointer;transition:all .22s;" onmouseover="this.style.background='#dff0db';this.style.borderColor='rgba(45,107,72,.3)';this.style.boxShadow='0 6px 20px rgba(45,107,72,0.12)';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f5f0e8';this.style.borderColor='rgba(45,107,72,.12)';this.style.boxShadow='none';this.style.transform='translateY(0)'">
-          <div style="width:32px;height:32px;flex-shrink:0;border-radius:50%;background:#f0f9ed;display:flex;align-items:center;justify-content:center;">
+        <div style="background:#f5f0e8;border:1px solid rgba(45,107,72,.12);border-radius:6px;padding:9px 12px;display:flex;gap:10px;align-items:flex-start;cursor:pointer;transition:all .22s;" onmouseover="this.style.background='#dff0db';this.style.borderColor='rgba(45,107,72,.3)';this.style.boxShadow='0 6px 20px rgba(45,107,72,0.12)';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f5f0e8';this.style.borderColor='rgba(45,107,72,.12)';this.style.boxShadow='none';this.style.transform='translateY(0)'">
+          <div style="width:22px;height:22px;flex-shrink:0;border-radius:50%;background:#f0f9ed;display:flex;align-items:center;justify-content:center;">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--green-mid)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
           </div>
           <div>
-            <div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--forest);margin-bottom:3px;">Presa de consciència</div>
-            <p style="font-size:11.5px;color:#4a6858;line-height:1.6;margin:0;">Revisar experiències i pensaments ens permet reconèixer com els vivim i desenvolupar la intel·ligència emocional.</p>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:14px;color:var(--forest);margin-bottom:2px;">Presa de consciència</div>
+            <p style="font-size:11px;color:#4a6858;line-height:1.5;margin:0;">Revisar experiències i pensaments ens permet reconèixer com els vivim i desenvolupar la intel·ligència emocional.</p>
           </div>
         </div>
 
-        <div style="background:#f5f0e8;border:1px solid rgba(45,107,72,.12);border-radius:10px;padding:14px 18px;display:flex;gap:12px;align-items:flex-start;cursor:pointer;transition:all .22s;" onmouseover="this.style.background='#dff0db';this.style.borderColor='rgba(45,107,72,.3)';this.style.boxShadow='0 6px 20px rgba(45,107,72,0.12)';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f5f0e8';this.style.borderColor='rgba(45,107,72,.12)';this.style.boxShadow='none';this.style.transform='translateY(0)'">
-          <div style="width:32px;height:32px;flex-shrink:0;border-radius:50%;background:#e8f5e4;display:flex;align-items:center;justify-content:center;">
+        <div style="background:#f5f0e8;border:1px solid rgba(45,107,72,.12);border-radius:6px;padding:9px 12px;display:flex;gap:10px;align-items:flex-start;cursor:pointer;transition:all .22s;" onmouseover="this.style.background='#dff0db';this.style.borderColor='rgba(45,107,72,.3)';this.style.boxShadow='0 6px 20px rgba(45,107,72,0.12)';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f5f0e8';this.style.borderColor='rgba(45,107,72,.12)';this.style.boxShadow='none';this.style.transform='translateY(0)'">
+          <div style="width:22px;height:22px;flex-shrink:0;border-radius:50%;background:#e8f5e4;display:flex;align-items:center;justify-content:center;">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--green-mid)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c-4 0-7-3-7-7 0-2.5 1.5-5 4-6.5V5a3 3 0 016 0v3.5c2.5 1.5 4 4 4 6.5 0 4-3 7-7 7z"/></svg>
           </div>
           <div>
-            <div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--forest);margin-bottom:3px;">Responsabilitat i llibertat</div>
-            <p style="font-size:11.5px;color:#4a6858;line-height:1.6;margin:0;">Acceptar els sentiments suposa fer-se'n responsable per viure més lliurement.</p>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:14px;color:var(--forest);margin-bottom:2px;">Responsabilitat i llibertat</div>
+            <p style="font-size:11px;color:#4a6858;line-height:1.5;margin:0;">Acceptar els sentiments suposa fer-se'n responsable per viure més lliurement.</p>
           </div>
         </div>
 
-        <div style="background:#f5f0e8;border:1px solid rgba(45,107,72,.12);border-radius:10px;padding:14px 18px;display:flex;gap:12px;align-items:flex-start;cursor:pointer;transition:all .22s;" onmouseover="this.style.background='#dff0db';this.style.borderColor='rgba(45,107,72,.3)';this.style.boxShadow='0 6px 20px rgba(45,107,72,0.12)';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f5f0e8';this.style.borderColor='rgba(45,107,72,.12)';this.style.boxShadow='none';this.style.transform='translateY(0)'">
-          <div style="width:32px;height:32px;flex-shrink:0;border-radius:50%;background:#f0f9ed;display:flex;align-items:center;justify-content:center;">
+        <div style="background:#f5f0e8;border:1px solid rgba(45,107,72,.12);border-radius:6px;padding:9px 12px;display:flex;gap:10px;align-items:flex-start;cursor:pointer;transition:all .22s;" onmouseover="this.style.background='#dff0db';this.style.borderColor='rgba(45,107,72,.3)';this.style.boxShadow='0 6px 20px rgba(45,107,72,0.12)';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f5f0e8';this.style.borderColor='rgba(45,107,72,.12)';this.style.boxShadow='none';this.style.transform='translateY(0)'">
+          <div style="width:22px;height:22px;flex-shrink:0;border-radius:50%;background:#f0f9ed;display:flex;align-items:center;justify-content:center;">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--green-mid)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
           </div>
           <div>
-            <div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--forest);margin-bottom:3px;">Acceptació i autoestima</div>
-            <p style="font-size:11.5px;color:#4a6858;line-height:1.6;margin:0;">Acceptar emocions i conductes ens permet sentir-nos millor i enfortir l'autoestima.</p>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:14px;color:var(--forest);margin-bottom:2px;">Acceptació i autoestima</div>
+            <p style="font-size:11px;color:#4a6858;line-height:1.5;margin:0;">Acceptar emocions i conductes ens permet sentir-nos millor i enfortir l'autoestima.</p>
           </div>
         </div>
 
-        <div style="background:#f5f0e8;border:1px solid rgba(45,107,72,.12);border-radius:10px;padding:14px 18px;display:flex;gap:12px;align-items:flex-start;cursor:pointer;transition:all .22s;" onmouseover="this.style.background='#dff0db';this.style.borderColor='rgba(45,107,72,.3)';this.style.boxShadow='0 6px 20px rgba(45,107,72,0.12)';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f5f0e8';this.style.borderColor='rgba(45,107,72,.12)';this.style.boxShadow='none';this.style.transform='translateY(0)'">
-          <div style="width:32px;height:32px;flex-shrink:0;border-radius:50%;background:#e8f5e4;display:flex;align-items:center;justify-content:center;">
+        <div style="background:#f5f0e8;border:1px solid rgba(45,107,72,.12);border-radius:6px;padding:9px 12px;display:flex;gap:10px;align-items:flex-start;cursor:pointer;transition:all .22s;" onmouseover="this.style.background='#dff0db';this.style.borderColor='rgba(45,107,72,.3)';this.style.boxShadow='0 6px 20px rgba(45,107,72,0.12)';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f5f0e8';this.style.borderColor='rgba(45,107,72,.12)';this.style.boxShadow='none';this.style.transform='translateY(0)'">
+          <div style="width:22px;height:22px;flex-shrink:0;border-radius:50%;background:#e8f5e4;display:flex;align-items:center;justify-content:center;">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--green-mid)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
           </div>
           <div>
-            <div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--forest);margin-bottom:3px;">Relació terapèutica i diàleg</div>
-            <p style="font-size:11.5px;color:#4a6858;line-height:1.6;margin:0;">El vincle entre terapeuta i consultant és l'eina principal del canvi i l'autoconeixement.</p>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:14px;color:var(--forest);margin-bottom:2px;">Relació terapèutica i diàleg</div>
+            <p style="font-size:11px;color:#4a6858;line-height:1.5;margin:0;">El vincle entre terapeuta i consultant és l'eina principal del canvi i l'autoconeixement.</p>
           </div>
         </div>
 
       </div>
 
       <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;">
-  <a onclick="showSection('gestalt-sessions',null)" style="display:inline-flex;align-items:center;gap:10px;padding:12px 24px;background:#2d6b48;color:#fff;font-family:'DM Sans',sans-serif;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;transition:all .25s;border-radius:40px;border:none;" onmouseover="this.style.background='rgba(30,90,56,0.55)';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#2d6b48';this.style.transform='translateY(0)'">Sessions i preus · Agenda cita →</a>
+        <a onclick="showSection('gestalt-sessions',null)" style="display:inline-flex;align-items:center;gap:10px;padding:12px 24px;background:#2d6b48;color:#fff;font-family:'DM Sans',sans-serif;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;transition:all .25s;border-radius:40px;border:none;" onmouseover="this.style.background='rgba(30,90,56,0.55)';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#2d6b48';this.style.transform='translateY(0)'">Sessions i preus · Agenda cita →</a>
+      </div>
 
-    </div>
+    </div><!-- /gestalt-text -->
 
-    <!-- Foto torxa: background-image per garantir visibilitat -->
+    <!-- Foto torxa: columna dreta cobrint tota l'alçada -->
     <div class="gestalt-foto" style="position:relative;overflow:hidden;">
       <img src="images/img_33.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center;">
       <div style="position:absolute;inset:0;background:linear-gradient(to top, rgba(18,32,41,0.88) 0%, rgba(18,32,41,0.05) 50%);"></div>
       <div style="position:absolute;bottom:0;left:0;right:0;padding:28px 24px;">
         <p style="font-family:'Cormorant Garamond',serif;font-size:19px;font-style:italic;color:#ffffff;line-height:1.75;margin:0;">"Sabem que l'acompanyament és essencial al llarg del cicle vital i que les figures que fan aquest rol, al llarg de la nostra vida van canviant pero són persones que ens ajuden a sostenir la torxa que il·lumina el camí."</p>
       </div>
-    </div>
+    </div><!-- /gestalt-foto -->
 
-  </div>
+  </div><!-- /gestalt-grid -->
 
 </div>
 </div><!-- /stack-item 4 -->
@@ -1455,7 +1453,7 @@ function changeLogo(){
 
   <!-- FAQ -->
   <div style="position:relative;overflow:hidden;border-top:1px solid rgba(45,107,72,0.12);">
-    <div style="position:absolute;inset:0;background-image:url('images/img_38.png');background-size:cover;background-position:center 60%;opacity:0.08;"></div>
+    <div style="position:absolute;inset:0;background-image:url('images/img_38.png');background-size:contain;background-position:center center;background-repeat:no-repeat;opacity:0.18;"></div>
     <div style="position:relative;z-index:1;padding:40px 0 8px;">
       <div style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--green-mid);margin-bottom:6px;">Preguntes freqüents</div>
       <h3 style="font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:300;color:#0f2d1e;margin-bottom:28px;">Tot el que necessites <em style="font-style:italic;color:var(--green-mid);">saber</em></h3>
