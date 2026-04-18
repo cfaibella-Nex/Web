@@ -85,7 +85,7 @@ section.active{display:block}
 .servei-photo{background-size:cover;background-position:center;position:relative;min-height:190px}
 .servei-photo-overlay{position:absolute;inset:0;background:linear-gradient(160deg,rgba(18,32,41,.65),rgba(45,107,72,.45));display:flex;flex-direction:column;justify-content:flex-end;padding:22px 18px}
 .servei-cat-name{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:300;color:var(--green-light);line-height:1.1}
-.servei-cat-tag{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:rgba(109,191,133,.6);margin-top:3px}
+.servei-cat-tag{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,0.6);margin-top:3px}
 .servei-items{padding:28px 32px}
 .servei-items h3{font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:600;color:var(--forest);margin-bottom:14px}
 .servei-list{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:7px}
@@ -920,7 +920,7 @@ function changeLogo(){
 <g class="lf_logo" style="transform-origin:130px 775px"><image href="images/img_01.png" x="55" y="700" width="150" height="150" opacity="0.88"/></g></g></svg></div><style>.sidebar-leaves{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0;}.sidebar>*:not(.sidebar-leaves){position:relative;z-index:1;}</style><div class="sidebar-logo"><img src="images/img_01.png" alt="NexSocial"><div><div class="logo-name">NexSocial</div><div class="logo-sub">Cooperativa d'Acompanyament<br>Sociovital</div></div></div><nav>
 <a class="active" onclick="showSection('inici',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>Inici</a>
 <a onclick="showSection('quisom',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>Qui som</a>
-<a onclick="showSection('serveis',this)" id="nav-serveis"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>Serveis Persones</a>
+<a onclick="showSection('serveis',this)" id="nav-serveis"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>Servei a Persones</a>
 <div id="subnav-serveis" style="max-height:200px; overflow:hidden; background:rgba(255,255,255,0.18);">
   <a onclick="showSection('nexacompanya',null)" style="padding:9px 20px 9px 44px; font-size:13px; opacity:1; border-left:2px solid #3d8a62;">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:13px;height:13px;"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
@@ -939,7 +939,7 @@ function changeLogo(){
     Consulta Cas a Cas
   </a>
 </div>
-<a onclick="showSection('entitats',this); toggleSubnav('subnav-entitats')" id="nav-entitats"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>Serveis Entitats<span id="subnav-entitats-arrow" style="margin-left:auto; font-size:9px; transition:transform .25s; opacity:0.5;">▼</span></a>
+<a onclick="showSection('entitats',this); toggleSubnav('subnav-entitats')" id="nav-entitats"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>Servei a Entitats<span id="subnav-entitats-arrow" style="margin-left:auto; font-size:9px; transition:transform .25s; opacity:0.5;">▼</span></a>
 <div id="subnav-entitats" style="max-height:0; overflow:hidden; transition:max-height .35s ease; background:rgba(255,255,255,0.18);">
   <a onclick="showSection('entitats-acomp',this)" style="padding:9px 20px 9px 44px; font-size:13px; opacity:1; color:#1e3028 !important; border-left:2px solid #3d8a62;">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:13px;height:13px;"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
@@ -1018,11 +1018,10 @@ function changeLogo(){
       <div style="padding:32px 32px 48px;display:flex;flex-direction:column;flex:1;">
         <p style="font-size:13.5px;color:#4a6858;line-height:1.85;margin-bottom:24px;">Acompanyem persones i famílies en moments de dificultat. Suport social, emocional i terapèutic adaptat a cada situació i persona.</p>
         <ul style="list-style:none;padding:0;margin-bottom:0;flex:1;">
-          <li style="font-size:12.5px;color:#4a6858;padding:8px 0;border-bottom:1px solid rgba(109,191,133,0.1);display:flex;gap:10px;align-items:center;"><span style="color:var(--green-mid);font-size:14px;">—</span> Acompanyament a Grans Persones i soledat no volguda</li>
+          <li style="font-size:12.5px;color:#4a6858;padding:8px 0;border-bottom:1px solid rgba(109,191,133,0.1);display:flex;gap:10px;align-items:center;"><span style="color:var(--green-mid);font-size:14px;">—</span> Acompanyament Sociovital a Persones Grans</li>
           <li style="font-size:12.5px;color:#4a6858;padding:8px 0;border-bottom:1px solid rgba(109,191,133,0.1);display:flex;gap:10px;align-items:center;"><span style="color:var(--green-mid);font-size:14px;">—</span> Acompanyament Emocional individualitzat</li>
-          <li style="font-size:12.5px;color:#4a6858;padding:8px 0;border-bottom:1px solid rgba(109,191,133,0.1);display:flex;gap:10px;align-items:center;"><span style="color:var(--green-mid);font-size:14px;">—</span> Coaching, Gestalt, psicologia i altres enfocaments</li>
-          <li style="font-size:12.5px;color:#4a6858;padding:8px 0;border-bottom:1px solid rgba(109,191,133,0.1);display:flex;gap:10px;align-items:center;"><span style="color:var(--green-mid);font-size:14px;">—</span> Retirs de 2-3 dies en connexió amb la natura</li>
-          <li style="font-size:12.5px;color:#4a6858;padding:8px 0;display:flex;gap:10px;align-items:center;"><span style="color:var(--green-mid);font-size:14px;">—</span> Tallers grupals i activitats comunitàries de barri</li>
+          <li style="font-size:12.5px;color:#4a6858;padding:8px 0;border-bottom:1px solid rgba(109,191,133,0.1);display:flex;gap:10px;align-items:center;"><span style="color:var(--green-mid);font-size:14px;">—</span> Coach, Gestalt, Psicologia i altres enfocaments</li>
+          <li style="font-size:12.5px;color:#4a6858;padding:8px 0;display:flex;gap:10px;align-items:center;"><span style="color:var(--green-mid);font-size:14px;">—</span> Retirs de 2-3 dies en connexió amb la natura</li>
         </ul>
         <div style="margin-top:28px;">
           <a onclick="showSection('nexacompanya',null)" style="display:inline-flex;align-items:center;gap:8px;padding:12px 24px;background:#2d6b48;color:#fff;font-family:'DM Sans',sans-serif;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;border-radius:40px;transition:all .25s;box-shadow:0 4px 16px rgba(45,107,72,0.3);" onmouseover="this.style.background='#1e5a38';this.style.color='#fff'" onmouseout="this.style.background='#2d6b48';this.style.backdropFilter='none';this.style.transform='translateY(0)';this.style.boxShadow='none'">Descobrir més →</a>
@@ -1042,10 +1041,9 @@ function changeLogo(){
       <div style="padding:32px 32px 48px;display:flex;flex-direction:column;flex:1;">
         <p style="font-size:13.5px;color:var(--text-muted);line-height:1.85;margin-bottom:24px;">Gestoria social cooperativa: gestionem íntegrament en el teu nom, detectem ajudes vigents amb la nostra eina pròpia NexlicitIA, i mediem quan cal.</p>
         <ul style="list-style:none;padding:0;margin-bottom:0;flex:1;">
-          <li style="font-size:12.5px;color:#4a6858;padding:8px 0;border-bottom:1px solid rgba(45,107,72,0.1);display:flex;gap:10px;align-items:center;"><span style="color:var(--green-mid);font-size:14px;">—</span> Detecció, informació i gestió d'ajudes vigents</li>
-          <li style="font-size:12.5px;color:#4a6858;padding:8px 0;border-bottom:1px solid rgba(45,107,72,0.1);display:flex;gap:10px;align-items:center;"><span style="color:var(--green-mid);font-size:14px;">—</span> Dependència, IMV, RGC i prestacions socials</li>
-          <li style="font-size:12.5px;color:#4a6858;padding:8px 0;border-bottom:1px solid rgba(45,107,72,0.1);display:flex;gap:10px;align-items:center;"><span style="color:var(--green-mid);font-size:14px;">—</span> Estrangeria: arrelament, residència i reagrupament</li>
-          <li style="font-size:12.5px;color:#4a6858;padding:8px 0;border-bottom:1px solid rgba(45,107,72,0.1);display:flex;gap:10px;align-items:center;"><span style="color:var(--green-mid);font-size:14px;">—</span> Ajudes d'habitatge i lloguer vigents</li>
+          <li style="font-size:12.5px;color:#4a6858;padding:8px 0;border-bottom:1px solid rgba(45,107,72,0.1);display:flex;gap:10px;align-items:center;"><span style="color:var(--green-mid);font-size:14px;">—</span> Detecció i informació d'ajudes vigents</li>
+          <li style="font-size:12.5px;color:#4a6858;padding:8px 0;border-bottom:1px solid rgba(45,107,72,0.1);display:flex;gap:10px;align-items:center;"><span style="color:var(--green-mid);font-size:14px;">—</span> Gestió i tramitació d'ajudes i prestacions socials</li>
+          <li style="font-size:12.5px;color:#4a6858;padding:8px 0;border-bottom:1px solid rgba(45,107,72,0.1);display:flex;gap:10px;align-items:center;"><span style="color:var(--green-mid);font-size:14px;">—</span> Àmbits preferents: ajudes socials, habitatge i tràmits migratoris</li>
           <li style="font-size:12.5px;color:#4a6858;padding:8px 0;display:flex;gap:10px;align-items:center;"><span style="color:var(--green-mid);font-size:14px;">—</span> Mediació i assessorament jurídic social</li>
         </ul>
         <div style="margin-top:28px;">
@@ -1801,7 +1799,7 @@ document.addEventListener('DOMContentLoaded',gsInit);
   <div class="area-card-img" id="srv-acomp-img" style="background-image:url('images/img_09.jpg');background-size:cover;background-position:center;">
     <div class="area-card-img-overlay"></div>
     <div style="position:absolute;bottom:24px;left:24px;">
-      <div style="font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--green-mid);opacity:1;margin-bottom:6px;">Àrea d'Acompanyament</div>
+      <div style="font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.75);margin-bottom:6px;">Àrea d'Acompanyament</div>
       <div style="font-family:'Cormorant Garamond',serif;font-size:42px;font-weight:300;color:#fff;line-height:1;">Nex<em style="color:var(--green-light);">Acompanya</em></div>
     </div>
   </div>
@@ -1809,12 +1807,11 @@ document.addEventListener('DOMContentLoaded',gsInit);
     <div>
       <div class="area-card-tag">Àrea d'Acompanyament</div>
       <div class="area-card-title">Acompanyament <em style="color:var(--green-mid);">Sociovital</em></div>
-      <p class="area-card-desc">Acompanyem persones i famílies en moments de dificultat: des del suport social i comunitàri fins a l'acompanyament emocional i terapèutic, coordinats amb <span style="font-family:'Cormorant Garamond',serif;font-size:1.15em;">Nex<em style="color:var(--green-mid);">Gestió</em></span> per una atenció completa.</p>
+      <p class="area-card-desc">Acompanyem persones i famílies en moments de dificultat. Suport social, emocional i terapèutic adaptat a cada situació i persona.</p>
       <ul class="area-card-list">
-        <li>Acompanyament a Grans Persones i soledat no volguda</li>
-        <li>Acompanyament Emocional i Terapèutic individualitzat</li>
-        <li>Coaching, Gestalt, psicologia i altres enfocaments</li>
-        <li>Tallers grupals i activitats comunitàries de barri</li>
+        <li>Acompanyament Sociovital a Persones Grans</li>
+        <li>Acompanyament Emocional individualitzat</li>
+        <li>Coach, Gestalt, Psicologia i altres enfocaments</li>
         <li>Retirs de 2-3 dies en connexió amb la natura</li>
       </ul>
     </div>
@@ -1828,12 +1825,11 @@ document.addEventListener('DOMContentLoaded',gsInit);
     <div>
       <div class="area-card-tag">Gestoria Social · Ajudes · Mediació</div>
       <div class="area-card-title">Nex<em style="color:var(--green-mid);">Gestió</em></div>
-      <p class="area-card-desc">Gestoria social cooperativa: gestionem íntegrament en el teu nom, detectem ajudes vigents amb la nostra eina pròpia NexlicitIA, i mediem quan cal. Traçabilitat total i transparència en els costos.</p>
+      <p class="area-card-desc">Gestoria social cooperativa: gestionem íntegrament en el teu nom, detectem ajudes vigents amb la nostra eina pròpia NexlicitIA, i mediem quan cal.</p>
       <ul class="area-card-list">
-        <li>Detecció, informació i gestió d'ajudes vigents</li>
-        <li>Dependència, IMV, RGC i prestacions socials</li>
-        <li>Estrangeria: arrelament, residència i reagrupament</li>
-        <li>Ajudes d'habitatge i lloguer vigents</li>
+        <li>Detecció i informació d'ajudes vigents</li>
+        <li>Gestió i tramitació d'ajudes i prestacions socials</li>
+        <li>Àmbits preferents: ajudes socials, habitatge i tràmits migratoris</li>
         <li>Mediació i assessorament jurídic social</li>
       </ul>
     </div>
@@ -1842,7 +1838,7 @@ document.addEventListener('DOMContentLoaded',gsInit);
   <div class="area-card-img" id="srv-gestio-img" style="background-image:url('images/img_10.jpg');background-size:cover;background-position:center; order:2;">
     <div class="area-card-img-overlay"></div>
     <div style="position:absolute;bottom:24px;left:24px;">
-      <div style="font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--green-mid);opacity:1;margin-bottom:6px;">Gestoria Social · Ajudes · Mediació</div>
+      <div style="font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.75);margin-bottom:6px;">Gestoria Social · Ajudes · Mediació</div>
       <div style="font-family:'Cormorant Garamond',serif;font-size:42px;font-weight:300;color:#fff;line-height:1;">Nex<em style="color:var(--green-light);">Gestió</em></div>
     </div>
   </div>
@@ -1853,7 +1849,7 @@ document.addEventListener('DOMContentLoaded',gsInit);
   <div class="area-card-img" style="background-image:url('images/img_21.png');background-size:cover;background-position:center top;">
     <div class="area-card-img-overlay" style="background:rgba(18,32,41,0.45);"></div>
     <div style="position:absolute;bottom:24px;left:24px;">
-      <div style="font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--green-mid);opacity:1;margin-bottom:6px;">Atenció personalitzada</div>
+      <div style="font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.75);margin-bottom:6px;">Atenció personalitzada</div>
       <div style="font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:300;color:#fff;line-height:1;">Consulta<br><em>Cas a Cas</em></div>
     </div>
   </div>
@@ -2379,7 +2375,7 @@ document.addEventListener('DOMContentLoaded',gsInit);
 <section id="entitats">
 <div class="page-header">
 <div class="page-header-bg" style="background-image:url('images/img_29.png');"></div>
-<span class="page-header-tag">Serveis Entitats</span>
+<span class="page-header-tag">Servei a Entitats</span>
 <h1>Consultoria Social <em>per Entitats</em></h1>
 <p>Acompanyament per a organitzacions, equips i entitats que busquen transformació i impacte social.</p>
 </div>
@@ -2391,7 +2387,7 @@ document.addEventListener('DOMContentLoaded',gsInit);
   <div class="area-card-img" style="background-image:url('images/img_31.jpg');background-size:cover;background-position:center top;">
     <div class="area-card-img-overlay"></div>
     <div style="position:absolute;bottom:24px;left:24px;">
-      <div style="font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--green-mid);opacity:1;margin-bottom:6px;">Serveis Entitats</div>
+      <div style="font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.75);margin-bottom:6px;">Servei a Entitats</div>
       <div style="font-family:'Cormorant Garamond',serif;font-size:38px;font-weight:300;color:#fff;line-height:1.1;">Programes<br><em style="color:var(--green-light);">d'Acompanyament</em></div>
     </div>
   </div>
@@ -2429,7 +2425,7 @@ document.addEventListener('DOMContentLoaded',gsInit);
   <div class="area-card-img" style="background-image:url('images/img_32.jpg');background-size:cover;background-position:center; order:2;">
     <div class="area-card-img-overlay"></div>
     <div style="position:absolute;bottom:24px;left:24px;">
-      <div style="font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--green-mid);opacity:1;margin-bottom:6px;">Serveis Entitats</div>
+      <div style="font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.75);margin-bottom:6px;">Servei a Entitats</div>
       <div style="font-family:'Cormorant Garamond',serif;font-size:38px;font-weight:300;color:#fff;line-height:1.1;">Transformació <em style="color:var(--green-light);">Organitzacional</em></div>
     </div>
   </div>
@@ -2460,7 +2456,7 @@ document.addEventListener('DOMContentLoaded',gsInit);
 <section id="entitats-acomp">
 <div class="page-header">
 <div class="page-header-bg" style="background-image:url('images/img_29.png');"></div>
-<span class="page-header-tag">Serveis Entitats</span>
+<span class="page-header-tag">Servei a Entitats</span>
 <h1>Consultoria Social <em>per Entitats</em></h1>
 <p>Programes d'acompanyament i transformació organitzacional per a entitats, empreses i administracions.</p>
 </div>
@@ -2773,8 +2769,8 @@ document.addEventListener('DOMContentLoaded',gsInit);
       </div>
       <div style="background:var(--green-mid);padding:22px 24px;">
         <div style="font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:#2d6b48;opacity:1;margin-bottom:8px;">③ Base de dades</div>
-        <div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:#0f2d1e;margin-bottom:8px;line-height:1.3;">Supabase · Temps real</div>
-        <div style="font-size:11.5px;color:#4a6858;line-height:1.65;color:#2a3d28;">Tot queda registrat amb upsert intel·ligent, traçabilitat de canvis i alertes de termini pròxim.</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:16px;color:#0f2d1e;margin-bottom:8px;line-height:1.3;">Base de dades · Temps real</div>
+        <div style="font-size:11.5px;color:#4a6858;line-height:1.65;color:#2a3d28;">Tot queda registrat automàticament, amb traçabilitat de canvis i alertes de termini pròxim.</div>
       </div>
     </div>
   </div>
@@ -3039,7 +3035,7 @@ document.addEventListener('DOMContentLoaded',gsInit);
           <li><a href="#" onclick="showSection('gestalt-sessions',null)" style="color:var(--forest);font-weight:500;">Sessions Gestalt · Cita</a></li>
           <li><a href="#" onclick="showSection('nexgestio',null)">NexGestió</a></li>
           <li><a href="#" onclick="showSection('consulta',null)">Cas a Cas</a></li>
-          <li><a href="#" onclick="showSection('entitats',document.querySelectorAll('nav a')[4])">Serveis Entitats</a></li>
+          <li><a href="#" onclick="showSection('entitats',document.querySelectorAll('nav a')[4])">Servei a Entitats</a></li>
         </ul>
       </div>
 
