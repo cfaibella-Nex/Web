@@ -41,13 +41,16 @@ section.active{display:block}
 .btn-primary:hover{background:rgba(30,90,56,0.55);backdrop-filter:blur(6px);transform:translateY(-2px);box-shadow:0 6px 20px rgba(45,107,72,0.18)}
 .btn-outline{background:rgba(152,190,149,0.88);color:var(--forest);padding:14px 32px;border:1.5px solid rgba(45,107,72,0.4);font-family:'DM Sans',sans-serif;font-size:12px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;text-decoration:none;display:inline-block;transition:all .3s;border-radius:40px}
 .btn-outline:hover{background:rgba(45,107,72,0.08);backdrop-filter:blur(6px);border-color:rgba(45,107,72,0.35);color:#2d6b48;transform:translateY(-2px);box-shadow:0 6px 18px rgba(45,107,72,0.08)}
-.hero-stats{position:relative;z-index:1;display:flex;border-top:1px solid rgba(255,255,255,.1);background:rgba(194,221,191,.92);margin-bottom:0;}
-.stat{flex:1;padding:26px 44px;border-right:1px solid rgba(255,255,255,.07);cursor:default;transition:all .25s;}
+.hero-stats{position:relative;z-index:1;display:flex;border-top:1px solid rgba(255,255,255,.1);background:rgba(194,221,191,.92);margin-bottom:0;border-bottom:3px solid var(--green-mid);}
+.stat{flex:1;padding:26px 44px;border-right:1px solid rgba(45,107,72,.15);cursor:default;transition:all .3s;position:relative;}
 .stat:last-child{border-right:none}
-.stat:hover{background:rgba(13,112,64,.1);}
-.stat:hover .stat-num,.stat:hover .stat-label{color:var(--green-mid);}
-.stat-num{font-family:'Cormorant Garamond',serif;font-size:44px;font-weight:300;color:#0f2d1e;line-height:1;margin-bottom:4px;transition:color .25s;}
-.stat-label{font-size:12px;color:#2a3d28;letter-spacing:.04em;transition:color .25s;}
+.stat::after{content:'';position:absolute;bottom:0;left:0;width:0;height:3px;background:var(--green-mid);transition:width .35s ease;}
+.stat:hover::after{width:100%;}
+.stat:hover{background:rgba(45,107,72,.08);}
+.stat:hover .stat-num{color:var(--forest);}
+.stat:hover .stat-label{color:var(--forest);}
+.stat-num{font-family:'League Spartan',sans-serif;font-size:40px;font-weight:400;color:#2d6b48;line-height:1;margin-bottom:5px;transition:color .25s;letter-spacing:-0.01em;}
+.stat-label{font-size:11px;color:#4a6858;letter-spacing:.08em;text-transform:uppercase;transition:color .25s;}
 .page-header{background:var(--forest-hero);padding:52px 64px 40px;position:relative;overflow:hidden}
 .page-header-bg{position:absolute;right:0;top:0;bottom:0;width:45%;background-size:cover;background-position:center;opacity:.55}
 .page-header::after{content:'';position:absolute;right:0;top:0;bottom:0;width:45%;background:linear-gradient(to right,var(--forest-hero) 0%,transparent 40%)}
@@ -1035,7 +1038,7 @@ function changeLogo(){
     <p class="hero-desc" id="hero-desc"><span style="font-family:'Cormorant Garamond',serif;font-size:1.15em;">Nex<em style="color:var(--green-mid);">Social</em></span> és una cooperativa que neix amb la voluntat de ser un nexe de suport i acompanyament global. Treballem per a la comunitat i per a les persones que necessiten suport en algun moment del seu cicle vital.</p>
     <div class="hero-cta">
       <a class="btn-primary" onclick="showSection('serveis',document.querySelectorAll('nav a')[2])">Els nostres serveis</a>
-      <a class="btn-outline" onclick="showSection('gestalt-sessions',null)">Inicia el teu procés terapèutic →</a>
+      <a class="btn-outline" onclick="showSection('gestalt-sessions',null)">Comencem l'acompanyament →</a>
     </div>
   </div>
 </div>
@@ -1208,7 +1211,7 @@ function changeLogo(){
           <div><div style="font-family:'Cormorant Garamond',serif;font-size:17px;color:var(--forest);margin-bottom:4px;">Responsabilitat i autoestima</div><p style="font-size:13px;color:#4a6858;line-height:1.6;margin:0;">Acceptar les emocions ens permet treballar en un camí coherent amb un mateix.</p></div>
         </div>
 
-        <div style="background:#98be95;border:1px solid rgba(45,107,72,.12);border-radius:6px;padding:14px 16px;display:flex;gap:14px;align-items:flex-start;">
+        <div style="background:#b8d4b4;border:1px solid rgba(45,107,72,.12);border-radius:6px;padding:14px 16px;display:flex;gap:14px;align-items:flex-start;">
           <div style="width:30px;height:30px;flex-shrink:0;border-radius:50%;background:rgba(255,255,255,0.35);display:flex;align-items:center;justify-content:center;margin-top:2px;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--forest)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
           <div><div style="font-family:'Cormorant Garamond',serif;font-size:17px;color:var(--forest);margin-bottom:4px;">Cada persona, el seu camí</div><p style="font-size:13px;color:#2a3d28;line-height:1.6;margin:0;">No hi ha un procés igual per a tothom. Construïm junts l'acompanyament que realment et serveix, al teu ritme i des del teu moment vital.</p></div>
         </div>
@@ -1729,18 +1732,18 @@ function gsFormSubmit(e){
     <!-- 3 cards xifres bloc 1 -->
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:2px;">
 
-      <div style="background:#f5f0e8;padding:32px 28px;text-align:center;border-radius:6px;box-shadow:0 4px 16px rgba(45,107,72,0.08);transition:all .25s;cursor:default;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 10px 28px rgba(45,107,72,0.15)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 16px rgba(45,107,72,0.08)'">
-        <div style="font-family:'League Spartan',sans-serif;font-size:52px;font-weight:300;color:#2d6b48;line-height:1;margin-bottom:12px;">1 de cada 4</div>
+      <div style="background:#f5f0e8;padding:32px 28px;text-align:center;border-radius:6px;box-shadow:0 4px 16px rgba(45,107,72,0.08);transition:all .3s;cursor:default;border-top:3px solid transparent;position:relative;overflow:hidden;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 10px 28px rgba(45,107,72,0.18)';this.style.borderTopColor='var(--green-mid)';this.style.background='#edf7e8';this.querySelector('.stat-num').style.color='#1a5c3a'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 16px rgba(45,107,72,0.08)';this.style.borderTopColor='transparent';this.style.background='#f5f0e8';this.querySelector('.stat-num').style.color='#2d6b48'">
+        <div class="stat-num" style="font-family:'League Spartan',sans-serif;font-size:52px;font-weight:300;color:#2d6b48;line-height:1;margin-bottom:12px;transition:color .3s;">1 de cada 4</div>
         <div style="font-size:12px;color:#4a6858;line-height:1.65;">persones viurà en algun moment una crisi emocional significativa al llarg de la seva vida <span style="color:#4a6858;opacity:.6">(OMS)</span></div>
       </div>
 
-      <div style="background:#f5f0e8;padding:32px 28px;text-align:center;border-radius:6px;box-shadow:0 4px 16px rgba(45,107,72,0.08);transition:all .25s;cursor:default;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 10px 28px rgba(45,107,72,0.15)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 16px rgba(45,107,72,0.08)'">
-        <div style="font-family:'League Spartan',sans-serif;font-size:80px;font-weight:300;color:#2d6b48;line-height:1;margin-bottom:12px;">70%</div>
+      <div style="background:#f5f0e8;padding:32px 28px;text-align:center;border-radius:6px;box-shadow:0 4px 16px rgba(45,107,72,0.08);transition:all .3s;cursor:default;border-top:3px solid transparent;position:relative;overflow:hidden;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 10px 28px rgba(45,107,72,0.18)';this.style.borderTopColor='var(--green-mid)';this.style.background='#edf7e8';this.querySelector('.stat-num').style.color='#1a5c3a'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 16px rgba(45,107,72,0.08)';this.style.borderTopColor='transparent';this.style.background='#f5f0e8';this.querySelector('.stat-num').style.color='#2d6b48'">
+        <div class="stat-num" style="font-family:'League Spartan',sans-serif;font-size:80px;font-weight:300;color:#2d6b48;line-height:1;margin-bottom:12px;transition:color .3s;">70%</div>
         <div style="font-size:12px;color:#4a6858;line-height:1.65;">de les persones que necessiten acompanyament emocional no arriben mai a demanar ajuda professional</div>
       </div>
 
-      <div style="background:#f5f0e8;padding:32px 28px;text-align:center;border-radius:6px;box-shadow:0 4px 16px rgba(45,107,72,0.08);transition:all .25s;cursor:default;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 10px 28px rgba(45,107,72,0.15)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 16px rgba(45,107,72,0.08)'">
-        <div style="font-family:'League Spartan',sans-serif;font-size:80px;font-weight:300;color:#2d6b48;line-height:1;margin-bottom:12px;">40%</div>
+      <div style="background:#f5f0e8;padding:32px 28px;text-align:center;border-radius:6px;box-shadow:0 4px 16px rgba(45,107,72,0.08);transition:all .3s;cursor:default;border-top:3px solid transparent;position:relative;overflow:hidden;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 10px 28px rgba(45,107,72,0.18)';this.style.borderTopColor='var(--green-mid)';this.style.background='#edf7e8';this.querySelector('.stat-num').style.color='#1a5c3a'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 16px rgba(45,107,72,0.08)';this.style.borderTopColor='transparent';this.style.background='#f5f0e8';this.querySelector('.stat-num').style.color='#2d6b48'">
+        <div class="stat-num" style="font-family:'League Spartan',sans-serif;font-size:80px;font-weight:300;color:#2d6b48;line-height:1;margin-bottom:12px;transition:color .3s;">40%</div>
         <div style="font-size:12px;color:#4a6858;line-height:1.65;">de les baixes laborals a Catalunya s'associen a causes emocionals o de benestar personal</div>
       </div>
 
@@ -1757,18 +1760,18 @@ function gsFormSubmit(e){
   <!-- Bloc dades: Col·lectiu Senior -->
   <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:2px;">
 
-    <div style="background:#f5f0e8;padding:32px 28px;text-align:center;border-radius:6px;box-shadow:0 4px 16px rgba(45,107,72,0.08);transition:all .25s;cursor:default;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 10px 28px rgba(45,107,72,0.15)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 16px rgba(45,107,72,0.08)'">
-      <div style="font-family:'League Spartan',sans-serif;font-size:80px;font-weight:300;color:#2d6b48;line-height:1;margin-bottom:12px;">~20%</div>
+    <div style="background:#f5f0e8;padding:32px 28px;text-align:center;border-radius:6px;box-shadow:0 4px 16px rgba(45,107,72,0.08);transition:all .3s;cursor:default;border-top:3px solid transparent;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 10px 28px rgba(45,107,72,0.18)';this.style.borderTopColor='var(--green-mid)';this.style.background='#edf7e8';this.querySelector('.stat-num').style.color='#1a5c3a'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 16px rgba(45,107,72,0.08)';this.style.borderTopColor='transparent';this.style.background='#f5f0e8';this.querySelector('.stat-num').style.color='#2d6b48'">
+      <div class="stat-num" style="font-family:'League Spartan',sans-serif;font-size:80px;font-weight:300;color:#2d6b48;line-height:1;margin-bottom:12px;transition:color .3s;">~20%</div>
       <div style="font-size:12px;color:#4a6858;line-height:1.65;">de la població catalana té 65 anys o més — un envelliment en acceleració constant <span style="color:#4a6858;opacity:.6">· Idescat 2025</span></div>
     </div>
 
-    <div style="background:#f5f0e8;padding:32px 28px;text-align:center;border-radius:6px;box-shadow:0 4px 16px rgba(45,107,72,0.08);transition:all .25s;cursor:default;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 10px 28px rgba(45,107,72,0.15)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 16px rgba(45,107,72,0.08)'">
-      <div style="font-family:'League Spartan',sans-serif;font-size:80px;font-weight:300;color:#2d6b48;line-height:1;margin-bottom:12px;">17,3%</div>
+    <div style="background:#f5f0e8;padding:32px 28px;text-align:center;border-radius:6px;box-shadow:0 4px 16px rgba(45,107,72,0.08);transition:all .3s;cursor:default;border-top:3px solid transparent;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 10px 28px rgba(45,107,72,0.18)';this.style.borderTopColor='var(--green-mid)';this.style.background='#edf7e8';this.querySelector('.stat-num').style.color='#1a5c3a'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 16px rgba(45,107,72,0.08)';this.style.borderTopColor='transparent';this.style.background='#f5f0e8';this.querySelector('.stat-num').style.color='#2d6b48'">
+      <div class="stat-num" style="font-family:'League Spartan',sans-serif;font-size:80px;font-weight:300;color:#2d6b48;line-height:1;margin-bottom:12px;transition:color .3s;">17,3%</div>
       <div style="font-size:12px;color:#4a6858;line-height:1.65;">de les persones majors de 65 anys estan en risc de pobresa o exclusió social <span style="color:#4a6858;opacity:.6">· AROPE / Idescat 2025</span></div>
     </div>
 
-    <div style="background:#f5f0e8;padding:32px 28px;text-align:center;border-radius:6px;box-shadow:0 4px 16px rgba(45,107,72,0.08);transition:all .25s;cursor:default;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 10px 28px rgba(45,107,72,0.15)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 16px rgba(45,107,72,0.08)'">
-      <div style="font-family:'League Spartan',sans-serif;font-size:80px;font-weight:300;color:#2d6b48;line-height:1;margin-bottom:12px;">18,4%</div>
+    <div style="background:#f5f0e8;padding:32px 28px;text-align:center;border-radius:6px;box-shadow:0 4px 16px rgba(45,107,72,0.08);transition:all .3s;cursor:default;border-top:3px solid transparent;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 10px 28px rgba(45,107,72,0.18)';this.style.borderTopColor='var(--green-mid)';this.style.background='#edf7e8';this.querySelector('.stat-num').style.color='#1a5c3a'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 16px rgba(45,107,72,0.08)';this.style.borderTopColor='transparent';this.style.background='#f5f0e8';this.querySelector('.stat-num').style.color='#2d6b48'">
+      <div class="stat-num" style="font-family:'League Spartan',sans-serif;font-size:80px;font-weight:300;color:#2d6b48;line-height:1;margin-bottom:12px;transition:color .3s;">18,4%</div>
       <div style="font-size:12px;color:#4a6858;line-height:1.65;">dels adults a Catalunya se senten sols — xifra que s'eleva al ~20% en majors de 75 anys <span style="color:#4a6858;opacity:.6">· ECV 2025</span></div>
     </div>
 
@@ -1776,7 +1779,7 @@ function gsFormSubmit(e){
 
   <!-- Cita de transició + font -->
   <div style="background:rgba(45,107,72,0.07);border-left:3px solid var(--green-mid);padding:20px 28px;margin-bottom:48px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;">
-    <div style="font-size:13px;color:#4a5e46;font-style:italic;line-height:1.75;max-width:600px;">&ldquo;El grup més vulnerable a Catalunya el formen les dones majors, que viuen soles, amb pensió baixa i creixent risc d'exclusió social. Davant d'aquesta realitat, NexSocial actua.&rdquo;</div>
+    <div style="font-size:13px;color:#4a5e46;font-style:italic;line-height:1.75;">&ldquo;El grup més vulnerable a Catalunya el formen les dones majors, que viuen soles, amb pensió baixa i creixent risc d'exclusió social. Davant d'aquesta realitat, NexSocial actua.&rdquo;</div>
     <div style="font-size:10px;color:var(--text-muted);letter-spacing:0.06em;line-height:1.8;text-align:right;">Fonts: Idescat · ECV 2025<br>INE · Indicador AROPE</div>
   </div>
 
@@ -2356,26 +2359,26 @@ function gsFormSubmit(e){
 
 <!-- Bloc 2: Mediació i Assessorament Jurídic -->
 <div class="srv-block" id="gestio-mediacio">
-  <div class="srv-block-title"><em style="font-style:italic;color:var(--green-mid);">Mediació</em> i Assessorament Jurídic <em style="font-style:italic;color:var(--green-mid);">Social</em></div>
+  <div class="srv-block-title"><em style="font-style:italic;color:var(--green-mid);">Mediació</em> i Assessorament <em style="font-style:italic;color:var(--green-mid);">Social</em></div>
   <div style="height:260px;background-size:cover;background-position:center center;background-image:url('images/img_20.jpg');background-size:cover;background-position:center;margin-bottom:24px;"></div>
-  <p class="srv-block-desc">Servei complementari per a situacions que requereixen una intervenció més especialitzada. La mediació comunitària i la intermediació en casos de pèrdua d'habitatge permeten trobar solucions consensuades evitant processos llargs i costosos. L'assessorament jurídic garanteix que cada persona conegui els seus drets i les millors alternatives per a la seva situació concreta.</p>
+  <p class="srv-block-desc">Quan sorgeixen conflictes o situacions complexes, la mediació i l'assessorament social obren vies de resolució consensuada, evitant processos llargs i desgastants. Des de NexSocial acompanyem persones i famílies perquè coneguin els seus drets i trobin la millor sortida possible a la seva situació.</p>
   <div class="srv-cols">
     <div class="srv-col-box">
       <div class="srv-col-box-title">Mediació</div>
       <ul>
-        <li>Intermediació en casos de pèrdua d'habitatge</li>
+        <li>Mediació familiar i interpersonal</li>
         <li>Mediació comunitària i entre veïns</li>
         <li>Processos de negociació facilitada</li>
         <li>Acords i seguiment dels compromisos</li>
       </ul>
     </div>
     <div class="srv-col-box">
-      <div class="srv-col-box-title">Assessorament Jurídic</div>
+      <div class="srv-col-box-title">Assessorament Social</div>
       <ul>
-        <li>Orientació sobre drets i recursos legals</li>
-        <li>Assessorament en habitatge i arrendaments</li>
+        <li>Orientació sobre drets i recursos socials</li>
         <li>Situacions de deute i vulnerabilitat econòmica</li>
-        <li>Derivació a serveis jurídics especialitzats</li>
+        <li>Acompanyament en processos administratius</li>
+        <li>Derivació a serveis especialitzats</li>
       </ul>
     </div>
   </div>
