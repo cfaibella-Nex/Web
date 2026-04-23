@@ -634,3 +634,39 @@ div[style*="padding:18px 24px 14px"]{
 
 /* Subpàgines: forçar visibilitat quan hi ha una sola section */
 body:not(.home) section { display:block !important; animation:none !important; }
+
+/* ── Links que fan de botó: sense subratllat ─────────────────── */
+a.btn-primary, a.btn-outline,
+a[style*="border-radius:40px"],
+a[style*="border-radius: 40px"],
+a[style*="border-radius:20px"],
+a[style*="background:#2d6b48"],
+a[style*="background: #2d6b48"],
+a[style*="letter-spacing:0.08em"],
+a[style*="letter-spacing: 0.08em"],
+nav a, .footer-links a, .topbar-btn {
+  text-decoration: none !important;
+}
+
+/* ── Hover translúcid homogeni per a tots els CTAs ───────────── */
+a[style*="background:#2d6b48"]:hover,
+a[style*="background: #2d6b48"]:hover,
+button[style*="background:#2d6b48"]:hover,
+button[style*="background: #2d6b48"]:hover {
+  background: rgba(45,107,72,0.72) !important;
+  backdrop-filter: blur(4px) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(45,107,72,0.18) !important;
+  transition: all .3s !important;
+}
+
+a.btn-primary:hover {
+  background: rgba(45,107,72,0.72) !important;
+  backdrop-filter: blur(4px) !important;
+  transform: translateY(-2px) !important;
+}
+
+a.btn-outline:hover {
+  background: rgba(45,107,72,0.08) !important;
+  transform: translateY(-2px) !important;
+}
