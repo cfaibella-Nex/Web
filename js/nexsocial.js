@@ -167,6 +167,7 @@ function resetDiag(){
   nextBtn.textContent = 'Següent →';
 }
 function showSection(id,el){
+  if(document.body.classList.contains('home') === false) return;
   document.querySelectorAll('section').forEach(s=>s.classList.remove('active'));
   document.querySelectorAll('nav a').forEach(a=>a.classList.remove('active'));
   var sec = document.getElementById(id);
