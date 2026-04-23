@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Servei a Entitats — Consultoria Social · NexSocial</title>
-<meta name="description" content="Consultoria social, diagnòstic d'impacte i gestió de subvencions per a entitats, cooperatives i administracions.">
+<meta name="description" content="Consultoria social, diagnòstic d'impacte i gestió de subvencions per a entitats i administracions.">
 <link rel="canonical" href="https://nexsocial.org/entitats/">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500&family=League+Spartan:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/nexsocial.css">
@@ -34,10 +34,10 @@
     <a href="/qui-som/" >Qui som</a>
     <a href="/">Servei a Persones</a>
     <div style="max-height:260px; overflow:hidden; background:rgba(255,255,255,0.18);">
-      <a href="/nexacompanya/" style="padding:9px 20px 9px 36px; font-size:13px; border-left:2px solid #3d8a62;">NexAcompanya</a>
-      <a href="/nexacompanya/sessions-gestalt/" style="padding:9px 20px 9px 48px; font-size:12px; border-left:2px solid rgba(61,138,98,0.5); color:#4a6858;">Sessions Gestalt</a>
-      <a href="/nexgestio/" style="padding:9px 20px 9px 36px; font-size:13px; color:#1e3028; border-left:2px solid #3d8a62;">NexGestió</a>
-      <a href="/nexgestio/nexlicitia/" style="padding:9px 20px 9px 48px; font-size:12px; border-left:2px solid rgba(61,138,98,0.5); color:#4a6858;">NexlicitIA</a>
+      <a href="/nexacompanya/" style="padding:9px 20px 9px 36px; font-size:13px; border-left:2px solid #3d8a62;" >NexAcompanya</a>
+      <a href="/nexacompanya/sessions-gestalt/" style="padding:9px 20px 9px 48px; font-size:12px; border-left:2px solid rgba(61,138,98,0.5); color:#4a6858;" >Sessions Gestalt</a>
+      <a href="/nexgestio/" style="padding:9px 20px 9px 36px; font-size:13px; color:#1e3028; border-left:2px solid #3d8a62;" >NexGestió</a>
+      <a href="/nexgestio/nexlicitia/" style="padding:9px 20px 9px 48px; font-size:12px; border-left:2px solid rgba(61,138,98,0.5); color:#4a6858;" >NexlicitIA</a>
       <a href="/consulta-cas-a-cas/" style="padding:9px 20px 9px 36px; font-size:13px; color:#1e3028; border-left:2px solid #3d8a62;" >Consulta Cas a Cas</a>
     </div>
     <a href="/entitats/" class="active">Servei a Entitats</a>
@@ -50,6 +50,7 @@
   </div>
 </aside>
 <main class="main">
+
 
 <div class="page-header">
 <div class="page-header-bg" style="background-image:url('../images/img_29.png');"></div>
@@ -81,7 +82,7 @@
         <li>Implantació, seguiment i memòria d'impacte</li>
       </ul>
     </div>
-    <button class="area-btn" onclick="showSection('entitats-acomp',null); setTimeout(function(){document.getElementById('entitats-programes').scrollIntoView({behavior:'smooth'})},100)">Veure el servei →</button>
+    <button class="area-btn" href='/entitats/'>Veure el servei →</button>
   </div>
 </div>
 
@@ -98,7 +99,7 @@
         <li>Acompanyament de direcció i propòsit comú</li>
       </ul>
     </div>
-    <button class="area-btn" onclick="showSection('entitats-acomp',null); setTimeout(function(){document.getElementById('entitats-transform').scrollIntoView({behavior:'smooth'})},100)">Veure el servei →</button>
+    <button class="area-btn" href='/entitats/'>Veure el servei →</button>
   </div>
   <div class="area-card-img" style="background-image:url('../images/img_32.jpg');background-size:cover;background-position:center; order:2;">
     <div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(45,107,72,0.1),rgba(15,45,30,0.72));"></div>
@@ -119,7 +120,7 @@
       <div style="font-size:12px;color:#4a6858;line-height:1.6;">Avalueu el vostre projecte en 10 preguntes i obteniu un pla d'acció personalitzat.</div>
       <div style="margin-top:16px;font-size:11px;color:var(--forest);letter-spacing:0.08em;text-transform:uppercase;">Accedir →</div>
     </div>
-    <div style="background:var(--green-mid);padding:28px;cursor:pointer;transition:transform .2s,box-shadow .2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 12px 32px rgba(18,32,41,0.2)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'" onclick="showSection('entitats-intel',null); nexCheckLogin()">
+    <div style="background:var(--green-mid);padding:28px;cursor:pointer;transition:transform .2s,box-shadow .2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 12px 32px rgba(18,32,41,0.2)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'" href='/nexgestio/nexlicitia/'>
       <div style="font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:var(--green-pale);opacity:.7;margin-bottom:10px;">Eina membres · 🔒</div>
       <div style="font-family:'Cormorant Garamond',serif;font-size:22px;color:#fff;font-weight:300;margin-bottom:8px;">Nex<em>licit</em>IA</div>
       <div style="font-size:12px;color:#4a6858;line-height:1.6;">Intel·ligència competitiva per a licitacions públiques del sector social.</div>
@@ -129,6 +130,7 @@
 </div>
 
 </div>
+
 
 <footer class="site-footer">
   <div class="footer-inner">
