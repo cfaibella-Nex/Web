@@ -1,1 +1,161 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacte — NexSocial</title>
+<meta name="description" content="Contacta amb NexSocial. Primera consulta gratuïta. infonex@nexsocial.org · www.nexsocial.org">
+<link rel="canonical" href="https://nexsocial.org/contacte/">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500&family=League+Spartan:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/nexsocial.css">
+</head>
+<body>
+<div class="topbar" id="topbar">
+  <div class="topbar-left">
+    <img src="../images/img_01.png" id="topbar-logo-img" alt="NexSocial" style="height:24px;width:24px;object-fit:contain;border-radius:50%;">
+    <span class="topbar-tagline">Nexe de Suport i Acompanyament Sociovital</span>
+  </div>
+  <div class="topbar-right">
+    <a href="/contacte/" class="topbar-btn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      <span>Contacte</span>
+    </a>
+  </div>
+</div>
+<button class="mobile-toggle" onclick="toggleSidebar()"><span></span><span></span><span></span></button>
+<div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-logo">
+    <img src="../images/img_01.png" alt="NexSocial">
+    <div><div class="logo-name">NexSocial</div><div class="logo-sub">Cooperativa d'Acompanyament<br>Sociovital</div></div>
+  </div>
+  <nav>
+    <a href="/">Inici</a>
+    <a href="/qui-som/" >Qui som</a>
+    <a href="/">Servei a Persones</a>
+    <div style="max-height:260px; overflow:hidden; background:rgba(255,255,255,0.18);">
+      <a href="/nexacompanya/" style="padding:9px 20px 9px 36px; font-size:13px; border-left:2px solid #3d8a62;">NexAcompanya</a>
+      <a href="/nexacompanya/sessions-gestalt/" style="padding:9px 20px 9px 48px; font-size:12px; border-left:2px solid rgba(61,138,98,0.5); color:#4a6858;">Sessions Gestalt</a>
+      <a href="/nexgestio/" style="padding:9px 20px 9px 36px; font-size:13px; color:#1e3028; border-left:2px solid #3d8a62;">NexGestió</a>
+      <a href="/nexgestio/nexlicitia/" style="padding:9px 20px 9px 48px; font-size:12px; border-left:2px solid rgba(61,138,98,0.5); color:#4a6858;">NexlicitIA</a>
+      <a href="/consulta-cas-a-cas/" style="padding:9px 20px 9px 36px; font-size:13px; color:#1e3028; border-left:2px solid #3d8a62;" >Consulta Cas a Cas</a>
+    </div>
+    <a href="/entitats/" >Servei a Entitats</a>
+    <a href="/collaboracions/" >Col·laboracions</a>
+    <a href="/contacte/" class="active">Contacte</a>
+  </nav>
+  <div class="sidebar-footer">
+    <a href="mailto:infonex@nexsocial.org">infonex@nexsocial.org</a><br>
+    <a href="https://nexsocial.org">www.nexsocial.org</a>
+  </div>
+</aside>
+<main class="main">
 
+<div class="page-header">
+<div class="page-header-bg" style="background-image:url('../images/img_25.png');background-position:center bottom;filter:blur(2px);transform:scale(1.05);opacity:0.3;"></div>
+<span class="page-header-tag">Parla amb nosaltres</span><h1>Posem-nos en <em>contacte</em></h1></div>
+<div class="contact-grid">
+<div class="contact-info">
+
+<div class="contact-logo"><img src="../images/img_26.png" alt="NexSocial"><span>NexSocial</span></div>
+<h2 id="contact-title">Estem aquí per<br><em>ajudar-te</em></h2>
+<p>Tant si necessites acompanyament personal com si ets una entitat que vol col·laborar, explica'ns la teva situació i t'orientem sense cap compromis.</p><p style="font-size:12px;color:#4a6858;margin-top:-8px;">Normalment responem en menys de 24 hores en dies laborables.</p>
+<div class="contact-item"><div class="contact-item-label">Email</div><div class="contact-item-val"><a href="/cdn-cgi/l/email-protection#6900070f06070c1129070c111a060a00080547061b0e"><span class="__cf_email__" data-cfemail="98f1f6fef7f6fde0d8f6fde0ebf7fbf1f9f4b6f7eaff">[email&#160;protected]</span></a></div></div>
+<div class="contact-item"><div class="contact-item-label">Web</div><div class="contact-item-val"><a href="https://nexsocial.org" target="_blank">www.nexsocial.org</a></div></div>
+<div class="contact-item"><div class="contact-item-label">Ubicació</div><div class="contact-item-val">Barcelona, Catalunya</div></div>
+<div class="contact-item"><div class="contact-item-label">Horari</div><div class="contact-item-val">Dilluns a divendres · 9h–18h</div></div>
+</div>
+<div class="contact-form"><h3>Escriu-nos un missatge</h3>
+<form id="contact-form" action="https://formspree.io/f/xlgpljjd" method="POST" onsubmit="handleContactForm(event)">
+<div class="form-group"><label>Nom *</label><input type="text" name="nom" placeholder="El teu nom i cognoms" required></div>
+<div class="form-row"><div class="form-group"><label>Email *</label><input type="email" name="email" placeholder="correu@exemple.com" required></div><div class="form-group"><label>Telèfon</label><input type="tel" name="telefon" placeholder="6XX XXX XXX"></div></div>
+<div class="form-group"><label>Motiu</label><select name="motiu">
+  <option value="">Selecciona el motiu...</option>
+  <optgroup label="NexAcompanya">
+    <option value="Sollicitar acompanyament social">Acompanyament Social (ajudes, habitatge, exclusió)</option>
+    <option value="Acompanyament emocional o terapeutic">Acompanyament Emocional o Terapèutic</option>
+    <option value="Retirs de creixement personal">Retirs de Creixement Personal</option>
+  </optgroup>
+  <optgroup label="NexGestió">
+    <option value="Gestoria social tramits">Gestoria Social · Tràmits i Ajudes</option>
+    <option value="Mediacio assessorament juridic">Mediació i Assessorament Jurídic</option>
+  </optgroup>
+  <optgroup label="General">
+    <option value="Informacio general serveis">Informació General sobre Serveis</option>
+    <option value="Altres">Altres consultes</option>
+  </optgroup>
+</select></div>
+<div class="form-group"><label>Missatge *</label><textarea name="missatge" placeholder="Explica'ns en què podem ajudar-te..." style="min-height:125px" required></textarea></div>
+<div style="margin-bottom:16px;display:flex;align-items:flex-start;gap:10px;">
+  <input type="checkbox" id="rgpd-contacte" name="rgpd" required style="margin-top:3px;accent-color:#2d6b48;flex-shrink:0;cursor:pointer;">
+  <label for="rgpd-contacte" style="font-size:12px;color:#4a6858;line-height:1.6;cursor:pointer;">He llegit i accepto la <button type="button" onclick="event.preventDefault();openModal('modal-privacitat')" style="background:none;border:none;padding:0;color:#2d6b48;font-size:12px;font-family:'DM Sans',sans-serif;cursor:pointer;border-bottom:1px solid rgba(45,107,72,0.3);">política de privacitat</button> i autoritzo el tractament de les meves dades per atendre la meva consulta.</label>
+</div>
+<div id="form-success" style="display:none;background:rgba(109,191,133,.15);border:1px solid #6dbf85;color:#6dbf85;padding:14px 18px;border-radius:6px;margin-bottom:12px;font-size:14px;">✓ Missatge enviat! Et respondrem en menys de 24h.</div>
+<button type="submit" class="btn-primary" id="form-submit-btn">Enviar missatge</button>
+</form>
+</div></div>
+
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-col footer-col--brand">
+        <div class="footer-brand">
+          <img src="../images/img_01.png" alt="NexSocial" style="width:38px;height:38px;object-fit:contain;">
+          <span class="footer-brand-name">NexSocial</span>
+        </div>
+        <p class="footer-desc">Cooperativa d'Acompanyament Sociovital a persones i entitats.</p>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Serveis</div>
+        <ul class="footer-links">
+          <li><a href="/nexacompanya/">NexAcompanya</a></li>
+          <li><a href="/nexgestio/">NexGestió</a></li>
+          <li><a href="/consulta-cas-a-cas/">Cas a Cas</a></li>
+          <li><a href="/entitats/">Servei a Entitats</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Teràpia Gestalt</div>
+        <ul class="footer-links">
+          <li><a href="/nexacompanya/sessions-gestalt/">Teràpia Gestalt</a></li>
+          <li><a href="/nexacompanya/sessions-gestalt/#gs-cal">Demana cita</a></li>
+          <li><a href="/nexacompanya/sessions-gestalt/#preus">Consulta preus</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Empresa</div>
+        <ul class="footer-links">
+          <li><a href="/qui-som/">Qui som</a></li>
+          <li><a href="/contacte/">Contacte</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Segueix-nos</div>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/nexsocial-cooperativa-acompa%C3%B1amiento-sociovital-218a213b9/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>LinkedIn
+          </a>
+          <a href="https://www.instagram.com/nexsocialcoop/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>Instagram
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 NexSocial Cooperativa d'Acompanyament Sociovital</span>
+      <span>Registre de Cooperatives de Catalunya</span>
+    </div>
+  </div>
+</footer>
+</main>
+<script src="../js/nexsocial.js"></script>
+<script>
+function toggleSidebar(){
+  document.getElementById('sidebar').classList.toggle('open');
+  document.getElementById('overlay').classList.toggle('active');
+}
+</script>
+</body>
+</html>
