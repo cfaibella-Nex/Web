@@ -1,4 +1,3 @@
-
 function handleContactForm(e){
   e.preventDefault();
   const btn = document.getElementById('form-submit-btn');
@@ -306,3 +305,113 @@ function changeLogo(){
   };
   input.click();
 }
+
+
+// ── Modals legals ────────────────────────────────────────────
+function openModal(id){ document.getElementById(id).classList.add('open'); document.body.style.overflow='hidden'; }
+function closeModal(id){ document.getElementById(id).classList.remove('open'); document.body.style.overflow=''; }
+function closeModalOutside(e,id){ if(e.target===document.getElementById(id)) closeModal(id); }
+document.addEventListener('keydown',function(e){ if(e.key==='Escape') document.querySelectorAll('.modal-overlay.open').forEach(function(m){ m.classList.remove('open'); document.body.style.overflow=''; }); });
+
+// Injectar modals al DOM si no hi són
+(function(){
+  if(document.getElementById('modal-legal')) return;
+  var div = document.createElement('div');
+  div.innerHTML = `<div class="modal-overlay" id="modal-legal" onclick="closeModalOutside(event,'modal-legal')">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('modal-legal')">×</button>
+    <span class="modal-tag">Informació legal</span>
+    <h2>Avís Legal</h2>
+    <p>En compliment de la Llei 34/2002, d'11 de juliol, de Serveis de la Societat de la Informació i de Comerç Electrònic (LSSI-CE), s'informa dels següents aspectes:</p>
+
+    <h3>Titular del lloc web</h3>
+    <p><strong>Denominació social:</strong> NexSocial, Cooperativa d'Acompanyament Sociovital<br>
+    <strong>Forma jurídica:</strong> Cooperativa de treball associat<br>
+    <strong>Registre:</strong> Registre de Cooperatives de Catalunya (número pendent de registre)<br>
+    <strong>Domicili social:</strong> Catalunya, Espanya<br>
+    <strong>Correu electrònic:</strong> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="563f38303938332e1638332e2539353f373a78392431">[email&#160;protected]</a><br>
+    <strong>Web:</strong> www.nexsocial.org</p>
+
+    <h3>Objecte i activitat</h3>
+    <p>NexSocial és una cooperativa dedicada a l'acompanyament sociovital de persones, famílies i entitats, oferint serveis d'acompanyament social, emocional, terapèutic i de gestoria administrativa.</p>
+
+    <h3>Propietat intel·lectual</h3>
+    <p>Tots els continguts d'aquest lloc web —textos, imatges, logotips, dissenys i qualsevol altre element— són propietat de NexSocial o disposen de les llicències corresponents. Queda prohibida la seva reproducció, distribució o comunicació pública sense autorització expressa.</p>
+
+    <h3>Responsabilitat</h3>
+    <p>NexSocial no es fa responsable dels danys o perjudicis que puguin derivar-se de l'ús de la informació continguda en aquest lloc web ni dels errors o omissions que pugui contenir. Els continguts d'aquest web tenen caràcter informatiu i no substitueixen l'assessorament professional personalitzat.</p>
+
+    <h3>Legislació aplicable</h3>
+    <p>Les presents condicions es regeixen per la legislació espanyola i catalana vigent. Per a la resolució de qualsevol controvèrsia, les parts se sotmeten als jutjats i tribunals competents.</p>
+  </div>
+</div>
+
+<!-- Modal Política de Privacitat -->
+<div class="modal-overlay" id="modal-privacitat" onclick="closeModalOutside(event,'modal-privacitat')">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('modal-privacitat')">×</button>
+    <span class="modal-tag">Protecció de dades</span>
+    <h2>Política de Privacitat</h2>
+    <p>En compliment del Reglament (UE) 2016/679 (RGPD) i la Llei Orgànica 3/2018 (LOPDGDD), l'informem sobre el tractament de les seves dades personals.</p>
+
+    <h3>Responsable del tractament</h3>
+    <p><strong>NexSocial, Cooperativa d'Acompanyament Sociovital</strong><br>
+    Correu de contacte: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="82ebece4edece7fac2ece7faf1ede1ebe3eeacedf0e5">[email&#160;protected]</a></p>
+
+    <h3>Dades que tractem</h3>
+    <p>Únicament tractem les dades que vostè ens facilita voluntàriament a través dels formularis de contacte del web: nom, correu electrònic, telèfon i el contingut del missatge. No recollim dades de manera automàtica més enllà de les estrictament necessàries per al funcionament tècnic del lloc web.</p>
+
+    <h3>Finalitat i base legal</h3>
+    <ul>
+      <li><strong>Atendre la seva consulta o sol·licitud</strong> — base legal: consentiment de l'interessat (art. 6.1.a RGPD).</li>
+      <li><strong>Gestionar la relació de servei</strong> — base legal: execució d'un contracte o mesures precontractuals (art. 6.1.b RGPD).</li>
+    </ul>
+
+    <h3>Conservació de les dades</h3>
+    <p>Les dades es conserven durant el temps necessari per atendre la seva sol·licitud i, posteriorment, durant els terminis legalment exigits. Un cop finalitzada la relació, les dades es bloquejen i s'eliminen.</p>
+
+    <h3>Destinataris</h3>
+    <p>No cedim les seves dades a tercers, excepte per obligació legal. El servei de correu electrònic pot estar allotjat en proveïdors externs amb les garanties adequades.</p>
+
+    <h3>Els seus drets</h3>
+    <p>Pot exercir els drets d'accés, rectificació, supressió, oposició, limitació del tractament i portabilitat enviant un correu a <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5831363e37363d2018363d202b373b31393476372a3f">[email&#160;protected]</a>. Si considera que els seus drets no han estat atesos, pot presentar una reclamació davant l'Agència Española de Protección de Datos (www.aepd.es).</p>
+  </div>
+</div>
+
+<!-- Modal Política de Cookies -->
+<div class="modal-overlay" id="modal-cookies" onclick="closeModalOutside(event,'modal-cookies')">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('modal-cookies')">×</button>
+    <span class="modal-tag">Cookies</span>
+    <h2>Política de Cookies</h2>
+    <p>Aquest lloc web utilitza únicament cookies tècniques estrictament necessàries per al seu funcionament. No s'utilitzen cookies d'analítica, publicitat ni de tercers.</p>
+
+    <h3>Què és una cookie?</h3>
+    <p>Una cookie és un petit fitxer de text que un lloc web emmagatzema al navegador de l'usuari quan el visita. Les cookies permeten que el lloc web recordi les accions i preferències de l'usuari durant un temps determinat.</p>
+
+    <h3>Cookies que utilitzem</h3>
+    <ul>
+      <li><strong>Cookies de sessió tècniques:</strong> necessàries per mantenir la sessió activa mentre es navega pel web (per exemple, per mantenir l'accés a àrees privades com NexlicitIA). S'eliminen en tancar el navegador.</li>
+      <li><strong>Preferències locals:</strong> emmagatzemament local al navegador (localStorage) per guardar preferències de navegació. No s'envien a cap servidor extern.</li>
+    </ul>
+
+    <h3>Exemció de consentiment</h3>
+    <p>Les cookies tècniques estan exemptes del requisit de consentiment previ, d'acord amb l'article 22.2 de la Llei 34/2002 (LSSI-CE) i les directrius de l'AEPD, ja que són estrictament necessàries per a la prestació del servei sol·licitat per l'usuari.</p>
+
+    <h3>Com gestionar les cookies</h3>
+    <p>Pot configurar o desactivar les cookies des de la configuració del seu navegador. Tingui en compte que desactivar les cookies tècniques pot afectar el funcionament del lloc web. Trobarà instruccions per a cada navegador a:</p>
+    <ul>
+      <li>Chrome: Configuració → Privadesa i seguretat → Cookies</li>
+      <li>Firefox: Opcions → Privadesa i seguretat</li>
+      <li>Safari: Preferències → Privadesa</li>
+      <li>Edge: Configuració → Cookies i permisos de lloc</li>
+    </ul>
+
+    <h3>Actualitzacions</h3>
+    <p>NexSocial es reserva el dret d'actualitzar aquesta política si incorpora noves funcionalitats que requereixin l'ús de cookies addicionals. En tal cas, s'informarà l'usuari prèviament i s'obtindrà el consentiment si fos necessari.</p>
+  </div>
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>`;
+  document.body.appendChild(div);
+})();
