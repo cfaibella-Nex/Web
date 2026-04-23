@@ -1,1 +1,568 @@
 
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sessions, preus i agenda — NexAcompanya · NexSocial</title>
+<meta name="description" content="Sessions de teràpia Gestalt individuals i grupals. Primera trucada de 15 min gratuïta. Des de 33€/sessió. NexAcompanya · NexSocial.">
+<link rel="canonical" href="https://nexsocial.org/nexacompanya/sessions-gestalt/">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500&family=League+Spartan:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../css/nexsocial.css">
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar" id="topbar">
+  <div class="topbar-left">
+    <img src="../../images/img_01.png" id="topbar-logo-img" alt="NexSocial" style="height:24px;width:24px;object-fit:contain;border-radius:50%;">
+    <span class="topbar-tagline">Nexe de Suport i Acompanyament Sociovital</span>
+  </div>
+  <div class="topbar-right">
+    <a href="/contacte/" class="topbar-btn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      <span>Contacte</span>
+    </a>
+  </div>
+</div>
+
+<button class="mobile-toggle" onclick="toggleSidebar()"><span></span><span></span><span></span></button>
+<div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
+
+<!-- SIDEBAR -->
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-logo">
+    <img src="../../images/img_01.png" alt="NexSocial">
+    <div>
+      <div class="logo-name">NexSocial</div>
+      <div class="logo-sub">Cooperativa d'Acompanyament<br>Sociovital</div>
+    </div>
+  </div>
+  <nav>
+    <a href="/">Inici</a>
+    <a href="/qui-som/">Qui som</a>
+    <a href="/">Servei a Persones</a>
+    <div style="max-height:260px; overflow:hidden; background:rgba(255,255,255,0.18);">
+      <a href="/nexacompanya/" style="padding:9px 20px 9px 36px; font-size:13px; border-left:2px solid #3d8a62;">NexAcompanya</a>
+      <a href="/nexacompanya/sessions-gestalt/" class="active" style="padding:9px 20px 9px 48px; font-size:12px; border-left:2px solid rgba(61,138,98,0.5); color:#4a6858;">Sessions Gestalt</a>
+      <a href="/nexgestio/" style="padding:9px 20px 9px 36px; font-size:13px; color:#1e3028; border-left:2px solid #3d8a62;">NexGestió</a>
+      <a href="/nexgestio/nexlicitia/" style="padding:9px 20px 9px 48px; font-size:12px; border-left:2px solid rgba(61,138,98,0.5); color:#4a6858;">NexlicitIA</a>
+      <a href="/consulta-cas-a-cas/" style="padding:9px 20px 9px 36px; font-size:13px; color:#1e3028; border-left:2px solid #3d8a62;">Consulta Cas a Cas</a>
+    </div>
+    <a href="/entitats/">Servei a Entitats</a>
+    <a href="/collaboracions/">Col·laboracions</a>
+    <a href="/contacte/">Contacte</a>
+  </nav>
+  <div class="sidebar-footer">
+    <a href="mailto:infonex@nexsocial.org">infonex@nexsocial.org</a><br>
+    <a href="https://nexsocial.org">www.nexsocial.org</a>
+  </div>
+</aside>
+
+<!-- MAIN -->
+<main class="main">
+
+<div class="page-header">
+  <div class="page-header-bg" style="background-image:url('../../images/img_38.png');background-position:center 35%;"></div>
+  <span class="page-header-tag">NexAcompanya · Teràpia Gestalt</span>
+  <h1>Sessions, <em>preus</em> i agenda</h1>
+  <p>Primera trucada de 15 min gratuïta. Explica'ns la teva situació i t'orientem sense compromís.</p>
+</div>
+
+<div class="content" style="background:#f5f0e8;">
+
+  <!-- INTRO compacte -->
+  <div style="display:grid;grid-template-columns:340px 1fr;gap:0;margin-bottom:32px;align-items:stretch;min-height:320px;border:1px solid rgba(45,107,72,0.1);">
+    <div style="position:relative;overflow:hidden;">
+      <img src="../../images/img_35.jpg" alt="Teràpia Gestalt" style="width:100%;height:100%;min-height:340px;object-fit:cover;object-position:center top;display:block;">
+      <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(15,45,30,0.62) 0%,transparent 55%);"></div>
+      <div style="position:absolute;bottom:0;left:0;right:0;padding:20px 22px;">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:17px;font-style:italic;color:#fff;line-height:1.45;margin-bottom:6px;">"El treball terapèutic comença quan ens atrevim a mirar allò que evitem."</div>
+        <div style="font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:var(--green-light);opacity:0.85;">Teràpia Gestalt · NexAcompanya</div>
+      </div>
+    </div>
+    <div style="padding:32px 36px;background:#f0f9ed;display:flex;flex-direction:column;justify-content:center;gap:14px;">
+      <div>
+        <div style="font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--green-mid);margin-bottom:8px;">El nostre equip terapèutic</div>
+        <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(24px,2.5vw,36px);font-weight:300;color:#0f2d1e;line-height:1.15;margin-bottom:10px;">Acompanyament <em style="font-style:italic;color:var(--green-mid);">gestàltic integratiu</em></h2>
+        <p style="font-size:13px;color:#4a5e46;line-height:1.8;margin-bottom:10px;">Un espai de suport proper, segur i empàtic per expressar, comprendre i gestionar emocions a partir d'un acompanyament personalitzat. Treballem amb diferents metodologies: Coaching, Gestalt, Psicologia Clínica, Acompanyament Emocional, entre altres — adaptades a cada persona i moment vital.</p>
+      </div>
+      <div style="display:flex;gap:6px;flex-wrap:wrap;">
+        <span style="font-size:11px;background:#fff;border:1px solid rgba(45,107,72,0.18);color:#2d6b48;padding:4px 10px;border-radius:20px;">Individual</span>
+        <span style="font-size:11px;background:#fff;border:1px solid rgba(45,107,72,0.18);color:#2d6b48;padding:4px 10px;border-radius:20px;">Grups</span>
+        <span style="font-size:11px;background:#fff;border:1px solid rgba(45,107,72,0.18);color:#2d6b48;padding:4px 10px;border-radius:20px;">CA · ES · EN</span>
+      </div>
+      <div style="border-top:1px solid rgba(45,107,72,0.15);padding-top:14px;display:flex;gap:20px;align-items:center;">
+        <div style="text-align:center;"><div style="font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:300;color:#0f2d1e;">55€</div><div style="font-size:10px;color:#4a6858;">individual</div></div>
+        <div style="width:1px;height:32px;background:rgba(45,107,72,0.2);"></div>
+        <div style="text-align:center;"><div style="font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:300;color:#0f2d1e;">33€</div><div style="font-size:10px;color:#4a6858;">grup</div></div>
+        <div style="width:1px;height:32px;background:rgba(45,107,72,0.2);"></div>
+        <div style="text-align:center;"><div style="font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:300;color:#0f2d1e;">45€</div><div style="font-size:10px;color:#4a6858;">trimestral/sessió</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TARIFES · INDIVIDUALS -->
+  <!-- TARIFES · SESSIONS INDIVIDUALS -->
+  <div style="margin-bottom:10px;">
+    <div style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--green-mid);margin-bottom:8px;">Tarifes · Sessions individuals</div>
+
+    <div style="display:flex;flex-direction:column;box-shadow:0 3px 16px rgba(45,107,72,0.13);border-radius:2px;overflow:hidden;border:1px solid rgba(45,107,72,0.14);">
+
+      <!-- Foto panoràmica -->
+      <div style="position:relative;height:200px;overflow:hidden;flex-shrink:0;">
+        <img src="../../images/img_39.jpg" alt="Teràpia individual — oficina i natura" style="width:100%;height:100%;object-fit:cover;object-position:center center;display:block;">
+        <div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(15,45,30,0.08) 0%,rgba(15,45,30,0.58) 100%);"></div>
+        <div style="position:absolute;bottom:0;left:0;right:0;padding:20px 28px;display:flex;align-items:flex-end;justify-content:space-between;">
+          <div>
+            <div style="font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.8);margin-bottom:5px;">Acompanyament individual</div>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:300;color:#fff;line-height:1.1;">Teràpia <em style="font-style:italic;">integrativa</em> — al teu espai o al nostre</div>
+          </div>
+          <div style="text-align:right;flex-shrink:0;margin-left:24px;">
+            <div style="font-family:'Cormorant Garamond',serif;font-size:52px;font-weight:300;color:#fff;line-height:1;">55€</div>
+            <div style="font-size:10px;color:rgba(255,255,255,0.75);">sessió · 60 min</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card dades sota -->
+      <div style="background:#f5f0e8;padding:20px 28px;display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center;">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+          <div>
+            <div style="font-size:9px;letter-spacing:0.16em;text-transform:uppercase;color:var(--green-mid);margin-bottom:10px;">Sessió puntual</div>
+            <ul style="list-style:none;padding:0;margin:0;">
+              <li style="font-size:12.5px;color:#4a5e46;padding:5px 0;border-bottom:1px solid rgba(45,107,72,0.1);display:flex;gap:8px;"><span style="color:var(--green-mid);flex-shrink:0;">—</span>Sessions al teu ritme</li>
+              <li style="font-size:12.5px;color:#4a5e46;padding:5px 0;border-bottom:1px solid rgba(45,107,72,0.1);display:flex;gap:8px;"><span style="color:var(--green-mid);flex-shrink:0;">—</span>Freqüència a convenir — tu decideixes</li>
+              <li style="font-size:12.5px;color:#4a5e46;padding:5px 0;display:flex;gap:8px;"><span style="color:var(--green-mid);flex-shrink:0;">—</span>Seguiment WhatsApp</li>
+            </ul>
+          </div>
+          <div>
+            <div style="font-size:9px;letter-spacing:0.16em;text-transform:uppercase;color:#2d6b48;margin-bottom:10px;">Trimestral · des de 45€</div>
+            <ul style="list-style:none;padding:0;margin:0;">
+              <li style="font-size:12.5px;color:#2a3d28;padding:5px 0;border-bottom:1px solid rgba(45,107,72,0.1);display:flex;gap:8px;"><span style="color:#2d6b48;font-weight:600;flex-shrink:0;">✓</span>WhatsApp + prioritat agenda sessió</li>
+              <li style="font-size:12.5px;color:#2a3d28;padding:5px 0;border-bottom:1px solid rgba(45,107,72,0.1);display:flex;gap:8px;"><span style="color:#2d6b48;font-weight:600;flex-shrink:0;">✓</span>Seguiment entre sessions</li>
+              <li style="font-size:12.5px;color:#2a3d28;padding:5px 0;display:flex;gap:8px;"><span style="color:#2d6b48;font-weight:600;flex-shrink:0;">✓</span>Freqüència adaptable segons el teu ritme de vida</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- CTA únic -->
+        <div style="background:#eaf4e6;border:1px solid rgba(45,107,72,0.18);border-radius:4px;padding:18px 22px;text-align:center;">
+          <div style="font-family:'Cormorant Garamond',serif;font-size:15px;color:#0f2d1e;margin-bottom:4px;">Primera trucada <em style="font-style:italic;color:#2d6b48;">gratuïta · 15 min</em></div>
+          <div style="font-size:11px;color:#4a6858;margin-bottom:14px;">Explica'ns la teva situació. Et truquem nosaltres.</div>
+          <a onclick="gsScrollForm('individual')" style="display:block;padding:11px 20px;background:#2d6b48;color:#fff;font-family:'DM Sans',sans-serif;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;border-radius:20px;transition:all .22s;" onmouseover="this.style.background='#1e5a38'" onmouseout="this.style.background='#2d6b48'">Sol·licitar primera trucada →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- QUADRE TRIMESTRAL -->
+  <div class="gs-trimestral-table" style="background:#fff;border:1px solid rgba(45,107,72,0.12);border-top:none;overflow:hidden;margin-bottom:3px;box-shadow:0 3px 14px rgba(45,107,72,0.07);">
+
+    <!-- Títol nou -->
+    <div style="padding:18px 24px 14px;border-bottom:1px solid rgba(45,107,72,0.08);background:#f8fdf6;display:flex;align-items:baseline;gap:12px;">
+      <div style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:300;color:#0f2d1e;">Preus assequibles per a <em style="font-style:italic;color:#2d6b48;">Acompanyament Trimestral</em></div>
+    </div>
+
+    <!-- Capçalera taula -->
+    <div style="background:#2d6b48;display:grid;grid-template-columns:1.8fr 0.7fr 0.9fr 1fr 0.8fr;gap:0;padding:13px 24px;">
+      <div style="font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.8);">Pla trimestral</div>
+      <div style="font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.8);text-align:center;">Sessions/mes</div>
+      <div style="font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.8);text-align:right;">Preu/sessió</div>
+      <div style="font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.8);text-align:right;">Total trimestre</div>
+      <div style="font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.8);text-align:right;">Estalvi</div>
+    </div>
+
+    <!-- Essencial -->
+    <div style="display:grid;grid-template-columns:1.8fr 0.7fr 0.9fr 1fr 0.8fr;gap:0;padding:10px 24px;border-top:1px solid rgba(45,107,72,0.08);align-items:center;background:#f8fdf6;">
+      <div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;color:#0f2d1e;display:flex;align-items:center;gap:8px;">Essencial <span style="font-size:9px;background:var(--green-mid);color:#fff;padding:2px 8px;border-radius:10px;font-family:'DM Sans',sans-serif;font-weight:400;">2/mes</span></div>
+        <div style="font-size:11px;color:#4a6858;margin-top:3px;">6 sessions · 3 mesos</div>
+      </div>
+      <div style="font-size:16px;color:#2a3d28;text-align:center;font-family:'Cormorant Garamond',serif;">2</div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:300;color:#0f2d1e;text-align:right;">50€</div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:22px;color:#0f2d1e;text-align:right;">300€</div>
+      <div style="font-size:15px;color:var(--green-mid);font-weight:700;text-align:right;">−30€</div>
+    </div>
+
+    <!-- Plus -->
+    <div style="display:grid;grid-template-columns:1.8fr 0.7fr 0.9fr 1fr 0.8fr;gap:0;padding:10px 24px;border-top:1px solid rgba(45,107,72,0.08);align-items:center;background:#edf7e8;">
+      <div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;color:#0f2d1e;display:flex;align-items:center;gap:8px;">Plus <span style="font-size:9px;background:#2d6b48;color:#fff;padding:2px 8px;border-radius:10px;font-family:'DM Sans',sans-serif;font-weight:400;">⭐ 4/mes</span></div>
+        <div style="font-size:11px;color:#4a6858;margin-top:3px;">12 sessions · 3 mesos</div>
+      </div>
+      <div style="font-size:16px;color:#2a3d28;text-align:center;font-family:'Cormorant Garamond',serif;">4</div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:34px;font-weight:300;color:#0f2d1e;text-align:right;">45€</div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:22px;color:#0f2d1e;text-align:right;">540€</div>
+      <div style="font-size:17px;color:#2d6b48;font-weight:700;text-align:right;">−120€</div>
+    </div>
+
+  </div>
+
+  <!-- CARDS MOBILE TRIMESTRAL (visible només <768px) -->
+  <div class="gs-mobile-plans" style="display:none;flex-direction:column;gap:10px;margin-bottom:3px;">
+    <!-- Essencial -->
+    <div style="background:#f8fdf6;border:1px solid rgba(45,107,72,0.14);border-left:4px solid var(--green-mid);padding:18px 20px;box-shadow:0 2px 10px rgba(45,107,72,0.08);">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px;">
+        <div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;color:#0f2d1e;display:flex;align-items:center;gap:8px;">Essencial <span style="font-size:9px;background:var(--green-mid);color:#fff;padding:2px 8px;border-radius:10px;font-family:'DM Sans',sans-serif;font-weight:400;">2/mes</span></div>
+          <div style="font-size:11px;color:#4a6858;margin-top:2px;">6 sessions · 3 mesos</div>
+        </div>
+        <div style="text-align:right;">
+          <div style="font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:300;color:#0f2d1e;line-height:1;">50€</div>
+          <div style="font-size:10px;color:#4a6858;">/sessió</div>
+        </div>
+      </div>
+      <div style="display:flex;justify-content:space-between;font-size:12px;color:#4a6858;border-top:1px solid rgba(45,107,72,0.1);padding-top:10px;margin-bottom:14px;">
+        <span>Total: <strong style="color:#0f2d1e;">300€</strong></span>
+        <span style="color:var(--green-mid);font-weight:700;">Estalvi −30€</span>
+      </div>
+      <a onclick="gsScrollForm('trimestral-essencial')" style="display:block;text-align:center;padding:11px;background:#2d6b48;color:#fff;font-family:'DM Sans',sans-serif;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;border-radius:20px;">Subscriure'm al pla Essencial →</a>
+    </div>
+    <!-- Plus -->
+    <div style="background:#edf7e8;border:1px solid rgba(45,107,72,0.18);border-left:4px solid #2d6b48;padding:18px 20px;box-shadow:0 2px 10px rgba(45,107,72,0.1);">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px;">
+        <div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;color:#0f2d1e;display:flex;align-items:center;gap:8px;">Plus <span style="font-size:9px;background:#2d6b48;color:#fff;padding:2px 8px;border-radius:10px;font-family:'DM Sans',sans-serif;font-weight:400;">⭐ 4/mes</span></div>
+          <div style="font-size:11px;color:#4a6858;margin-top:2px;">12 sessions · 3 mesos</div>
+        </div>
+        <div style="text-align:right;">
+          <div style="font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:300;color:#0f2d1e;line-height:1;">45€</div>
+          <div style="font-size:10px;color:#4a6858;">/sessió</div>
+        </div>
+      </div>
+      <div style="display:flex;justify-content:space-between;font-size:12px;color:#4a6858;border-top:1px solid rgba(45,107,72,0.12);padding-top:10px;margin-bottom:14px;">
+        <span>Total: <strong style="color:#0f2d1e;">540€</strong></span>
+        <span style="color:#2d6b48;font-weight:700;">Estalvi −120€</span>
+      </div>
+      <a onclick="gsScrollForm('trimestral-plus')" style="display:block;text-align:center;padding:11px;background:#2d6b48;color:#fff;font-family:'DM Sans',sans-serif;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;border-radius:20px;">Subscriure'm al pla Plus →</a>
+    </div>
+  </div>
+
+  <!-- TARIFES · GRUPALS -->
+  <div style="margin-bottom:32px;">
+    <div style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--green-mid);margin-bottom:8px;margin-top:20px;">Tarifes · Grupals</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+
+      <!-- Grup terapèutic: foto + card sota -->
+      <div style="display:flex;flex-direction:column;box-shadow:0 3px 16px rgba(45,107,72,0.13);border-radius:2px;overflow:hidden;border:1px solid rgba(45,107,72,0.14);">
+        <!-- Foto -->
+        <div style="position:relative;height:200px;overflow:hidden;flex-shrink:0;">
+          <img src="../../images/img_14.jpg" alt="Grup terapèutic" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;">
+          <div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(15,45,30,0.1) 0%,rgba(15,45,30,0.52) 100%);"></div>
+          <div style="position:absolute;bottom:0;left:0;right:0;padding:16px 20px;">
+            <div style="font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.8);margin-bottom:4px;">Grup terapèutic</div>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:300;color:#fff;line-height:1;">33€ <span style="font-size:14px;opacity:0.85;">/ sessió</span></div>
+          </div>
+        </div>
+        <!-- Card dades -->
+        <div style="background:#f5f0e8;padding:20px 22px;flex:1;">
+          <div style="font-size:10px;color:#4a6858;margin-bottom:14px;">sessió · 90 min · màx. 8–10 persones</div>
+          <ul style="list-style:none;padding:0;margin:0 0 14px;">
+            <li style="font-size:12px;color:#4a5e46;padding:5px 0;border-bottom:1px solid rgba(45,107,72,0.1);display:flex;gap:7px;"><span style="color:var(--green-mid);">—</span>Grup tancat, màx. 8–10 persones</li>
+            <li style="font-size:12px;color:#4a5e46;padding:5px 0;border-bottom:1px solid rgba(45,107,72,0.1);display:flex;gap:7px;"><span style="color:var(--green-mid);">—</span>Dol, relacions, autoestima, connexió</li>
+            <li style="font-size:12px;color:#4a5e46;padding:5px 0;border-bottom:1px solid rgba(45,107,72,0.1);display:flex;gap:7px;"><span style="color:var(--green-mid);">—</span>Creixement compartit i dinàmiques de grup</li>
+            <li style="font-size:12px;color:#4a5e46;padding:5px 0;display:flex;gap:7px;"><span style="color:#2d6b48;font-weight:600;">✓</span>Descompte addicional amb pla Plus</li>
+          </ul>
+          <div style="font-size:10.5px;color:#4a6858;background:rgba(45,107,72,0.07);padding:7px 11px;border-left:2px solid var(--green-light);">Consulta pròximes dates</div>
+        </div>
+      </div>
+
+      <!-- Retir intensiu: foto + card sota -->
+      <div style="display:flex;flex-direction:column;box-shadow:0 3px 16px rgba(45,107,72,0.13);border-radius:2px;overflow:hidden;border:1px solid rgba(45,107,72,0.14);">
+        <!-- Foto -->
+        <div style="position:relative;height:200px;overflow:hidden;flex-shrink:0;">
+          <img src="../../images/img_17.jpg" alt="Retir intensiu" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;">
+          <div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(15,45,30,0.08) 0%,rgba(15,45,30,0.55) 100%);"></div>
+          <div style="position:absolute;bottom:0;left:0;right:0;padding:16px 20px;">
+            <div style="font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.8);margin-bottom:4px;">Retir intensiu</div>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:300;color:#fff;line-height:1;">Consulta <span style="font-size:14px;opacity:0.85;">· 2–3 dies</span></div>
+          </div>
+        </div>
+        <!-- Card dades -->
+        <div style="background:#d4e8d0;padding:20px 22px;flex:1;">
+          <div style="font-size:10px;color:#4a6858;margin-bottom:14px;">Cap de setmana immersiu · natura</div>
+          <ul style="list-style:none;padding:0;margin:0 0 14px;">
+            <li style="font-size:12px;color:#2a3d28;padding:5px 0;border-bottom:1px solid rgba(45,107,72,0.15);display:flex;gap:7px;"><span style="color:#2d6b48;">—</span>Cap de setmana immersiu en entorn natural</li>
+            <li style="font-size:12px;color:#2a3d28;padding:5px 0;border-bottom:1px solid rgba(45,107,72,0.15);display:flex;gap:7px;"><span style="color:#2d6b48;">—</span>Treball corporal i emocional</li>
+            <li style="font-size:12px;color:#2a3d28;padding:5px 0;display:flex;gap:7px;"><span style="color:#2d6b48;">—</span>Grups reduïts de 4–6 persones</li>
+          </ul>
+          <div style="font-size:10.5px;color:#2a3d28;background:rgba(255,255,255,0.5);padding:7px 11px;border-left:2px solid #2d6b48;">Dates sota consulta · contacta'ns</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FORMULARI PRIMERA TRUCADA -->
+  <div id="gs-cal" style="margin-bottom:48px;">
+    <div style="display:grid;grid-template-columns:1fr 1.4fr;gap:3px;">
+
+      <!-- Esquerra: text -->
+      <div style="background:#dff0db;padding:32px 36px;display:flex;flex-direction:column;justify-content:center;">
+        <div style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:#3d8a62;margin-bottom:10px;">Primera trucada gratuïta · 15 min</div>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:clamp(22px,2.5vw,32px);font-weight:300;color:#0f2d1e;line-height:1.15;margin-bottom:14px;">Explica'ns la teva situació.<br><em style="font-style:italic;color:#2d6b48;">Et truquem nosaltres.</em></h3>
+        <p style="font-size:13px;color:#4a6858;line-height:1.75;margin-bottom:16px;">Sense compromís. Ens expliques el que t'ha portat fins aquí i t'orientem sobre el format més adequat per a tu.</p>
+        <div style="display:flex;flex-direction:column;gap:7px;">
+          <div style="display:flex;gap:10px;align-items:flex-start;font-size:12.5px;color:#2a3d28;"><span style="color:#2d6b48;flex-shrink:0;">—</span>Et truquem en 24–48 h hàbils</div>
+          <div style="display:flex;gap:10px;align-items:flex-start;font-size:12.5px;color:#2a3d28;"><span style="color:#2d6b48;flex-shrink:0;">—</span>Confidencial i sense cap compromís</div>
+        </div>
+      </div>
+
+      <!-- Dreta: formulari Formspree reutilitzant xlgpljjd -->
+      <div style="background:#f0f9ed;border:1px solid rgba(45,107,72,0.12);padding:32px 28px;">
+        <div style="font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:#3d8a62;margin-bottom:18px;">Les teves dades</div>
+
+        <form id="gs-form" action="https://formspree.io/f/xlgpljjd" method="POST" onsubmit="gsFormSubmit(event)" style="display:flex;flex-direction:column;gap:12px;">
+          <input type="hidden" name="_subject" value="Primera trucada Gestalt — NexSocial">
+          <input type="hidden" name="origen" value="Formulari primera trucada Gestalt">
+
+          <div>
+            <label style="font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#4a6858;display:block;margin-bottom:5px;">Nom i cognoms *</label>
+            <input name="nom" type="text" required placeholder="El teu nom complet" style="width:100%;padding:10px 13px;border:1px solid rgba(45,107,72,0.2);background:#fff;font-family:'DM Sans',sans-serif;font-size:13px;color:#2a3d28;outline:none;border-radius:2px;box-sizing:border-box;transition:border-color .2s;" onfocus="this.style.borderColor='#3d8a62'" onblur="this.style.borderColor='rgba(45,107,72,0.2)'">
+          </div>
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+            <div>
+              <label style="font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#4a6858;display:block;margin-bottom:5px;">Telèfon *</label>
+              <input name="telefon" type="tel" required placeholder="6XX XXX XXX" style="width:100%;padding:10px 13px;border:1px solid rgba(45,107,72,0.2);background:#fff;font-family:'DM Sans',sans-serif;font-size:13px;color:#2a3d28;outline:none;border-radius:2px;box-sizing:border-box;" onfocus="this.style.borderColor='#3d8a62'" onblur="this.style.borderColor='rgba(45,107,72,0.2)'">
+            </div>
+            <div>
+              <label style="font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#4a6858;display:block;margin-bottom:5px;">Correu *</label>
+              <input name="email" type="email" required placeholder="correu@exemple.com" style="width:100%;padding:10px 13px;border:1px solid rgba(45,107,72,0.2);background:#fff;font-family:'DM Sans',sans-serif;font-size:13px;color:#2a3d28;outline:none;border-radius:2px;box-sizing:border-box;" onfocus="this.style.borderColor='#3d8a62'" onblur="this.style.borderColor='rgba(45,107,72,0.2)'">
+            </div>
+          </div>
+
+          <div>
+            <label style="font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#4a6858;display:block;margin-bottom:5px;">Modalitat que t'interessa</label>
+            <select name="modalitat" style="width:100%;padding:10px 13px;border:1px solid rgba(45,107,72,0.2);background:#fff;font-family:'DM Sans',sans-serif;font-size:13px;color:#2a3d28;outline:none;border-radius:2px;cursor:pointer;box-sizing:border-box;">
+              <option value="no-se">Encara no ho sé</option>
+              <option value="individual">Sessió individual (55€)</option>
+              <option value="trimestral-essencial">Trimestral Essencial — 2 sessions/mes (50€/sessió)</option>
+              <option value="trimestral-plus">Trimestral Plus — 4 sessions/mes (45€/sessió)</option>
+              <option value="grup">Grup terapèutic (33€)</option>
+              <option value="retir">Retir intensiu</option>
+            </select>
+          </div>
+
+          <div>
+            <label style="font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#4a6858;display:block;margin-bottom:5px;">Explica'ns en poques paraules</label>
+            <textarea name="motiu" rows="3" placeholder="Què t'ha portat fins aquí? Com et pots estar sentint? No cal que sigui llarg." style="width:100%;padding:10px 13px;border:1px solid rgba(45,107,72,0.2);background:#fff;font-family:'DM Sans',sans-serif;font-size:13px;color:#2a3d28;outline:none;border-radius:2px;resize:vertical;box-sizing:border-box;" onfocus="this.style.borderColor='#3d8a62'" onblur="this.style.borderColor='rgba(45,107,72,0.2)'"></textarea>
+          </div>
+
+          <div style="display:flex;align-items:flex-start;gap:10px;margin-bottom:4px;">
+            <input type="checkbox" id="rgpd-gestalt" name="rgpd" required style="margin-top:3px;accent-color:#2d6b48;flex-shrink:0;cursor:pointer;">
+            <label for="rgpd-gestalt" style="font-size:12px;color:#4a6858;line-height:1.6;cursor:pointer;">He llegit i accepto la <button type="button" onclick="event.preventDefault();openModal('modal-privacitat')" style="background:none;border:none;padding:0;color:#2d6b48;font-size:12px;font-family:'DM Sans',sans-serif;cursor:pointer;border-bottom:1px solid rgba(45,107,72,0.3);">política de privacitat</button> i autoritzo el tractament de les meves dades.</label>
+          </div>
+
+          <button type="submit" id="gs-submit-btn" style="padding:13px 24px;background:#2d6b48;color:#fff;border:none;font-family:'DM Sans',sans-serif;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;border-radius:40px;transition:all .25s;box-shadow:0 4px 16px rgba(45,107,72,0.2);" onmouseover="this.style.background='rgba(30,90,56,0.85)';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#2d6b48';this.style.transform='translateY(0)'">Sol·licitar primera trucada gratuïta →</button>
+
+          <div id="gs-ok" style="display:none;text-align:center;padding:18px 16px;background:#fff;border:1px solid rgba(45,107,72,0.2);border-radius:4px;">
+            <div style="font-size:22px;margin-bottom:8px;">🌿</div>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:20px;color:#0f2d1e;margin-bottom:5px;">Sol·licitud enviada!</div>
+            <div style="font-size:12.5px;color:#4a6858;line-height:1.65;">Et trucarem en 24–48 h hàbils. Fins aviat!</div>
+          </div>
+          <div id="gs-err" style="display:none;font-size:12px;color:#a32d2d;background:#fcebeb;padding:10px 14px;border-radius:2px;"></div>
+
+          <p style="font-size:10.5px;color:#4a6858;line-height:1.6;margin:0;">Dades tractades de forma confidencial. <button onclick="openModal('modal-privacitat')" style="background:none;border:none;padding:0;color:#2d6b48;font-family:'DM Sans',sans-serif;font-size:10.5px;cursor:pointer;border-bottom:1px solid rgba(45,107,72,0.3);">Política de privacitat</button>.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <!-- FAQ -->
+  <div style="position:relative;overflow:hidden;border-top:1px solid rgba(45,107,72,0.12);">
+    <div style="position:absolute;inset:0;background-image:url('../../images/img_38.png');background-size:contain;background-position:center center;background-repeat:no-repeat;opacity:0.18;"></div>
+    <div style="position:relative;z-index:1;padding:40px 0 8px;max-width:680px;margin:0 auto;">
+      <div style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--green-mid);margin-bottom:6px;">Preguntes freqüents</div>
+      <h3 style="font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:300;color:#0f2d1e;margin-bottom:28px;">Tot el que necessites <em style="font-style:italic;color:var(--green-mid);">saber</em></h3>
+      <div>
+    <div class="gs-faq-item" style="border-bottom:1px solid rgba(45,107,72,0.12);">
+      <button onclick="gsFaqToggle(0)" style="width:100%;text-align:left;padding:18px 0;background:none;border:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;">
+        <span style="font-family:'Cormorant Garamond',serif;font-size:17px;color:#0f2d1e;line-height:1.3;">Què és l'acompanyament i en què es diferencia d'altres enfocaments?</span>
+        <span id="gs-faq-icon-0" style="color:var(--green-mid);font-size:20px;flex-shrink:0;transition:transform .25s;line-height:1;">+</span>
+      </button>
+      <div id="gs-faq-body-0" style="display:none;padding:0 0 18px;font-size:13.5px;color:#4a5e46;line-height:1.82;">La teràpia Gestalt és un enfocament psicoterapèutic centrat en l'experiència present, en la consciència d'un mateix i en la manera en què ens relacionem amb l'entorn. No es limita a analitzar intel·lectualment el que ocorre, sinó que posa atenció en com una persona sent, pensa, evita o repeteix determinades formes d'estar en el món. La seva singularitat és integrar cos, emoció, pensament i vincle, afavorint una comprensió més viva i transformadora.</div>
+    </div>
+    <div class="gs-faq-item" style="border-bottom:1px solid rgba(45,107,72,0.12);">
+      <button onclick="gsFaqToggle(1)" style="width:100%;text-align:left;padding:18px 0;background:none;border:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;">
+        <span style="font-family:'Cormorant Garamond',serif;font-size:17px;color:#0f2d1e;line-height:1.3;">La teràpia Gestalt serveix només per a persones amb un malestar greu?</span>
+        <span id="gs-faq-icon-1" style="color:var(--green-mid);font-size:20px;flex-shrink:0;transition:transform .25s;line-height:1;">+</span>
+      </button>
+      <div id="gs-faq-body-1" style="display:none;padding:0 0 18px;font-size:13.5px;color:#4a5e46;line-height:1.82;">No. Pot ser molt valuosa tant en moments de crisi com en etapes de recerca, canvi o revisió vital. Moltes persones arriben a teràpia no perquè 'estiguin malament' en sentit clínic estricte, sinó perquè senten bloqueig, desconnexió, repetició de patrons o necessitat de recuperar claredat i presència en la seva vida.</div>
+    </div>
+    <div class="gs-faq-item" style="border-bottom:1px solid rgba(45,107,72,0.12);">
+      <button onclick="gsFaqToggle(3)" style="width:100%;text-align:left;padding:18px 0;background:none;border:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;">
+        <span style="font-family:'Cormorant Garamond',serif;font-size:17px;color:#0f2d1e;line-height:1.3;">Empezar teràpia significa reconèixer debilitat?</span>
+        <span id="gs-faq-icon-3" style="color:var(--green-mid);font-size:20px;flex-shrink:0;transition:transform .25s;line-height:1;">+</span>
+      </button>
+      <div id="gs-faq-body-3" style="display:none;padding:0 0 18px;font-size:13.5px;color:#4a5e46;line-height:1.82;">Sovint significa justament el contrari: assumir amb honestedat que alguna cosa necessita atenció. Demanar ajuda no implica fragilitat ni fracàs personal. Sovint és un acte de responsabilitat, consciència i cura envers un mateix. Començar teràpia pot ser una manera de deixar de sostenir en soledat allò que durant massa temps ha quedat sense espai.</div>
+    </div>
+    <div class="gs-faq-item" style="border-bottom:1px solid rgba(45,107,72,0.12);">
+      <button onclick="gsFaqToggle(4)" style="width:100%;text-align:left;padding:18px 0;background:none;border:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;">
+        <span style="font-family:'Cormorant Garamond',serif;font-size:17px;color:#0f2d1e;line-height:1.3;">Quant dura un procés terapèutic?</span>
+        <span id="gs-faq-icon-4" style="color:var(--green-mid);font-size:20px;flex-shrink:0;transition:transform .25s;line-height:1;">+</span>
+      </button>
+      <div id="gs-faq-body-4" style="display:none;padding:0 0 18px;font-size:13.5px;color:#4a5e46;line-height:1.82;">No hi ha una durada universal. Hi ha processos breus, centrats en una situació concreta, i d'altres més profunds que requereixen més temps. La durada depèn de la demanda, del moment vital, de la complexitat del malestar i del grau d'implicació en el procés.</div>
+    </div>
+    <div class="gs-faq-item" style="border-bottom:1px solid rgba(45,107,72,0.12);">
+      <button onclick="gsFaqToggle(5)" style="width:100%;text-align:left;padding:18px 0;background:none;border:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;">
+        <span style="font-family:'Cormorant Garamond',serif;font-size:17px;color:#0f2d1e;line-height:1.3;">L'acompanyament pot ajudar en processos de dol o relacions difícils?</span>
+        <span id="gs-faq-icon-5" style="color:var(--green-mid);font-size:20px;flex-shrink:0;transition:transform .25s;line-height:1;">+</span>
+      </button>
+      <div id="gs-faq-body-5" style="display:none;padding:0 0 18px;font-size:13.5px;color:#4a5e46;line-height:1.82;">Sí, pot ser especialment valuosa en processos de dol, crisis vitals, dificultats vinculars, autoexigència, dependència emocional, baixa autoestima o repetició de patrons. Més que oferir solucions ràpides, acompanya a comprendre profundament què sosté aquell malestar i com obrir una forma diferent de viure'l.</div>
+    </div>
+    <div class="gs-faq-item" style="border-bottom:1px solid rgba(45,107,72,0.12);">
+      <button onclick="gsFaqToggle(6)" style="width:100%;text-align:left;padding:18px 0;background:none;border:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;">
+        <span style="font-family:'Cormorant Garamond',serif;font-size:17px;color:#0f2d1e;line-height:1.3;">Presencial o online — quina opció és millor?</span>
+        <span id="gs-faq-icon-6" style="color:var(--green-mid);font-size:20px;flex-shrink:0;transition:transform .25s;line-height:1;">+</span>
+      </button>
+      <div id="gs-faq-body-6" style="display:none;padding:0 0 18px;font-size:13.5px;color:#4a5e46;line-height:1.82;">Ambdues modalitats tenen el seu valor. Les sessions presencials a Badalona permeten un contacte més directe; les online, via videotrucada segura, ofereixen comoditat i accessibilitat. La decisió depèn de les teves circumstàncies i preferències. Ho parlem a la primera trucada.</div>
+    </div>
+    <div class="gs-faq-item" style="border-bottom:1px solid rgba(45,107,72,0.12);">
+      <button onclick="gsFaqToggle(7)" style="width:100%;text-align:left;padding:18px 0;background:none;border:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;">
+        <span style="font-family:'Cormorant Garamond',serif;font-size:17px;color:#0f2d1e;line-height:1.3;">La informació que comparteixi és confidencial?</span>
+        <span id="gs-faq-icon-7" style="color:var(--green-mid);font-size:20px;flex-shrink:0;transition:transform .25s;line-height:1;">+</span>
+      </button>
+      <div id="gs-faq-body-7" style="display:none;padding:0 0 18px;font-size:13.5px;color:#4a5e46;line-height:1.82;">Totalment. Tota la informació tractada en sessió és estrictament confidencial i subjecta al secret professional i a la normativa de protecció de dades (RGPD). La confidencialitat és un dels pilars fonamentals del vincle terapèutic.</div>
+    </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+function gsFaqToggle(i){
+  var body=document.getElementById('gs-faq-body-'+i);
+  var icon=document.getElementById('gs-faq-icon-'+i);
+  var open=body.style.display!=='none'&&body.style.display!=='';
+  // Close all
+  document.querySelectorAll('[id^="gs-faq-body-"]').forEach(function(b){b.style.display='none';});
+  document.querySelectorAll('[id^="gs-faq-icon-"]').forEach(function(ic){ic.textContent='+';ic.style.transform='rotate(0deg)';});
+  // Open this one if it was closed
+  if(!open){body.style.display='block';icon.textContent='×';icon.style.transform='rotate(90deg)';}
+}
+</script>
+
+</div>
+
+
+
+</div>
+
+<script>
+function gsScrollForm(modalitat){
+  var el=document.getElementById('gs-cal');
+  if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
+  setTimeout(function(){
+    var sel=document.querySelector('#gs-form select[name="modalitat"]');
+    if(sel&&modalitat){sel.value=modalitat;}
+  },500);
+}
+function gsFormSubmit(e){
+  e.preventDefault();
+  var form=document.getElementById('gs-form');
+  var btn=document.getElementById('gs-submit-btn');
+  var ok=document.getElementById('gs-ok');
+  var err=document.getElementById('gs-err');
+  err.style.display='none';
+  // Fallback mailto si Formspree encara no configurat
+  if(!form.action||form.action.indexOf('XXXXXXXX')>-1){
+    var nom=form.querySelector('[name="nom"]').value.trim();
+    var tel=form.querySelector('[name="telefon"]').value.trim();
+    var email=form.querySelector('[name="email"]').value.trim();
+    var mod=form.querySelector('[name="modalitat"]').value;
+    var franja=form.querySelector('[name="franja_preferida"]').value;
+    var mot=form.querySelector('[name="motiu"]').value.trim();
+    var body=encodeURIComponent(
+      'Nova sol·licitud primera trucada — Gestalt NexSocial\n\n'
+      +'Nom: '+nom+'\nTelèfon: '+tel+'\nCorreu: '+email
+      +'\nModalitat: '+(mod||'no especificada')
+      +'\nFranja preferida: '+(franja||'indiferent')
+      +'\n\nMotiu:\n'+(mot||'—')
+    );
+    window.location.href='mailto:infonex@nexsocial.org?subject=Primera+trucada+Gestalt+%E2%80%93+'+encodeURIComponent(nom)+'&body='+body;
+    ok.style.display='block';
+    form.reset();
+    return;
+  }
+  // Formspree AJAX
+  btn.textContent='Enviant...';btn.disabled=true;
+  fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}})
+    .then(function(res){
+      if(res.ok){ok.style.display='block';form.reset();btn.style.display='none';}
+      else{err.textContent='Hi ha hagut un error. Torna-ho a intentar o escriu-nos a infonex@nexsocial.org.';err.style.display='block';btn.textContent='Sol·licitar primera trucada gratuïta →';btn.disabled=false;}
+    })
+    .catch(function(){err.textContent='Error de connexió. Prova de nou o contacta\'ns directament.';err.style.display='block';btn.textContent='Sol·licitar primera trucada gratuïta →';btn.disabled=false;});
+}
+</script>
+
+
+
+
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-col footer-col--brand">
+        <div class="footer-brand">
+          <img src="../../images/img_01.png" alt="NexSocial" style="width:38px;height:38px;object-fit:contain;">
+          <span class="footer-brand-name">NexSocial</span>
+        </div>
+        <p class="footer-desc">Cooperativa d'Acompanyament Sociovital a persones i entitats.</p>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Serveis</div>
+        <ul class="footer-links">
+          <li><a href="/nexacompanya/">NexAcompanya</a></li>
+          <li><a href="/nexgestio/">NexGestió</a></li>
+          <li><a href="/consulta-cas-a-cas/">Cas a Cas</a></li>
+          <li><a href="/entitats/">Servei a Entitats</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Teràpia Gestalt</div>
+        <ul class="footer-links">
+          <li><a href="/nexacompanya/sessions-gestalt/">Teràpia Gestalt</a></li>
+          <li><a href="/nexacompanya/sessions-gestalt/#gs-cal">Demana cita</a></li>
+          <li><a href="/nexacompanya/sessions-gestalt/#preus">Consulta preus</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Empresa</div>
+        <ul class="footer-links">
+          <li><a href="/qui-som/">Qui som</a></li>
+          <li><a href="/contacte/">Contacte</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Segueix-nos</div>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/nexsocial-cooperativa-acompa%C3%B1amiento-sociovital-218a213b9/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>LinkedIn
+          </a>
+          <a href="https://www.instagram.com/nexsocialcoop/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>Instagram
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 NexSocial Cooperativa d'Acompanyament Sociovital</span>
+      <span>Registre de Cooperatives de Catalunya</span>
+    </div>
+  </div>
+</footer>
+
+</main>
+<script src="../../js/nexsocial.js"></script>
+<script>
+function toggleSidebar(){
+  document.getElementById('sidebar').classList.toggle('open');
+  document.getElementById('overlay').classList.toggle('active');
+}
+</script>
+</body>
+</html>
