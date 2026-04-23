@@ -630,5 +630,7 @@ div[style*="padding:18px 24px 14px"]{
 .modal-box ul{padding-left:20px;margin:8px 0 16px;}
 .modal-tag{font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--green-mid);margin-bottom:16px;display:block;}
 
-/* Subpàgines: section sempre visible (no hi ha showSection) */
-.main > section:only-child { display:block; }
+
+
+/* Subpàgines: forçar visibilitat quan hi ha una sola section */
+body:not(.home) section { display:block !important; animation:none !important; }
